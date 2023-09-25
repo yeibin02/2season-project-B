@@ -1,0 +1,66 @@
+/* 공통요소 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #191919;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+}
+html {
+  font-size: 16px;
+  height: 100%;
+}
+body {
+  font-family: "Noto Serif KR", serif;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0px;
+  color: #191919;
+  word-break: keep-all;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #baa693;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f8f0e5;
+}
+::selection {
+  background-color: #baa693;
+  color: #fff;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #f8f0e5 inset;
+}
+.clearfix::after {
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.inner {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
