@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://weddingforyoub.vercel.app/
+
+# Sitemaps
+Sitemap: https://weddingforyoub.vercel.app/sitemap.xml
