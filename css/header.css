@@ -28,6 +28,7 @@ html.active {
 }
 .header nav{
   width: calc(100vw - 220px - 200px);
+  font-family: 'Noto serif KR', 'serif';
   /* background-color: #887160; */
 }
 .header nav ul{
@@ -39,7 +40,6 @@ html.active {
 .header nav ul li{
   margin: 30px;
 }
-<<<<<<< HEAD
 .header nav ul li:first-child a{
   position: relative;
   border: 1px solid #fff;
@@ -113,18 +113,6 @@ html.active {
 }
 
 
-=======
-.header-2 ul li:first-child {
-  margin: 0;
-  padding: 20px 10px 0;
-}
-.header-2 ul li a {
-  font-family: "Noto Serif KR", "serif";
-}
-.header-1 ul li:nth-child(1)::after {
-  background: transparent !important;
-}
->>>>>>> 7117e0b6ac04b35d6b480442ea99857f3815d804
 .hamburger {
   position: absolute;
   display: none;
@@ -204,74 +192,15 @@ html.active {
   color: #555;
 }
 
-<<<<<<< HEAD
-
-=======
-.header-2 {
-  height: 60px;
-  /* background-color: palegoldenrod; */
-  font-size: 14px;
-  text-transform: uppercase;
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.2s, transform 0.4s;
-}
-.header-2.active {
-  height: 20px;
-  opacity: 0;
-  transform: translateY(-40%);
-  transition: opacity 0.2s, transform 0.4s;
-}
-.header-2 ul {
-  display: flex;
-  justify-content: center;
-}
-.header-2 ul li {
-  position: relative;
-  margin: 0 30px;
-  margin-top: 20px;
-  line-height: 25px;
-}
-.header-2 ul li:hover a {
-  color: #baa693;
-  transition: color 0.3s;
-  position: relative;
-}
-.header-2 ul li::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -10px;
-  width: 0;
-  opacity: 0;
-  height: 2px;
-  background-color: #baa693;
-  transition: width 0.5s, opacity 0.5s;
-}
-.header-2 ul li:hover::after {
-  opacity: 1;
-  width: 120%;
-}
->>>>>>> 7117e0b6ac04b35d6b480442ea99857f3815d804
 @media all and (max-width: 930px) {
 }
 @media all and (max-width: 700px) {
-<<<<<<< HEAD
-/* .s-menu {
+.s-menu {
   width: 140px;
 }
 .s-menu ul li {
   margin: 10px 5px;
 }
-=======
-  .s-menu {
-    width: 140px;
-  }
-  .s-menu ul li {
-    margin: 10px 5px;
-  }
->>>>>>> 7117e0b6ac04b35d6b480442ea99857f3815d804
 }
 @media all and (max-width: 550px) {
   .header .inner {
@@ -292,16 +221,9 @@ html.active {
   .header-2 ul {
     display: none;
   }
-<<<<<<< HEAD
   .hamburger{
-=======
-  .header-2 {
-    height: 20px;
-  }
-  .hamburger {
->>>>>>> 7117e0b6ac04b35d6b480442ea99857f3815d804
     display: block;
-  } */
+  }
 }
 @media all and (max-width: 360px) {
 }
