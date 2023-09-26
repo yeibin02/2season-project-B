@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta name="naver-site-verification" content="ac8f45f467b14d6d0ce812c1547c0dc6ffb110b6" />
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5L3S46BJ');</script>
-  <!-- End Google Tag Manager -->
+    <link rel="canonical" href="http://www.mysite.com/article/article1.html" />
+    <meta
+      name="naver-site-verification"
+      content="e394674f760eb584c248e383e2623c424f9d655a"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NFH6CXG7");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -138,26 +149,62 @@
     <script src="js/package-review.js"></script>
     <script src="js/wedding-hall.js"></script>
     <script src="js/sdm.js"></script>
-    <script src="js/review.js"></script>
-    <script src="js/looking.js"></script>
-    <script src="js/notice.js"></script>
+    <script src="js/gallery.js"></script>
     <script src="js/footer.js"></script>
     <!-- css 불러오기 -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Flickity 스타일시트 가져오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
+    />
+    <!-- Flickity 및 classie 스크립트 가져오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
+    
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5L3S46BJ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-    <div class="wrap">
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NFH6CXG7"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrap" id="wrap">
+      <!-- top button -->
+      <a href="#wrap"><div class="top-button">top</div></a>
       <!-- header -->
-      <header class="header clearfix">
+      <header class="header clearfix" id="header">
         <div class="inner">
+<<<<<<< HEAD
           <div class="header-logo">
             <a href="index.html">
               <img src="images/logo_white.png" alt="header-logo">
             </a>
+=======
+          <div class="header-1">
+            <div class="logo">
+              <a href="index.html">
+                <img src="images/logo_black.png" alt="header-logo" />
+              </a>
+            </div>
+            <div class="s-menu">
+              <ul>
+                <li><a href="login.html">login</a></li>
+                <li><a href="#">my page</a></li>
+              </ul>
+            </div>
+            <button class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+>>>>>>> 7117e0b6ac04b35d6b480442ea99857f3815d804
           </div>
           <nav>
             <ul>
@@ -165,9 +212,6 @@
                 <a href="s_package.html" class="package-menu">package
                 <!-- <div class="balloon">click</div> -->
                 </a>
-              </li>
-              <li>
-                <a href="s_about.html">about</a>
               </li>
               <li>
                 <a href="s_weddinghall.html">wedding hall</a>
@@ -198,77 +242,270 @@
       </header>
       <div class="hamburger-menu">
         <ul class="hamburger-menu-contents">
-            <li><a href="s_package.html">PACKAGE</a></li>
-            <li><a href="s_about.html">ABOUT</a></li>
-            <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
-            <li><a href="s_sdm.html">S.D.M</a></li>
-            <li><a href="s_notice.html">Q&A</a></li>
-            <li><a href="s_review.html">REVIEW</a></li>
+          <li><a href="s_package.html">PACKAGE</a></li>
+          <li><a href="s_about.html">ABOUT</a></li>
+          <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
+          <li><a href="s_sdm.html">S.D.M</a></li>
+          <li><a href="s_notice.html">Q&A</a></li>
+          <li><a href="s_review.html">REVIEW</a></li>
         </ul>
       </div>
       <div class="modal-overlay"></div>
       <!-- visual -->
       <div class="visual clearfix">
         <div class="inner">
-          <div class="main">
-            <div class="center" id="">
-              <!-- Slider indicator -->
-              <div class="lines">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+          <div class="visual_inner">
+            <div class="main">
+              <div class="center">
+                <!-- Slider indicator -->
+                <div class="lines">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+                <!-- sliderHeading -->
+                <div class="heading">
+                  <h1>PACKAGE</h1>
+                  <h1>PLACE</h1>
+                  <h1>S.D.M</h1>
+                  <h1>REVIEW</h1>
+                </div>
+                <!-- slidertext -->
+                <div class="textContainer">
+                  <div class="visual_text">
+                    웨딩박람회, 웨딩플래너 없이 준비하려니 막연하실 수 있어요.
+                    하지만 어렵지 않아요. 지금 바로 패키지 웨딩포유의 패키지
+                    상품을 만나보세요.
+                    <div class="visual_button_detail">
+                      <button>
+                        <a href="s_package.html"><p>MORE INFO</p></a>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="visual_text">
+                    웨딩홀을 쉽게 탐색하실 수 있는 방법을 제공해드립니다. 이제
+                    직접 웨딩홀에 상담예약 후 상담 받고 할인까지 챙기세요.
+                    <div class="visual_button_detail">
+                      <button>
+                        <a href="s_weddinghall.html"><p>MORE INFO</p></a>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="visual_text">
+                    직접 원하시는 구성으로 스/드/메 견적서를 생성해보세요.
+                    <div class="visual_button_detail">
+                      <button>
+                        <a href="s_sdm.html"><p>MORE INFO</p></a>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="visual_text">
+                    당신의 경험을 살려 '전문 웨딩 리뷰 크리에이터'에
+                    도전해보세요. 많은 사람들이 당신의 리뷰를 보고 상품을
+                    구매하면 할 수록 높은 수익을 달성 하실 수 있습니다......
+                    <div class="visual_button_detail">
+                      <button>
+                        <a href="s_notice.html"><p>MORE INFO</p></a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slider Images -->
+                <div class="imgContainer" id="visual_back1"></div>
+                <div class="imgContainer" id="visual_back2"></div>
+                <div class="imgContainer" id="visual_back3"></div>
+                <div class="imgContainer" id="visual_back4"></div>
               </div>
-              <!-- sliderHeading -->
-              <div class="heading">
-                <h1>STUDIO</h1>
-                <h1>DRESS</h1>
-                <h1>BEAUTY</h1>
-                <h1>PACKAGE</h1>
-              </div>
-              <!-- slidertext -->
-              <div class="textContainer">
-                <div class="text">
-                  고객님들이 원하시는 사진을 남기실 수 있도록 각 스튜디오에서는
-                  ‘샘플링 촬영’을 통해서 스튜디오의 역량을 보여주고 있답니다.
-                  그렇기 때문에 ‘시즌별 샘플 사진’을 보고 결정하시면 됩니다.
-                  ‘샘플 이미지’ 중 상당수가 마음에 든다면 해당 스튜디오 이름을
-                  기억하기
-                </div>
-                <div class="text">
-                  드레스는 사실 입어보기 전까지는 알 수 없어요. 하지만 '드레스
-                  투어' 진행시 보통 3군데의 샵을 방문하는데 문제는 어떤 샵을
-                  방문할 지에 대한 고민이 생기죠.
-                </div>
-                <div class="text">
-                  메이크업은 개개인의 편차가 가장 심한 서비스 분야에요.
-                  스튜디오, 드레스에 비해 업체간 가격차이가 많지 않기 때문에
-                  '고객후기'를 참조해서 선택하시면 좋을 것 같아요!
-                </div>
-                <div class="text">
-                  Istanbul is a major city in Turkey that straddles Europe
-                  andAsia across the Bosphorus Strait. Its Olects cultural
-                </div>
-              </div>
-              <!-- Slider Images -->
-              <div class="imgContainer" id="visual_back1"></div>
-              <div class="imgContainer" id="visual_back2"></div>
-              <div class="imgContainer" id="visual_back3"></div>
-              <div class="imgContainer" id="visual_back4"></div>
             </div>
           </div>
         </div>
       </div>
       <!-- Package -->
-
       <div class="package clearfix">
+        <!-- 모달창 -->
+        <div id="PkmyModal" class="pk-modal">
+          <div class="pk-modal-wraper">
+            <div class="pk-modal-wraper2">
+              <div class="pk-modal-img">
+                <img class="pk-modal-content" id="pkModalImage" />
+              </div>
+              <!-- 01 -->
+              <div class="pk-modal-list01">
+                <div class="pk-modal-list1">
+                  <div class="pk-modal-text">
+                    <h2 id="pkModalTitle">"벨라비타컨벤션"</h2>
+                    <h4 id="pkModalPlace">
+                      서울 강남구 역삼동 680 <br />
+                      : SK리스뷰 1F
+                    </h4>
+                  </div>
+                  <div class="pk-modal-map">
+                    <img src="images/wedding_map1.png" alt="wedding_map" />
+                  </div>
+                </div>
+                <div class="pk-modal-list2">
+                  <div class="hall-notice-modal">
+                    <div class="mo-notice-text-wrap">
+                      <h2>
+                        홀 타입 <br />
+                        예식 형태 / 간격
+                      </h2>
+                      <p>
+                        채플홀 <br />
+                        분리예식 / 90분
+                      </p>
+                    </div>
+                    <div class="mo-notice-text-wrap">
+                      <h2>수용인원</h2>
+                      <p>
+                        최소 250명 <br />
+                        착석 180명 <br />
+                        최대 680명
+                      </p>
+                    </div>
+                    <div class="mo-notice-text-wrap">
+                      <h2>메뉴 /식대</h2>
+                      <p>
+                        뷔페 <br />
+                        55,000원
+                      </p>
+                    </div>
+                  </div>
+                  <div class="hall-notice-modal2">
+                    <div class="mo-notice-text-wrap">
+                      <h2>
+                        대관료 <br />
+                        연출료
+                      </h2>
+                      <p>
+                        대관료 있음<br />
+                        5,200,000원 부터<br />
+                        5,020,000원 까지
+                      </p>
+                      <p>연출료 없음</p>
+                    </div>
+                    <div class="mo-notice-text-wrap">
+                      <h2>꽃장식</h2>
+                      <p>
+                        생화 <br />
+                        대관료 포함
+                      </p>
+                    </div>
+                    <div class="mo-notice-text-wrap">
+                      <h2>음주류</h2>
+                      <p>식대 포함</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 02 -->
+              <div class="pk-modal-list02">
+                <div class="pk-modal-list1">
+                  <div class="pk-modal-text">
+                    <h2 id="pkModalTitle">"헤움"</h2>
+                    <h2 id="pkModalTitle2">
+                      [촬영 + 본식] 신부신랑 헤어메이크업(실장)
+                    </h2>
+                    <p>웨딩포유 판매가</p>
+                    <h3>550,000원 <span>56%</span></h3>
+                    <p>정상가 : 1,200,000원</p>
+                  </div>
+                  <div class="pk-modal-map">
+                    <img src="images/makeup7-1.jpg" alt="makeup7-1" />
+                  </div>
+                </div>
+                <div class="pk-make-modal-list2">
+                  <div class="make-notice-modal">
+                    <div class="make-main-text-wrap">
+                      <div class="make-title-wrap">
+                        <h2>상품 기본 정보</h2>
+                      </div>
+                      <div class="make-text-wrap-list">
+                        <div class="make-text-wrap-list1">
+                          <h3>상품 구성</h3>
+                          <p>촬영 1회 + 본식 1회 헤어메이크업</p>
+                        </div>
+                        <div class="make-text-wrap-list2">
+                          <h3>시술자 직급</h3>
+                          <p>메이크업 : 실장 / 헤어 : 상담 후 결정</p>
+                        </div>
+                      </div>
+                      <div class="make-map-text">
+                        <h2>오시는 길</h2>
+                        <p id="pkModalPlace">
+                          서울 강남구 언주로 <br />
+                          159길 3, 5층
+                        </p>
+                      </div>
+                    </div>
+                    <div class="make-img-list"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 03 -->
+              <div class="pk-modal-list03">
+                <div class="pk-modal-list1">
+                  <div class="pk-modal-text">
+                    <h2 id="pkModalTitle">"비비엔다 스튜디오"</h2>
+                    <h2 id="pkModalTitle2">[웨딩촬영] 뉴트폴리오</h2>
+                    <h3>가격문의</h3>
+                    <div class="studio-map-text">
+                      <h2>오시는 길</h2>
+                      <p id="pkModalPlace">
+                        서울 강남구 언주로 <br />
+                        159길 3, 5층
+                      </p>
+                    </div>
+                  </div>
+                  <div class="studio-notice-modal">
+                    <div class="studio-main-text-wrap">
+                      <div class="studio-text-wrap-list">
+                        <div class="studio-text-wrap-list1">
+                          <h3>상품 구성</h3>
+                          <p>앨범 1권 (20P) + 기본 액자 1개</p>
+                        </div>
+                        <div class="studio-text-wrap-list2">
+                          <h3>촬영 소요 시간</h3>
+                          <p>4시간 ~ 5시간</p>
+                        </div>
+                        <div class="studio-text-wrap-list3">
+                          <h3>촬영 스케줄</h3>
+                          <p>10시, 13시 30분(10-3월), 14시 30분(4-9월)</p>
+                        </div>
+                        <div class="studio-text-wrap-list4">
+                          <h3>보유 소품</h3>
+                          <p>조화 부케, 웨딩 슈즈</p>
+                          <span>웨딩 슈즈 235, 245mm 보유 (화이트)</span>
+                        </div>
+                        <div class="studio-text-wrap-list5">
+                          <h3>촬영 의상 벌 수</h3>
+                          <p>5벌 (드레스 3벌, 캐주얼 1벌, 한복 1벌)</p>
+                          <span>
+                            의상 추가 시 추가 비용 없으나 작가 조율 후
+                            진행됨으로 사전 공유 필요
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pk-studio-modal-list2">
+                  <div class="studio-img-list"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pk-modal-wrap-close">
+            <span class="pk-close">&times;</span>
+          </div>
+        </div>
+        <!-- inner -->
         <div class="inner">
           <div class="package-wrap">
             <div class="package-main-wrap">
-              <img
-                src="images/package-weddinghall-1.png"
-                alt="weddinghall-main"
-              />
+              <img src="images/pk_dress_2.png" alt="weddinghall-main" />
             </div>
             <div class="package-text-wrap">
               <h2 class="package-title">best package</h2>
@@ -281,17 +518,17 @@
             <div class="package-img-wrap">
               <ul class="packimgwrap">
                 <li class="packimgli1">
-                  <a href="s_package.html">
+                  <a href="#">
                     <!-- <img src="images/package-dress-1.jpg" alt="package-dress1"> -->
                   </a>
                 </li>
                 <li class="packimgli2">
-                  <a href="s_package.html">
+                  <a href="#">
                     <!-- <img src="images/package-makeup-1.jpg" alt="package-dress1"> -->
                   </a>
                 </li>
                 <li class="packimgli3">
-                  <a href="s_package.html">
+                  <a href="#">
                     <!-- <img src="images/package-studio-1.jpg" alt="package-dress1"> -->
                   </a>
                 </li>
@@ -302,72 +539,79 @@
       </div>
       <!-- package-review -->
       <div class="package-review clearfix">
-
-      <!-- 모달 창 -->
-      <div id="PackagemyModal" class="package-modal">
-      <div class="modal-wraper">
-    <div class="modal-wrap-btn">
-    <img class="modal-content" id="modalImage">
-    <button class="pk-review-more" id="PackageMoreBtn">MORE</button>
-    </div>
-    <div class="modal-wrap-close">
-      <img class="modal-content" id="modalImage1">
-      <span class="package-close">&times;</span>
-    </div>
-      </div>
-      </div>
-      <div class="inner">
-
+        <!-- 모달 창 -->
+        <div id="PackagemyModal" class="package-modal">
+          <div class="modal-wraper">
+            <div class="modal-wrap-btn">
+              <img class="modal-content" id="modalImage" />
+              <button class="pk-review-more" id="PackageMoreBtn">MORE</button>
+            </div>
+            <div class="modal-wrap-close">
+              <img class="modal-content" id="modalImage1" />
+              <span class="package-close">&times;</span>
+            </div>
+          </div>
+        </div>
+        <div class="inner">
           <div class="package-review-text-wrap">
             <h2 class="package-review-title">package review</h2>
-            <p>추천 패키지를 이용해 보신 고객분들의 생생한 후기</p>
+            <p>
+              추천 패키지를 이용해 보신 고객분들의 생생한 후기<br />
+              아래 사진들을 <span>"click"</span>하여 리뷰를 확인해 보세요
+            </p>
           </div>
           <div class="package-review-wrapper">
-
-            <div class="swiper">
+            <div class="swiper pk-review-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="package-review-wrapper-inner1">
-                <div class="package-review-wrap review-wrap1">
-                <div class="package-review-wrap-text-wrap">
-                  <h2 class="package-review-wrap-title"><span>고 * 아</span> 님</h2>
-                </div>
-              </div>
-              </div>
+                    <div class="package-review-wrap review-wrap1">
+                      <div class="package-review-wrap-text-wrap">
+                        <h2 class="package-review-wrap-title">
+                          <span>고 * 아</span> 님
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="package-review-wrapper-inner2">
                     <div class="package-review-wrap review-wrap2">
-                    <div class="package-review-wrap-text-wrap">
-                      <h2 class="package-review-wrap-title"><span>김 * 화</span> 님</h2>
+                      <div class="package-review-wrap-text-wrap">
+                        <h2 class="package-review-wrap-title">
+                          <span>김 * 화</span> 님
+                        </h2>
+                      </div>
                     </div>
-                  </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="package-review-wrapper-inner3">
                     <div class="package-review-wrap review-wrap3">
-                    <div class="package-review-wrap-text-wrap">
-                      <h2 class="package-review-wrap-title"><span>김 * 아</span> 님</h2>
+                      <div class="package-review-wrap-text-wrap">
+                        <h2 class="package-review-wrap-title">
+                          <span>김 * 아</span> 님
+                        </h2>
+                      </div>
                     </div>
-                  </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="package-review-wrapper-inner4">
                     <div class="package-review-wrap review-wrap4">
-                    <div class="package-review-wrap-text-wrap">
-                      <h2 class="package-review-wrap-title"><span>박 * 정</span> 님</h2>
+                      <div class="package-review-wrap-text-wrap">
+                        <h2 class="package-review-wrap-title">
+                          <span>박 * 정</span> 님
+                        </h2>
+                      </div>
                     </div>
                   </div>
-                  </div>
                 </div>
-
               </div>
+            </div>
           </div>
-          </div>
+        </div>
       </div>
-      </div> 
       <!-- wedding-hall -->
       <div class="wedding-hall clearfix">
         <div class="inner">
@@ -376,7 +620,7 @@
             <p>고객들이 가장 선호 하시는 웨딩 홀을 둘러보세요!</p>
           </div>
           <div class="swiperbox">
-            <div class="swiper w-swiper">
+            <div class="swiper wSwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="images/컨벤션.jpg" alt="컨벤션 홀" />
@@ -395,27 +639,40 @@
                 </div>
               </div>
             </div>
+
             <div class="w-sitebox">
               <div class="w-sbox1">
                 <div class="w-tbox">
-                  <img src="images/컨벤션.jpg" alt="컨벤션 홀" />
+                  <a href="s_weddinghall.html">
+                    <img
+                      src="images/컨벤션.jpg"
+                      alt="컨벤션 홀"
+                      id="conventionImage"
+                    />
+                  </a>
                   <p>컨벤션 홀</p>
                   <span>#화려함 #편안한 장소선택</span>
                 </div>
                 <div class="w-tbox">
-                  <img src="images/채플.jpg" alt="채플 홀" />
+                  <a href="s_weddinghall.html">
+                    <img src="images/채플.jpg" alt="채플 홀"
+                  /></a>
                   <p>채플 홀</p>
                   <span>#성스러움 #종교적 이벤트</span>
                 </div>
               </div>
               <div class="w-sbox2">
                 <div class="w-tbox">
-                  <img src="images/하우스야외.jpg" alt="하우스/야외 홀" />
+                  <a href="s_weddinghall.html">
+                    <img src="images/하우스야외.jpg" alt="하우스/야외 홀"
+                  /></a>
                   <p>야외/하우스 홀</p>
                   <span>#여러가지 테마 #다양한 스타일</span>
                 </div>
                 <div class="w-tbox">
-                  <img src="images/호텔.jpg" alt="호텔 홀" />
+                  <a href="s_weddinghall.html">
+                    <img src="images/호텔.jpg" alt="호텔 홀"
+                  /></a>
                   <p>호텔 홀</p>
                   <span>#고급스러운 환경 #편리한 교통</span>
                 </div>
@@ -428,7 +685,10 @@
       <div class="sdm clearfix">
         <div class="inner">
           <div class="sdm_title" data-aos="zoom-in">
-            <h2>S.D.M OF THE MONTH</h2>
+            <h2>
+              <b>S.D.M</b> OF
+              THE MONTH
+            </h2>
           </div>
           <div class="sdm_wrap">
             <div class="sdm_box">
@@ -459,7 +719,7 @@
                 </div>
                 <div class="review_3">
                   <div class="review_profile">
-                    <img src="images/profile01.png" alt="" />
+                    <img src="images/profile01.png" alt="캐릭터" />
                     <div class="review_3_text">
                       <h3>MITIPO</h3>
                       <p>새싹</p>
@@ -471,10 +731,10 @@
                       고맙고 고생하셨습니다.
                     </p>
                   </div>
-                  <div class="review_3_text3">
+                  <!-- <div class="review_3_text3">
                     <p>♥</p>
                     <p class="review_heart">반응을 남겨보세요.</p>
-                  </div>
+                  </div> -->
                   <button class="review_button">
                     <a href="s_sdm.html" class="button_a"><p>MORE INFO</p></a>
                   </button>
@@ -509,19 +769,19 @@
                 </div>
                 <div class="review_3">
                   <div class="review_profile">
-                    <img src="images/profile02.png" alt="" />
+                    <img src="images/profile02.png" alt="캐릭터" />
                     <div class="review_3_text">
                       <h3>Alba01</h3>
                       <p>열매</p>
                     </div>
                   </div>
                   <div class="review_3_text2">
-                    <p>역시나 비즈 맛집! 비즈 반짝임이 남다르고 예뻐요!!</p>
+                    <p>
+                      역시나 소문대로 비즈 맛집! 친절하고 샵 자체로 블링블링.
+                      비즈 반짝임이 남다르고 예뻐요!!
+                    </p>
                   </div>
-                  <div class="review_3_text3">
-                    <p>♥</p>
-                    <p class="review_heart">반응을 남겨보세요.</p>
-                  </div>
+                  
                   <button class="review_button">
                     <a href="s_sdm.html" class="button_a"><p>MORE INFO</p></a>
                   </button>
@@ -529,7 +789,7 @@
               </div>
             </div>
             <div class="sdm_box">
-              <!-- <div class="sdm_makeup" id="sdm_subtitle"><p>make_up</p></div> -->
+             
               <div class="sdm_imgbox" id="makeup_box">
                 <div class="imgbox_hover">50%</div>
               </div>
@@ -568,10 +828,7 @@
                       너무 만족합니다. 원장님 최고에요 :)
                     </p>
                   </div>
-                  <div class="review_3_text3">
-                    <p>♥</p>
-                    <p class="review_heart">반응을 남겨보세요.</p>
-                  </div>
+                  
                   <button class="review_button">
                     <a href="s_sdm.html" class="button_a"><p>MORE INFO</p></a>
                   </button>
@@ -579,38 +836,218 @@
               </div>
             </div>
           </div>
+
+          <div class="sdm_box_reactive">
+            
+            <div class="sdm_reactiove_1">
+              <div class="sdm_imgbox" id="studio_box">
+                <div class="imgbox_hover">40%</div>
+              </div>
+              <div class="sdm_box_name_hover">
+                <div class="review_1">
+                  <h4>Studio Wonkyu</h4>
+                  <p>서울 특별시 강남구 청담동 영동대로 708</p>
+                </div>
+                <div class="review_2">
+                  <div class="review_2_1">
+                    <h4>4.9</h4>
+                    <div class="review_star">
+                      <img src="images/sdm_star.png" alt="리뷰별" />
+                    </div>
+                  </div>
+                  <div class="review_2_2">
+                    <p>리뷰 192개</p>
+                    <div class="review_tting"><p>i</p></div>
+                  </div>
+                </div>
+                <button class="review_button2">
+                  <a href="s_sdm.html"><p class="button_a2">MORE INFO</p></a>
+                </button>
+              </div>
+            </div>
+            <div class="sdm_reactiove_2">
+              <div class="sdm_imgbox" id="drees_box">
+                <div class="imgbox_hover">30%</div>
+              </div>
+              <div class="sdm_box_name_hover">
+                <div class="review_1">
+                  <h4>Monica Blanche</h4>
+                  <p>서울 특별시 강남구 선릉로 146길 15</p>
+                </div>
+                <div class="review_2">
+                  <div class="review_2_1">
+                    <h4>4.5</h4>
+                    <div class="review_star">
+                      <img src="images/sdm_star.png" alt="리뷰별" />
+                    </div>
+                  </div>
+                  <div class="review_2_2">
+                    <p>리뷰 247개</p>
+                    <div class="review_tting"><p>i</p></div>
+                  </div>
+                </div>
+                <button class="review_button2">
+                  <a href="s_sdm.html"><p class="button_a2">MORE INFO</p></a>
+                </button>
+              </div>
+            </div>
+            <div class="sdm_reactiove_3">
+              <div class="sdm_imgbox" id="makeup_box">
+                <div class="imgbox_hover">50%</div>
+              </div>
+              <div class="sdm_box_name_hover">
+                <div class="review_1">
+                  <h4>A BY BOM</h4>
+                  <p>서울 특별시 강남구 선릉로 152길 40</p>
+                </div>
+                <div class="review_2">
+                  <div class="review_2_1">
+                    <h4>5.0</h4>
+                    <div class="review_star">
+                      <img src="images/sdm_star.png" alt="리뷰별" />
+                    </div>
+                  </div>
+                  <div class="review_2_2">
+                    <p>리뷰 102개</p>
+                    <div class="review_tting"><p>i</p></div>
+                  </div>
+                </div>
+                <button class="review_button2">
+                  <a href="s_sdm.html"><p class="button_a2">MORE INFO</p></a>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- looking -->
-      <div class="looking clearfix">
-        <div class="inner"></div>
+      <!-- gallery -->
+      <div class="inner">
+        <h2 class="gallery-title">gallery</h2>
       </div>
-      <!-- review -->
-      <div class="review clearfix">
-        <div class="inner"></div>
-      </div>
-      <!-- notice -->
-      <div class="notice clearfix">
-        <div class="inner"></div>
+
+      <div class="gallery clearfix">
+        <div class="slide slide-1">
+          <img src="images/wedding1.jpg" />
+        </div>
+        <div class="slide slide-2">
+          <img src="images/wedding2.jpg" />
+        </div>
+        <div class="slide slide-3">
+          <img src="images/wedding3.jpg" />
+        </div>
+        <div class="slide slide-4">
+
+          <img src="images/wedding4.jpg" />
+
+
+        </div>
       </div>
       <!-- footer -->
       <footer class="footer clearfix">
         <div class="inner">
-          <div class="footer1">
-            <div class="footer-logo"></div>
-            <div class="footer1-1">
-              <p>Wedding for your</p>
-              <p>대표자: 실뱅 꼴라델 / 서울시 강남구 영동대로 517, 35층(삼성동, 아셈타워) / 사업자등록번호: 120-81-79834</p>
-              <p>통신판매업 신고번호 제 2015-서울강남-00052 호 (<a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208179834&apv_perm_no=null">사업자 정보 확인</a>)</p>
-              <p>개인정보보호책임자: 한소희 / 호스팅 서비스: Rackspace Hosting</p>
-              <p>클라이언트서비스센터 02-3452-1921 메일 문의 <a href="">clientservice.kr@gucci.com</a></p>
-              
+          <div class="footer-top">
+            <div class="footer-logo">
+              <a href="index.html">
+                <img src="images/logo_black.png" alt="footerlogo" />
+              </a>
             </div>
-
           </div>
-          <div class="footer2"></div>
+          <div class="footer-middle">
+            <div class="footer1 footer-middle-content">
+              <a href="s_package.html"><h3>package</h3></a>
+              <ul>
+                <a href="#"><li>스튜디오</li></a>
+                <a href="#"><li>드레스</li></a>
+                <a href="#"><li>메이크업</li></a>
+                <a href="#"><li>웨딩홀</li></a>
+              </ul>
+            </div>
+            <div class="footer2 footer-middle-content">
+              <a href="s_package.html"><h3>wedding hall</h3></a>
+              <ul>
+                <a href="#"><li>일반 홀</li></a>
+                <a href="#"><li>컨벤션 홀</li></a>
+                <a href="#"><li>야외/하우스 홀</li></a>
+                <a href="#"><li>채플 홀</li></a>
+                <a href="#"><li>호텔 홀</li></a>
+              </ul>
+            </div>
+            <div class="footer3 footer-middle-content">
+              <a href="s_sdm.html"><h3>sdm</h3></a>
+              <ul>
+                <a href="s_sdm.html#sdm_studio"><li>스튜디오</li></a>
+                <a href="#"><li>드레스</li></a>
+                <a href="#"><li>메이크업</li></a>
+              </ul>
+            </div>
+            <div class="footer4 footer-middle-content">
+              <a href="s_notice.html"><h3>q&a</h3></a>
+              <ul>
+                <a href="#"><li>자주 묻는 질문</li></a>
+                <a href="#"><li>질문하기</li></a>
+              </ul>
+            </div>
+            <div class="footer5 footer-middle-content">
+              <a href="s_review.html"><h3>review</h3></a>
+              <ul>
+                <a href="#"><li>패키지 리뷰</li></a>
+                <a href="#"><li>고객 리뷰</li></a>
+              </ul>
+
+            </div>
+            <div class="footer-middle-mobile-content">
+              <a href="#"><h4>package</h4></a>
+              <a href="#"><h4>wedding hall</h4></a>
+              <a href="#"><h4>sdm</h4></a>
+              <a href="#"><h4>q&a</h4></a>
+              <a href="#"><h4>review</h4></a>
+            </div>
+            <div class="footer-middle-mobile-content-contact">
+              <a href="#">
+                <div class="footer-contact">
+                  <p>contact</p>
+                  <img src="images/enter_887160.png" alt="contact" />
+                  <img src="images/enter_black.png" alt="contact" />
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom1">
+              <p>
+                대표자: 실뱅 꼴라델 / 서울시 강남구 영동대로 517, 35층(삼성동,
+                아셈타워) / 사업자등록번호: 120-81-79834
+              </p>
+              <p>
+                통신판매업 신고번호 제 2015-서울강남-00052 호 (<a
+                  href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208179834&apv_perm_no=null"
+                  class="footer-underline"
+                  >사업자 정보 확인</a
+                >)
+              </p>
+              <p>
+                개인정보보호책임자: 한소희 / 호스팅 서비스: Rackspace Hosting
+              </p>
+              <p>
+                클라이언트서비스센터 02-3452-1921 메일 문의
+                <a href="" class="footer-underline"
+                  >clientservice.kr@gucci.com</a
+                >
+              </p>
+            </div>
+            <div class="footer-bottom2">
+              <a href="#">
+                <div class="footer-contact">
+                  <p>contact</p>
+                  <img src="images/enter_887160.png" alt="contact" />
+                  <img src="images/enter_black.png" alt="contact" />
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
-</div>
+    </div>
   </body>
 </html>
