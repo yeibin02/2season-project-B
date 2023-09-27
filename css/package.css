@@ -6,6 +6,7 @@
   background-size: cover;
   padding: 100px 0;
 }
+
 .package-wrap {
   position: relative;
   display: block;
@@ -19,6 +20,7 @@
   width: 100%;
   text-align: center;
 }
+
 .m-pk-text-wrap h2 {
   font-family: "Noto Serif KR", "serif";
   font-weight: bold;
@@ -58,6 +60,7 @@
 .m-pk-img-wrap {
   width: 100%;
   margin: 0 auto;
+
 }
 .m-pk-img-wrap li img {
   width: 100%;
@@ -72,6 +75,7 @@
   width: 300px;
   text-align: center;
 }
+
 .pk-li-wrap {
   overflow: hidden;
   border-radius: 50px;
@@ -80,6 +84,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+
 }
 .m-pk-img-wrapper > .m-pk-img-wrap > li > p {
   margin-top: 10px;
@@ -88,6 +93,7 @@
   font-size: 20px;
   color: #474747;
 }
+
 .m-pk-sale-wrap {
   border: 1px solid #474747;
   width: 600px;
@@ -102,6 +108,7 @@
   font-weight: bold;
   margin: 0;
   padding: 25px;
+
 }
 .m-pk-sale-wrap h2 span {
   font-size: 38px;
@@ -109,6 +116,7 @@
   font-weight: bold;
   color: #887160;
 }
+
 .m-pk-timesale p {
   margin: 0;
   padding: 10px;
@@ -116,12 +124,285 @@
 .m-pk-timesale .pri {
   color: #8c8c8c;
   text-decoration: line-through;
+
 }
 .m-pk-timesale .sal {
   color: #bf0049;
   font-size: 21px;
 }
+/* 모달창 */
+.pk-modal {
+  width: 650px;
+  height: 780px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 999;
+}
+.pk-modal-list1 {
+  display: flex;
+  flex-direction: column;
+}
+.pk-modal-map img {
+  width: 287px;
+  height: 196px;
+}
+.pk-modal-text {
+  margin-top: 15px;
+}
+#pkModalTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #887160;
+  margin-bottom: 10px;
+}
+#pkModalPlace {
+  font-family: "Noto Sans", "serif";
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.pk-modal-wraper2 {
+  width: 620px;
+  height: 750px;
+  border: 8px solid #887160;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.pk-modal-wrap-btn {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pk-modal-wrap-close {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row-reverse;
+}
+.pk-modal-img {
+  width: 50%;
+  height: 35%;
+  padding: 15px;
+  margin: 0 !important;
+  float: left;
+}
+#pkModalImage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.modal-wraper {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+.pk-close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  font-size: 33px;
+  color: #ffffff;
+  background-color: #887160;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  line-height: 30px;
+}
+.pk-close:hover {
+  color: #000000;
+}
+.pk-modal-list2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+  text-align: center;
+}
+.pk-modal-list2 h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #887160;
+}
+.pk-modal-list2 p {
+  font-family: "Noto Sans", "serif";
+  line-height: 20px;
+}
+.hall-notice-modal {
+  margin-top: 35px;
+  padding: 0 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.hall-notice-modal div {
+  width: 150px;
+  height: 170px;
+  background-color: #e7ded7;
+}
+.hall-notice-modal2 div {
+  width: 150px;
+  height: 170px;
+  background-color: #e7ded7;
+}
+.hall-notice-modal2 {
+  padding: 0 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mo-notice-text-wrap {
+  line-height: 30px;
+}
+.pk-modal-list01,
+.pk-modal-list02,
+.pk-modal-list03 {
+  display: none;
+}
+/* pk-modal-list02 */
+#pkModalTitle2 {
+  font-family: "Noto Sans", "serif";
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.pk-modal-list02 {
+  height: 100%;
+}
+.pk-make-modal-list2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+.pk-make-modal-list2 h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #887160;
+}
+.pk-modal-text p {
+  font-family: "Noto Sans", "serif";
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #868686;
+}
+.pk-modal-text h3 {
+  font-family: "Noto Sans", "serif";
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.pk-modal-text h3 span {
+  font-family: "Noto Sans", "serif";
+  font-size: 22px;
+  font-weight: bold;
+  color: #d82a56;
+}
+.make-title-wrap h2 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+.make-text-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.make-main-text-wrap {
+  display: inline-block;
+  float: left;
+  margin-left: 15px;
+}
+.make-map-text h2 {
+  margin-top: 50px;
+}
+.make-map-text p {
+  font-family: "Noto Sans", "serif";
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.make-text-wrap {
+  text-align: left;
+  height: 50%;
+}
+.make-text-wrap-list {
+  margin-left: 20px;
+}
+.make-text-wrap-list1 h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.make-text-wrap-list1 p {
+  font-family: "Noto Sans", "serif";
+  margin-bottom: 10px;
+}
+.make-text-wrap-list2 h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.make-notice-modal {
+  width: 300px;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+.make-img-list {
+  position: absolute;
+  width: 287px;
+  height: 300px;
+  background: url("../images/makeup7-2.jpg") no-repeat center;
+  background-size: cover;
+  top: 50px;
+  right: -289px;
+}
+/* pk-modal-list03 */
+.studio-text-wrap-list1 h3,
+.studio-text-wrap-list2 h3,
+.studio-text-wrap-list3 h3,
+.studio-text-wrap-list4 h3,
+.studio-text-wrap-list5 h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.studio-text-wrap-list4 span,
+.studio-text-wrap-list5 span {
+  color: #9f9f9f;
+}
+.studio-text-wrap-list {
+  font-family: "Noto Sans", "serif";
+  padding: 5px;
+  padding-bottom: 8px;
+  margin-right: 15px;
+  /* background-color: #e7ded7; */
+}
+.pk-studio-modal-list2 {
+  margin-top: 10px;
+}
+.studio-img-list {
+  width: 95%;
+  height: 300px;
+  margin: 0 auto;
+  background: url("../images/studio5.jpg") no-repeat top;
+  background-size: cover;
+}
 /* 반응형 */
+
 @media all and (max-width: 1495px) {
   .package {
     width: 100%;
@@ -229,5 +510,6 @@
   }
   .m-pk-timesale .sal {
     font-size: 16px;
+
   }
 }

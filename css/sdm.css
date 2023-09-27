@@ -1,420 +1,247 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
-/* 박스이미지 */
-#studio_box {
-  background: url("../images/sutdio666.png") no-repeat center;
+.sdm .inner {
+  max-width: 1920px;
+}
+.sdm_back_b {
+  position: relative;
+  width: 100%;
+  height: 3000px;
+  background: url("../images/sdm_back_b.png") no-repeat;
   background-size: cover;
-  transition: all 0.5s;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#studio_box:hover {
-  background: url("../images/studio_hover2.png") no-repeat center;
-  background-size: cover;
-  transition: all 0.5s;
-}
-#drees_box {
-  background: url("../images/dreehover.png");
-  transition: all 0.5s;
-}
-#drees_box:hover {
-  background: url("../images/dress_hover.png");
-  transition: all 0.5s;
-}
-#makeup_box {
-  background: url("../images/makeup_hover.png");
-  transition: all 0.5s;
-}
-#makeup_box:hover {
-  background: url("../images/makeup222.png") no-repeat center;
-  background-size: cover;
-  transition: all 0.5s;
-}
-#sdm_subtitle {
-  text-align: center;
-  padding: 25px;
-  font-family: "Noto Serif KR", serif;
-  font-weight: 500;
-  font-size: 22px;
-  text-transform: uppercase;
-  user-select: none;
-}
-/*  */
 .sdm_title {
+  /* padding-top: 18%; */
+  position: absolute;
+  text-align: center;
+  /* background-color: aqua; */
+  width: 100%;
+  height: 200px;
+  top: 15%;
+  user-select: none;
+}
+.sdm_title h2 {
   font-size: 68px;
-  text-align: center;
-  color: #887160;
-  margin-top: 5%;
-  padding: 5%;
-  font-family: "Noto Serif KR", serif;
-  font-weight: 600;
-  user-select: none;
+  color: #ececec;
 }
-.sdm_wrap {
-  margin-top: 3%;
+.sdm_box_b {
+  top: 26%;
+  position: absolute;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 5%;
-  width: 100%;
-}
-.sdm_box {
-  width: 406px;
-  height: 652px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.sdm_imgbox {
-  width: 406px;
-  height: 287px;
-  position: relative;
-}
-.imgbox_hover {
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  font-size: 20px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(102, 73, 37, 0.8);
-  color: #fff;
-  right: 0;
-  top: 0;
-  font-family: "Noto Sans KR", sans-serif;
-  user-select: none;
-}
-.sdm_box_name {
-  text-align: center;
-  border: 1px solid #cecece;
-  width: 100%;
-  height: 92px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.sdm_box_name h3 {
-  font-size: 28px;
-  font-family: "Noto Serif KR", serif;
-  font-weight: 700;
-}
-.sdm_box_name p {
-  font-size: 13px;
-  font-weight: 500;
-  font-family: "Noto Sans KR", sans-serif;
-  padding-top: 4px;
-}
-.sdm_box_review {
-  width: 100%;
-  height: 322px;
-  border: 1px solid #cecece;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.review_1 {
-  width: 90%;
-  height: 18%;
   /* background-color: aqua; */
-  user-select: none;
-}
-.review_1 h4 {
-  font-size: 24px;
-  font-weight: 600;
   font-family: "Noto Sans KR", sans-serif;
 }
-.review_1 p {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  padding-top: 8px;
-}
-/* review2 */
-.review_2 {
-  width: 90%;
-  height: 10%;
-  /* background-color: rgb(136, 255, 0); */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  user-select: none;
-}
-.review_2_1 {
-  width: 150px;
-  display: flex;
-  justify-content: baseline;
-  align-items: center;
-  position: relative;
-  /* background-color: antiquewhite; */
-}
-.review_2_2 {
-  width: 100px;
-  display: flex;
-  justify-content: baseline;
-  align-items: center;
-  position: relative;
-  /* background-color: antiquewhite; */
-}
-.review_2 h4 {
-  font-size: 24px;
-  font-weight: 500;
-  font-family: "Noto Sans KR", sans-serif;
-  padding-right: 5px;
-}
-.review_2 p {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 5px;
-}
-.review_tting {
-  width: 17px;
-  height: 17px;
-  vertical-align: middle;
-  text-align: center;
-  background: none;
-  border: 1px solid #000;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2px;
-}
-.review_tting p {
-  font-size: 10px;
-  font-weight: 900;
-}
-.review_tting:hover {
-  background-color: #000;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-/* review3 */
-.review_3 {
-  margin-top: 20px;
-  width: 100%;
-  height: 45%;
-  /* background-color: rgb(136, 255, 0); */
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: baseline;
-}
-.review_profile {
-  width: 90%;
-  display: flex;
-  justify-content: baseline;
-  align-items: center;
-  position: relative;
-  user-select: none;
-}
-.review_3_text {
-  width: 100%;
-  height: 20px;
-  /* background-color: aqua; */
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-left: 10px;
-}
-.review_3_text h3 {
-  font-size: 18px;
-  font-weight: 500;
-  font-family: "Noto Sans KR", sans-serif;
-}
-.review_3_text p {
-  font-size: 12px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
-  padding-top: 3px;
-}
-.review_3_text2 {
-  width: 90%;
-  display: flex;
-  justify-content: baseline;
-  align-items: center;
-  position: relative;
-  font-size: 13px;
-  font-family: "Noto Sans KR", sans-serif;
-  padding: 5px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  line-height: 15px;
-}
-.review_3_text3 {
-  width: 88%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  font-size: 11px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-.review_heart {
-  padding-left: 3px;
-}
-.review_button {
-  position: absolute;
-  padding: 12px;
-  width: 90%;
-  bottom: 12px;
-  border-radius: 50px;
-  border: none;
-  background-color: #887160;
-  text-align: center;
-  font-weight: 500;
-  font-family: "Noto Sans KR", sans-serif;
-}
-.review_button a {
-  color: #fff;
-}
-.review_button:hover {
+#sdmbox_b_all {
+  width: 400px;
+  height: 730px;
   background-color: #fff;
-  color: #887160;
-  cursor: pointer;
-  border: 2px solid #887160;
-  transition: all 0.3s;
+  border-radius: 500px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.review_button:hover .button_a {
-  color: #887160;
-}
-/* -------------리액티브--------- */
-.sdm_reactiove_1 {
-  padding-top: 10%;
-}
+.smd_box_b_circle {
+  width: 300px;
+  height: 300px;
+  /* background-color: aquamarine; */
 
-.sdm_box_name_hover {
-  border: 1px solid #cecece;
-  width: 100%;
-  height: 100%;
-  padding: 30px;
-  padding-bottom: 15px;
-  margin-bottom: 20%;
+  border-radius: 50%;
 }
-.review_button2 {
-  width: 100%;
-  height: 40px;
-  margin-top: 5%;
+#circle01 {
+  background: url("../images/sdm_circle01.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#circle02 {
+  background: url("../images/sdm_circle02.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#circle03 {
+  background: url("../images/sdm_circle03.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.sdm_box_h3 {
+  padding-top: 18%;
+  font-size: 32px;
+  font-weight: 600;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  color: #282828;
+}
+.sdm_box_p01 {
+  padding-top: 5%;
+  font-size: 15px;
+  width: 80%;
   font-weight: 500;
-  background-color: #887160;
-  border: none;
-  border-radius: 50px;
+  line-height: 20px;
+  color: #474747;
 }
-.review_button2 p {
+.sdm_box_p02 {
+  padding-top: 4%;
+  padding-bottom: 12%;
+  font-size: 16px;
+  font-weight: 600;
+  width: 80%;
+  line-height: 21px;
+  color: #474747;
+}
+.sdm_secondtext {
+  max-width: 1440px;
+  position: relative;
+  left: 10%;
+  top: 6%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.sdm_sec_first {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 500;
+  padding-bottom: 2%;
+}
+.sdm_sec_second {
+  width: 170px;
+  height: 60px;
+  z-index: 9999999999999999999;
+}
+.sdm_sec_second button {
+  background: none;
+  font-size: 26px;
+  width: 170px;
+  height: 60px;
+  border: 3px solid #494949;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.sdm_sec_second button a {
+  color: #494949;
+  font-weight: 500;
+}
+.sdm_sec_second button:hover {
+  background-color: #494949;
+  color: #fff;
+  z-index: 999999;
+}
+.sdm_sec_second button:hover a {
   color: #fff;
 }
-.review_button2:hover {
-  background: none;
-  border: 1px solid #887160;
-  transition: all 0.5s;
+.smd_b_foot {
+  top: 50%;
+  right: 0;
+  position: absolute;
+  max-width: 1440px;
+  width: 100%;
+  /* margin: 0 auto; */
+  /* background-color: aqua; */
 }
-.review_button2:hover .button_a2 {
-  color: #887160;
-  font-weight: 600;
+.smd_b_foot_img {
+  background: url("../images/sdm_b_foot.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1123px;
+  height: 1016px;
 }
 
-/* ------------반응형----------- */
-@media all and (min-width: 1440px) {
-  .sdm_box_reactive {
-    display: none;
+/* ------------------------- */
+/* 반응형 */
+@media all and (max-width: 1024px) {
+  .sdm_secondtext {
+    padding-left: 5%;
   }
-}
-@media all and (max-width: 1440px) {
-  .sdm_box_reactive {
-    display: none;
+  .sdm_box_b {
+    padding: 5%;
   }
-}
-@media all and (max-width: 1215px) {
-  .sdm_box {
-    width: 352px;
-    height: 652px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  #sdmbox_b_all {
+    width: 280px;
   }
-  .sdm_imgbox {
-    width: 352px;
-    height: 287px;
-    position: relative;
+  .smd_box_b_circle {
+    width: 250px;
+    height: 250px;
   }
-}
-@media all and (max-width: 1050px) {
-  .sdm_box {
-    width: 338px;
-    height: 652px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  .smd_b_foot_img {
+    width: 953px;
+    height: 856px;
   }
-  .sdm_imgbox {
-    width: 338px;
-    height: 287px;
-    position: relative;
+  .smd_b_foot {
+    padding-left: 12%;
   }
-}
-@media all and (max-width: 1010px) {
-  .sdm_box {
-    width: 318px;
-    height: 652px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  .sdm_sec_first {
+    font-size: 28px;
   }
-  .sdm_imgbox {
-    width: 318px;
-    height: 287px;
-    position: relative;
+  .sdm_sec_second button {
+    width: 120px;
+    height: 50px;
   }
-}
-@media all and (max-width: 945px) {
-  .sdm_box {
-    width: 308px;
-    height: 682px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .sdm_imgbox {
-    width: 308px;
-    height: 287px;
-    position: relative;
-  }
-}
-@media all and (max-width: 930px) {
-  .sdm_box_reactive {
-    display: block;
+  .sdm_sec_second button a {
+    font-size: 18px;
+    text-align: center;
     width: 100%;
+    height: 100%;
+    vertical-align: 5px;
+  }
+}
+@media all and (max-width: 480px) {
+  .smd_b_foot_img {
+    width: 350px;
+    height: 606px;
+  }
+  .smd_b_foot {
+    position: relative;
+    padding-top: 60%;
+    left: -9%;
+  }
+  .sdm_sec_first {
+    font-size: 24px;
+  }
+  .sdm_sec_second {
+    padding-top: 3%;
+  }
+  .sdm_sec_second button {
+    width: 130px;
+  }
+  .sdm_sec_second button a {
+    font-size: 20px;
+  }
+  .sdm_box_b {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .sdm_wrap {
-    display: none;
+  #sdmbox_b_all {
+    position: relative;
+    margin: 20px;
+    width: 400px;
   }
-  .sdm_box_name {
-    display: none;
+  .smd_box_b_circle {
+    width: 340px;
+    height: 340px;
   }
-  .review_tting:hover {
-    background-color: #333;
-    color: #fff;
+  .sdm_secondtext {
+    position: relative;
+    padding-top: 780%;
+    left: -1%;
+    /* flex-direction: column; */
   }
-  .review_2_2 {
-    right: 0;
-    width: 100%;
-  }
-}
-@media all and (max-width: 768px) {
-  .sdm_title {
-    font-size: 58px;
-  }
-}
-@media all and (max-width: 480px) {
-}
-@media all and (max-width: 360px) {
 }

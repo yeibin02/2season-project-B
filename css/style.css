@@ -2,15 +2,17 @@
 @import url("base.css");
 @import url("font.css");
 @import url("header.css");
+@import url("timesale.css");
 @import url("login.css");
 @import url("signup.css");
+@import url("signup2.css");
 @import url("visual.css");
 @import url("package.css");
 @import url("package-review.css");
 @import url("wedding-hall.css");
 @import url("sdm.css");
 @import url("looking.css");
-@import url("notice.css");
+@import url("gallery.css");
 @import url("footer.css");
 @import url("s_about.css");
 @import url("s_weddinghall.css");
@@ -19,3 +21,4 @@
 @import url("s_sdm.css");
 @import url("s_contact.css");
 @import url("s_contact2.css");
+
