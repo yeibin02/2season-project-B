@@ -145,6 +145,7 @@
     <!-- script 불러오기 -->
     <script src="js/header.js"></script>
     <script src="js/visual.js"></script>
+    <script src="js/timesale.js"></script>
     <script src="js/package.js"></script>
     <script src="js/package-review.js"></script>
     <script src="js/wedding-hall.js"></script>
@@ -162,7 +163,6 @@
     <!-- Flickity 및 classie 스크립트 가져오기 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
-    
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -297,6 +297,26 @@
                 <div class="imgContainer" id="visual_back3"></div>
                 <div class="imgContainer" id="visual_back4"></div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- time sale -->
+      <div class="timesale clearfix">
+        <div class="inner">
+          <em>서둘러주세요</em>
+          <h3>예약 기간이 <span>얼마 남지 않았어요!</span></h3>
+          <div class="timesale-box">
+            <span class="ts-font"
+              >프리미엄 패키지
+              <strong>혜택가</strong>
+            </span>
+            <h4>최대 %대 까지!!</h4>
+            <div class="count-time">
+              <em>잔여 시간</em>
+              <strong id="countdown">
+                <!-- 시간이 출력됩니다 -->
+              </strong>
             </div>
           </div>
         </div>
@@ -665,10 +685,7 @@
       <div class="sdm clearfix">
         <div class="inner">
           <div class="sdm_title" data-aos="zoom-in">
-            <h2>
-              <b>S.D.M</b> OF
-              THE MONTH
-            </h2>
+            <h2><b>S.D.M</b> OF THE MONTH</h2>
           </div>
           <div class="sdm_wrap">
             <div class="sdm_box">
@@ -761,7 +778,7 @@
                       비즈 반짝임이 남다르고 예뻐요!!
                     </p>
                   </div>
-                  
+
                   <button class="review_button">
                     <a href="s_sdm.html" class="button_a"><p>MORE INFO</p></a>
                   </button>
@@ -769,7 +786,6 @@
               </div>
             </div>
             <div class="sdm_box">
-             
               <div class="sdm_imgbox" id="makeup_box">
                 <div class="imgbox_hover">50%</div>
               </div>
@@ -808,7 +824,7 @@
                       너무 만족합니다. 원장님 최고에요 :)
                     </p>
                   </div>
-                  
+
                   <button class="review_button">
                     <a href="s_sdm.html" class="button_a"><p>MORE INFO</p></a>
                   </button>
@@ -818,7 +834,6 @@
           </div>
 
           <div class="sdm_box_reactive">
-            
             <div class="sdm_reactiove_1">
               <div class="sdm_imgbox" id="studio_box">
                 <div class="imgbox_hover">40%</div>
@@ -916,10 +931,7 @@
           <img src="images/wedding3.jpg" />
         </div>
         <div class="slide slide-4">
-
           <img src="images/wedding4.jpg" />
-
-
         </div>
       </div>
       <!-- footer -->
@@ -973,7 +985,6 @@
                 <a href="#"><li>패키지 리뷰</li></a>
                 <a href="#"><li>고객 리뷰</li></a>
               </ul>
-
             </div>
             <div class="footer-middle-mobile-content">
               <a href="#"><h4>package</h4></a>
@@ -990,7 +1001,6 @@
                   <img src="images/enter_black.png" alt="contact" />
                 </div>
               </a>
-
             </div>
           </div>
           <div class="footer-bottom">
