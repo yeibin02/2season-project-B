@@ -14,9 +14,29 @@
   position: relative;
   width: 100%;
   height: 1080px;
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
+}
+.visual_swiper_back01 {
+  background: url("../images/real_back_14.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+.visual_swiper_back02 {
+  background: url("../images/real_back_15.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.visual_swiper_back03 {
+  background: url("../images/real_back_09.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.visual_swiper_back04 {
+  background: url("../images/real_back_18.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom center;
 }
 .visual_swiper .swiper-slide::before {
   position: absolute;
@@ -103,9 +123,14 @@
   font-weight: 600;
   color: #b6b6b6;
 }
+@media all and (max-width: 1024px) {
+  .visual .inner {
+    max-width: 1024px;
+  }
+}
 @media all and (max-width: 480px) {
   .visual_swiper_text {
-    width: 80%;
+    width: 60%;
   }
   .visual_swiper_text h3 {
     font-size: 58px;
