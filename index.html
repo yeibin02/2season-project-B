@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta name="naver-site-verification" content="ac8f45f467b14d6d0ce812c1547c0dc6ffb110b6" />
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5L3S46BJ');</script>
-  <!-- End Google Tag Manager -->
+    <meta
+      name="naver-site-verification"
+      content="ac8f45f467b14d6d0ce812c1547c0dc6ffb110b6"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5L3S46BJ");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -147,9 +157,15 @@
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5L3S46BJ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5L3S46BJ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="wrap">
       <!-- header -->
       <header class="header clearfix">
@@ -170,7 +186,7 @@
               <span></span>
               <span></span>
               <span></span>
-          </button>
+            </button>
           </div>
           <nav class="header-2">
             <ul>
@@ -190,23 +206,30 @@
                 <a href="s_notice.html">q&a</a>
               </li>
               <li>
-                <a href="#">review</a>
+                <a href="s_contact.html">contact</a>
               </li>
-              
             </ul>
           </nav>
         </div>
-
       </header>
       <div class="hamburger-menu">
         <ul class="hamburger-menu-contents">
-            <li><a href="s_package.html">PACKAGE</a></li>
-            <li><a href="s_about.html">ABOUT</a></li>
-            <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
-            <li><a href="s_sdm.html">S.D.M</a></li>
-            <li><a href="s_notice.html">Q&A</a></li>
-            <li><a href="s_review.html">REVIEW</a></li>
+          <li><a href="s_package.html">PACKAGE</a></li>
+          <li><a href="s_about.html">ABOUT</a></li>
+          <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
+          <li><a href="s_sdm.html">S.D.M</a></li>
+          <li><a href="s_notice.html">Q&A</a></li>
+          <li><a href="s_contact.html">CONTACT</a></li>
         </ul>
+      </div>
+      <!-- 문의하기 btn -->
+      <div class="contact-btn">
+        <a href="s_contact.html">
+          <img src="images/contact_modal.png" alt="문의하기" />
+        </a>
+        <div class="con-hover">
+          <p>문의하기</p>
+        </div>
       </div>
       <div class="modal-overlay"></div>
       <!-- visual -->
@@ -262,40 +285,65 @@
         </div>
       </div>
       <!-- Package -->
-
       <div class="package clearfix">
         <div class="inner">
           <div class="package-wrap">
-            <div class="package-main-wrap">
-              <img
-                src="images/package-weddinghall-1.png"
-                alt="weddinghall-main"
-              />
-            </div>
-            <div class="package-text-wrap">
-              <h2 class="package-title">best package</h2>
+            <div class="m-pk-text-wrap">
+              <h2>PREMIUM PACKAGE</h2>
+              <div class="m-pk-sale-wrap">
+                <h2>지금 예약하시면 <span>총 1,450,000원</span> 절약</h2>
+                <div class="m-pk-timesale" id="pkTimeSale">
+                  <p class="pri">정상가 : 3,540,000 원</p>
+                  <p class="sal">할인가 : 2,340,000 원</p>
+                </div>
+              </div>
               <p>
-                <span>wedding for you</span>가 추천하는 패키지로 <br />
-                고민할 필요없이 모든 메뉴얼을 한 눈에 비교해보세요!
+                결혼이 처음이라 어떻게 준비해야할지 다들 어려우시죠?<br />
+                웨딩포유가 추천하는 프리미엄 패키지로 고민을 덜어보세요!
+                <br /><br />
+                <span>PACKAGE</span> 페이지에서 고객님들의 취향대로 업체들을
+                골라<br />
+                할인된 가격을 비교하고 직접 견적을 내 보세요!
               </p>
-              <button class="package-more-btn" id="packageMoreBtn">more</button>
+              <button class="m-pk-more-btn">more</button>
             </div>
-            <div class="package-img-wrap">
-              <ul class="packimgwrap">
-                <li class="packimgli1">
-                  <a href="s_package.html">
-                    <!-- <img src="images/package-dress-1.jpg" alt="package-dress1"> -->
-                  </a>
+            <div class="m-pk-img-wrapper">
+              <ul class="m-pk-img-wrap">
+                <li>
+                  <div class="pk-li-wrap">
+                    <img
+                      src="images/main_pk_img1.png"
+                      alt="추천패키지-드레스"
+                    />
+                  </div>
+                  <p>dress</p>
                 </li>
-                <li class="packimgli2">
-                  <a href="s_package.html">
-                    <!-- <img src="images/package-makeup-1.jpg" alt="package-dress1"> -->
-                  </a>
+                <li>
+                  <div class="pk-li-wrap">
+                    <img
+                      src="images/main_pk_img2.png"
+                      alt="추천패키지-드레스"
+                    />
+                  </div>
+                  <p>studio</p>
                 </li>
-                <li class="packimgli3">
-                  <a href="s_package.html">
-                    <!-- <img src="images/package-studio-1.jpg" alt="package-dress1"> -->
-                  </a>
+                <li>
+                  <div class="pk-li-wrap">
+                    <img
+                      src="images/main_pk_img3.png"
+                      alt="추천패키지-드레스"
+                    />
+                  </div>
+                  <p>make up</p>
+                </li>
+                <li>
+                  <div class="pk-li-wrap">
+                    <img
+                      src="images/main_pk_img4.png"
+                      alt="추천패키지-드레스"
+                    />
+                  </div>
+                  <p>wedding hall</p>
                 </li>
               </ul>
             </div>
@@ -304,72 +352,35 @@
       </div>
       <!-- package-review -->
       <div class="package-review clearfix">
-
-      <!-- 모달 창 -->
-      <div id="PackagemyModal" class="package-modal">
-      <div class="modal-wraper">
-    <div class="modal-wrap-btn">
-    <img class="modal-content" id="modalImage">
-    <button class="pk-review-more" id="PackageMoreBtn">MORE</button>
-    </div>
-    <div class="modal-wrap-close">
-      <img class="modal-content" id="modalImage1">
-      <span class="package-close">&times;</span>
-    </div>
-      </div>
-      </div>
-      <div class="inner">
-
-          <div class="package-review-text-wrap">
-            <h2 class="package-review-title">package review</h2>
-            <p>추천 패키지를 이용해 보신 고객분들의 생생한 후기</p>
+        <!-- 모달 창 -->
+        <div id="PackagemyModal" class="package-modal">
+          <div class="modal-wraper">
+            <div class="modal-wrap-btn">
+              <img class="modal-content" id="modalImage" />
+            </div>
+            <div class="modal-wrap-close">
+              <img class="modal-content" id="modalImage1" />
+              <span class="package-close">&times;</span>
+            </div>
           </div>
-          <div class="package-review-wrapper">
-
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="package-review-wrapper-inner1">
-                <div class="package-review-wrap review-wrap1">
-                <div class="package-review-wrap-text-wrap">
-                  <h2 class="package-review-wrap-title"><span>고 * 아</span> 님</h2>
-                </div>
-              </div>
-              </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="package-review-wrapper-inner2">
-                    <div class="package-review-wrap review-wrap2">
-                    <div class="package-review-wrap-text-wrap">
-                      <h2 class="package-review-wrap-title"><span>김 * 화</span> 님</h2>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="package-review-wrapper-inner3">
-                    <div class="package-review-wrap review-wrap3">
-                    <div class="package-review-wrap-text-wrap">
-                      <h2 class="package-review-wrap-title"><span>김 * 아</span> 님</h2>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="package-review-wrapper-inner4">
-                    <div class="package-review-wrap review-wrap4">
-                    <div class="package-review-wrap-text-wrap">
-                      <h2 class="package-review-wrap-title"><span>박 * 정</span> 님</h2>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-
-              </div>
+        </div>
+        <div class="inner">
+          <div class="pk-review-wrap">
+            <div class="pk-review-text-wrap">
+              <h2>package review</h2>
+              <p>
+                추천 패키지를 이용해 보신 웨딩포유 고객님들의 생생한 리뷰 <br />
+                아래 <span>청첩장을 클릭</span>하여 이미지와 함께 리뷰를 감상해
+                보세요!
+              </p>
+            </div>
+            <div class="pk-letter">
+              <img src="images/pk-review-letter.png" alt="패키지리뷰-청첩장" />
+              <button class="pk-review-click-btn">click</button>
+            </div>
           </div>
-          </div>
+        </div>
       </div>
-      </div> 
       <!-- wedding-hall -->
       <div class="wedding-hall clearfix">
         <div class="inner">
@@ -595,24 +606,6 @@
       <div class="notice clearfix">
         <div class="inner"></div>
       </div>
-      <!-- footer -->
-      <footer class="footer clearfix">
-        <div class="inner">
-          <div class="footer1">
-            <div class="footer-logo"></div>
-            <div class="footer1-1">
-              <p>Wedding for your</p>
-              <p>대표자: 실뱅 꼴라델 / 서울시 강남구 영동대로 517, 35층(삼성동, 아셈타워) / 사업자등록번호: 120-81-79834</p>
-              <p>통신판매업 신고번호 제 2015-서울강남-00052 호 (<a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208179834&apv_perm_no=null">사업자 정보 확인</a>)</p>
-              <p>개인정보보호책임자: 한소희 / 호스팅 서비스: Rackspace Hosting</p>
-              <p>클라이언트서비스센터 02-3452-1921 메일 문의 <a href="">clientservice.kr@gucci.com</a></p>
-              
-            </div>
-
-          </div>
-          <div class="footer2"></div>
-        </div>
-      </footer>
-</div>
+    </div>
   </body>
 </html>
