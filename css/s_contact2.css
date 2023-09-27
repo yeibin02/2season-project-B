@@ -1,0 +1,20 @@
+@charset "utf-8";
+.term {
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: 500;
+  width: 720px;
+  padding: 220px 0 0;
+  margin: 0 auto 30px;
+  line-height: 28px;
+  word-break: keep-all;
+}
+.term-head {
+  font-size: 16px;
+}
+.term-p {
+  font-family: "Noto Sans KR";
+  color: #888;
+  white-space: auto;
+  margin-bottom: 40px;
+}
