@@ -1,0 +1,139 @@
+@charset "utf-8";
+.contact {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 140px;
+}
+.contact-open-wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+.contact-open-wrap img {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 50vh;
+}
+.open-text-wrap {
+  position: absolute;
+  display: block;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.open-text-wrap h2 {
+  font-size: 68px;
+  font-family: "Ragara";
+}
+.open-text-wrap p {
+  text-transform: uppercase;
+}
+.back-wrap {
+  padding: 20px 0;
+  border-bottom: 1px solid #cdc5bf;
+  border-top: 1px solid #cdc5bf;
+}
+.back-wrap img {
+  width: 10px;
+  height: 15px;
+  margin-left: 240px;
+}
+.back-wrap a {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.contact-main-wrap {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.con-text-wrap h2 {
+  font-size: 22px;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.con-text-wrap p {
+  font-size: 16px;
+  font-family: "Noto Sans KR";
+  line-height: 20px;
+}
+.contact-form-input {
+  width: 50%;
+}
+.contact-form-title {
+  width: 50%;
+}
+.contact-form-item-title {
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.contact-form-item {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 12px;
+  transition: 0.2s all;
+  border: 1px solid transparent;
+}
+.contact-form-item:hover {
+  border: 1px solid #887160;
+}
+.contact-form-item-input input {
+  width: 100%;
+  border: none;
+}
+.contact-form-agree {
+  font-family: "Noto Sans KR";
+  width: 100%;
+  white-space: nowrap;
+}
+.contact-form-agree a {
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #222;
+  display: block;
+}
+.contact-form-agree a:hover {
+  color: #887160;
+}
+.co-submit {
+  background: #887160;
+  color: #fff;
+  width: 200px;
+  font-size: 0.7rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+}
+#mand1 {
+  position: absolute;
+  display: none;
+}
+.mand2 {
+  display: flex;
+}
+label::before {
+  width: 25px;
+  height: 25px;
+}
+@media screen and (max-width: 644px) {
+  .contact {
+    width: 100%;
+    padding: 30px;
+    max-width: 644px;
+  }
+}

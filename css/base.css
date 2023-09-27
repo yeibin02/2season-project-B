@@ -67,6 +67,44 @@ input:-webkit-autofill {
   margin: 0 auto;
 }
 
+/* 문의하기 btn */
+.contact-btn {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  z-index: 9999;
+}
+.contact-btn img {
+  animation: rotate_image 25s linear infinite;
+  transform-origin: 50% 50%;
+  width: 120px;
+}
+.con-hover {
+  width: 100px;
+  padding: 20px;
+  opacity: 0;
+  position: fixed;
+  right: 22px;
+  bottom: 130px;
+  transition: 0.2s all;
+}
+.con-hover p {
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  font-weight: 500;
+  color: #887160;
+}
+.contact-btn:hover .con-hover {
+  opacity: 1;
+  transition: 0.2s all;
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 .top-button{
   position: fixed;
   right: 80px;
@@ -87,3 +125,4 @@ input:-webkit-autofill {
 .top-button:hover{
   background-color: #887160;
 }
+

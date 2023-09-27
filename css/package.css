@@ -1,156 +1,134 @@
 /* 패키지 */
 .package {
   position: relative;
+  display: block;
   background: url("../images/makeupback_gra.png") no-repeat center;
   background-size: cover;
   padding: 100px 0;
-  display: flex;
-  align-items: center;
 }
+
 .package-wrap {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.m-pk-text-wrap {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.m-pk-text-wrap h2 {
+  font-family: "Noto Serif KR", "serif";
+  font-weight: bold;
+  font-size: 68px;
+  color: #282828;
+  margin-bottom: 50px;
+}
+.m-pk-text-wrap p {
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  line-height: 25px;
+  color: #474747;
+  margin-bottom: 50px;
+}
+.m-pk-text-wrap p span {
+  font-family: "Noto Serif KR", "serif";
+}
+.m-pk-more-btn {
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  color: #474747;
+  text-transform: uppercase;
+  background: transparent;
+  padding: 6px 20px;
+  border: 1px solid #474747;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.m-pk-more-btn:hover {
+  color: #fff;
+  border: 1px solid #887160;
+  background-color: #887160;
+  transition: 0.2s ease-in-out;
+}
+.m-pk-img-wrap {
   width: 100%;
   margin: 0 auto;
+
 }
-.package-text-wrap {
-  position: relative;
-  display: block;
+.m-pk-img-wrap li img {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
-.package-title {
-  font-family: "Noto Serif KR", "serif";
+.m-pk-img-wrap li:hover img {
+  scale: 1.07;
+  transition: 0.2s ease-in-out;
+}
+.m-pk-img-wrap > li {
+  width: 300px;
+  text-align: center;
+}
+
+.pk-li-wrap {
+  overflow: hidden;
+  border-radius: 50px;
+}
+.m-pk-img-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.m-pk-img-wrapper > .m-pk-img-wrap > li > p {
+  margin-top: 10px;
+  text-align: center;
   text-transform: uppercase;
-  font-size: 56px;
+  font-size: 20px;
+  color: #474747;
+}
+
+.m-pk-sale-wrap {
+  border: 1px solid #474747;
+  width: 600px;
+  padding: 40px 0;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.m-pk-sale-wrap h2 {
+  font-size: 26px;
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+  margin: 0;
+  padding: 25px;
+
+}
+.m-pk-sale-wrap h2 span {
+  font-size: 38px;
+  font-family: "Noto Sans KR";
   font-weight: bold;
   color: #887160;
 }
-.package-text-wrap p {
-  font-family: "Noto Sans", "serif";
-  margin-top: 50px;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: left;
-  color: #887160;
+
+.m-pk-timesale p {
+  margin: 0;
+  padding: 10px;
 }
-.package-text-wrap p span {
-  text-transform: uppercase;
-  font-size: 22px;
-  color: #887160;
-  font-family: "Ragara";
+.m-pk-timesale .pri {
+  color: #8c8c8c;
+  text-decoration: line-through;
+
 }
-.package-more-btn {
-  font-family: "Noto Sans", "serif";
-  margin-top: 50px;
-  padding: 8px 18px;
-  text-transform: uppercase;
-  font-size: 16px;
-  border-radius: 50px;
-  background: none;
-  border: 1px solid #887160;
-  color: #887160;
-  cursor: pointer;
-  transition: 0.15s ease-in-out;
-}
-.package-more-btn:hover {
-  background-color: #887160;
-  border: 1px solid #887160;
-  color: #fff;
-  transition: 0.15s ease-in-out;
-}
-.package-main-wrap {
-  position: relative;
-  display: block;
-}
-.package-main-wrap img {
-  position: absolute;
-  width: 470px;
-  right: 0;
-}
-.packimgwrap {
-  margin-top: 72px;
-  width: 850px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-.package-review-wrap {
-  cursor: pointer;
-}
-.packimgli1:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s;
-}
-.packimgli2:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s;
-}
-.packimgli3:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s;
-}
-.packimgwrap li {
-  box-shadow: 5px 5px 10px #00000066;
-  cursor: pointer;
-}
-.packimgwrap li:first-child {
-  position: relative;
-  width: 220px;
-  height: 330px;
-  background: url("../images/pk_weddinghall_2.webp") no-repeat center;
-  background-size: cover;
-  border-radius: 500px;
-  transition: transform 0.3s;
-}
-.packimgwrap li:first-child img {
-  object-fit: cover;
-  position: absolute;
-  top: -30px;
-  left: -30px;
-  display: none;
-}
-.packimgwrap li:first-child:hover img {
-  display: block;
-}
-.packimgwrap li:nth-child(2) {
-  position: relative;
-  width: 220px;
-  height: 330px;
-  background: url("../images/makeup7.jpg") no-repeat center;
-  background-size: cover;
-  border-radius: 500px;
-  transition: transform 0.3s;
-}
-.packimgwrap li:nth-child(2) img {
-  object-fit: cover;
-  position: absolute;
-  top: -30px;
-  left: -30px;
-  display: none;
-}
-.packimgwrap li:nth-child(2):hover img {
-  display: block;
-}
-.packimgwrap li:nth-child(3) {
-  position: relative;
-  width: 220px;
-  height: 330px;
-  background: url("../images/studio5.jpg") no-repeat center;
-  background-size: cover;
-  border-radius: 500px;
-  transition: transform 0.3s;
-}
-.packimgwrap li:nth-child(3) img {
-  object-fit: cover;
-  position: absolute;
-  top: -30px;
-  left: -30px;
-  display: none;
-}
-.packimgwrap li:nth-child(3):hover img {
-  display: block;
+.m-pk-timesale .sal {
+  color: #bf0049;
+  font-size: 21px;
 }
 /* 모달창 */
 .pk-modal {
@@ -424,164 +402,114 @@
   background-size: cover;
 }
 /* 반응형 */
-@media all and (max-width: 1520px) {
+
+@media all and (max-width: 1495px) {
   .package {
-    padding: 100px;
+    width: 100%;
+    max-width: 1495px;
+    padding: 50px;
   }
-  .package-title {
-    margin-top: 50px;
+}
+@media all and (max-width: 1400px) {
+  .package {
+    width: 100%;
+    max-width: 1400px;
+    padding: 100px 0;
   }
-  .packimgwrap {
+  .m-pk-img-wrap {
     margin: 0 auto;
   }
-  .package-main-wrap img {
-    display: none;
+  .m-pk-img-wrap li img {
+    width: 90%;
   }
-  .package-more-btn {
-    margin-bottom: 50px;
+  .m-pk-img-wrap > li {
+    margin: 0 15px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .pk-li-wrap {
+    border-radius: 20px;
   }
 }
 @media all and (max-width: 768px) {
-  .package {
-    width: 100%;
-    max-width: 768px;
-    position: relative;
-    margin: 0 auto;
+  .m-pk-text-wrap h2 {
+    font-size: 60px;
   }
-  .package-wrap {
-    width: 100%;
-    height: auto;
+  .m-pk-sale-wrap {
+    width: 500px;
+    padding: 20px 0;
   }
-  .package-main-wrap {
-    display: none;
+  .m-pk-sale-wrap h2 {
+    font-size: 22px;
   }
-  .package-img-wrap {
-    margin-top: 100px;
+  .m-pk-sale-wrap h2 span {
+    font-size: 30px;
   }
-  .packimgwrap {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .m-pk-timesale .pri {
+    font-size: 14px;
   }
-  .package-text-wrap {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .package-text-wrap p {
-    text-align: center;
-  }
-  .packimgwrap li:first-child,
-  .packimgwrap li:nth-child(2),
-  .packimgwrap li:nth-child(3) {
-    margin: 20px;
-  }
-  .packimgli2 {
-    margin-top: 200px;
-  }
-  /* .packimgwrap li {
-    margin-bottom: -50px;
-  } */
-  .package-more-btn {
-    position: absolute;
-    top: 1450px;
-    margin: 0 auto;
+  .m-pk-timesale .sal {
+    font-size: 20px;
   }
 }
-@media all and (max-width: 736px) {
-  .package {
-    position: relative;
-    margin: 0 auto;
-    max-width: 736px;
+@media all and (max-width: 540px) {
+  .m-pk-text-wrap h2 {
+    font-size: 48px;
   }
-
-  .package-text-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+  .m-pk-text-wrap p {
+    font-size: 14px;
   }
-  .package-more-btn {
-    top: 1450px;
+  .m-pk-sale-wrap {
+    width: 420px;
+    padding: 20px 0;
   }
-  .package-text-wrap p {
-    width: 150%;
+  .m-pk-sale-wrap h2 {
+    font-size: 20px;
+  }
+  .m-pk-sale-wrap h2 span {
+    font-size: 26px;
+  }
+  .m-pk-timesale .pri {
+    font-size: 14px;
+  }
+  .m-pk-timesale .sal {
+    font-size: 20px;
   }
 }
 @media all and (max-width: 480px) {
-  .package {
-    width: 100%;
-    max-width: 480px;
-    position: relative;
-    margin: 0 auto;
-  }
-  .package-wrap {
-    width: 100%;
-    height: auto;
-  }
-  .package-more-btn {
-    top: 1435px;
-  }
-  .package-text-wrap {
+  .m-pk-img-wrap {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .package-title {
-    width: 200%;
-    font-size: 45px;
-  }
-  .package-text-wrap p {
-    width: 200%;
-    font-size: 16px;
-  }
-  .package-text-wrap p span {
-    font-size: 16px;
+  .m-pk-img-wrap li {
+    margin-bottom: 15px;
   }
 }
-@media all and (max-width: 320px) {
-  .package {
-    padding: 100px 0;
+@media all and (max-width: 360px) {
+  .m-pk-text-wrap h2 {
+    font-size: 40px;
   }
-  .package-text-wrap {
-    text-align: center;
+  .m-pk-text-wrap p {
+    font-size: 12px;
   }
-  .package-text-wrap h2 {
-    font-size: 30px;
+  .m-pk-sale-wrap {
+    width: 320px;
+    padding: 20px 0;
   }
-  .package-text-wrap p {
-    margin-top: 30px;
-    font-size: 14px;
-    width: 100%;
+  .m-pk-sale-wrap h2 {
+    font-size: 15px;
   }
-  .package-title {
-    width: 100%;
+  .m-pk-sale-wrap h2 span {
+    font-size: 18px;
   }
-  .package-text-wrap p span {
-    font-size: 14px;
+  .m-pk-timesale .pri {
+    font-size: 12px;
   }
-  .packimgwrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .packimgwrap li:first-child,
-  .packimgwrap li:nth-child(2),
-  .packimgwrap li:nth-child(3) {
-    width: 150px;
-    height: 220px;
-  }
-  .package-more-btn {
-    top: 1105px;
-    font-size: 14px;
+  .m-pk-timesale .sal {
+    font-size: 16px;
+
   }
 }
