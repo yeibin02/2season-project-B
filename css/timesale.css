@@ -1,17 +1,19 @@
 /* timesale */
 .timesale {
   position: relative;
-  display: block;
   width: 100%;
+  padding: 13.8rem 0 11rem;
   background-color: #f5f6f7;
   text-align: center;
-  padding: 13.8rem 0 11rem;
+  z-index: 1;
+  letter-spacing: -0.08em;
 }
 .timesale .inner {
   width: 118rem;
-  margin: 0 auto;
+  margin: 0px auto;
   padding: unset;
 }
+
 .timesale em {
   font-weight: 500;
   font-size: 3.6rem;
@@ -32,10 +34,16 @@
   padding-top: 2rem;
   margin: 5rem auto 0;
   background: url("../images/timesalebar.png") no-repeat center / 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .ts-font {
   font-weight: 300;
   font-size: 2.8rem;
+}
+#wrap > div.timesale.clearfix > div > div > h4 > em {
+  font-size: 7.4rem;
+  color: red;
 }
 .ts-font strong {
   display: block;
@@ -102,4 +110,36 @@
   font-size: 2.2rem;
   color: red;
   line-height: 1;
+}
+.ts-price {
+  position: relative;
+  display: block;
+  width: 43.8rem;
+  margin-top: 3.2rem;
+  padding-right: 3rem;
+  font-weight: 700;
+  font-size: 2.8rem;
+  letter-spacing: -1px;
+  line-height: 9rem;
+  color: #fff;
+  background: #151c2b url("../images/ts-price-bt.png") no-repeat 36.5rem 50%/2.6rem;
+  text-align: center;
+  border-radius: 4.5rem;
+  box-sizing: border-box;
+}
+.timesale-box:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e8e9e9 url(../images/timesalecolor.png) no-repeat center / 100%;
+  animation: price-rotate 4s 1s infinite linear normal;
+  z-index: -1;
+}
+@keyframes price-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }
