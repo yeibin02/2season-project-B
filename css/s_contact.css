@@ -119,16 +119,24 @@
   border: none;
   cursor: pointer;
 }
-#mand1 {
-  position: absolute;
-  display: none;
-}
 .mand2 {
   display: flex;
 }
-label::before {
-  width: 25px;
-  height: 25px;
+#mand1[type="checkbox"] + .mand2 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: 1px solid #887160;
+  margin-right: 5px;
+}
+#mand1 {
+  display: none;
+}
+#mand1[type="checkbox"] + .mand2::after {
+  content: "✔";
+  font-size: 14px;
+  text-align: center;
 }
 @media screen and (max-width: 644px) {
   .contact {
