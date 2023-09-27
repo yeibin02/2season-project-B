@@ -9,7 +9,7 @@
   letter-spacing: -0.08em;
 }
 .timesale .inner {
-  width: 118rem;
+  width: 100%;
   margin: 0px auto;
   padding: unset;
 }
@@ -29,20 +29,36 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70rem;
-  height: 68.8rem;
+  width: 100%;
+
   padding-top: 2rem;
   margin: 5rem auto 0;
   background: url("../images/timesalebar.png") no-repeat center / 100%;
   overflow: hidden;
   box-sizing: border-box;
 }
+.timesale-box:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e8e9e9 url(../images/timesalecolor.png) no-repeat center / 100%;
+  animation: price-rotate 4s 1s infinite linear normal;
+  z-index: -1;
+}
+@keyframes price-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .ts-font {
   font-weight: 300;
   font-size: 2.8rem;
 }
 #wrap > div.timesale.clearfix > div > div > h4 > em {
-  font-size: 7.4rem;
+  font-size: 7rem;
   color: red;
 }
 .ts-font strong {
@@ -127,19 +143,84 @@
   border-radius: 4.5rem;
   box-sizing: border-box;
 }
-.timesale-box:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #e8e9e9 url(../images/timesalecolor.png) no-repeat center / 100%;
-  animation: price-rotate 4s 1s infinite linear normal;
-  z-index: -1;
+
+@media screen and (max-width: 1024px) {
+  .timesale {
+    padding: 6.2em 0 6em;
+    font-size: 100%;
+  }
+  .timesale .inner {
+    padding: 0 1.9em;
+    box-sizing: border-box;
+  }
+  .timesale em {
+    font-size: 1.8em;
+  }
+  .timesale h3 {
+    font-size: 3.23em;
+    letter-spacing: -0.05;
+  }
+  .timesale .timesale-box {
+    width: 35.85em;
+    height: 34.76em;
+    margin: 4.38em auto 0;
+    padding-top: 1.2em;
+  }
+  .ts-font {
+    font-size: 2.33em;
+  }
+  .ts-font strong {
+    height: 1.37em;
+    margin-top: 0.6em;
+    line-height: 1.07em;
+  }
+  .timesale-box h4,
+  .timesale-box h4 > em {
+    padding: 0;
+    margin-top: 0.3em;
+    font-size: 3.76em;
+  }
+  .count-time {
+    width: 20em;
+    height: 5.14em;
+    margin: 1.71em auto 0;
+  }
+  .count-time em {
+    display: block;
+    width: 2.5em;
+    height: 2.27em;
+    font-size: 2.04em;
+    letter-spacing: 0;
+  }
+  .ts-price {
+    width: 15.11em;
+    margin-top: 1.25em;
+    font-size: 1.71em;
+    line-height: 3.57em;
+    border-radius: 2.8em;
+    background-position: 13em;
+    background-size: 1em;
+  }
+  .ts-font strong::before,
+  .ts-font strong::after {
+    width: 1.4em;
+    height: 1.4em;
+  }
+  #countdown {
+    font-size: 1.64em;
+    display: block;
+    padding-top: 0.8em;
+    width: 15em;
+  }
 }
-@keyframes price-rotate {
-  100% {
-    transform: rotate(360deg);
+@media screen and (max-width: 581px) {
+  #wrap > div.timesale.clearfix > div > div > h4 > em {
+    font-size: 1em;
+  }
+  .ts-price {
+    width: 16em;
+    font-size: 0.74em;
+    background: #151c2b url("../images/ts-price-bt.png") no-repeat 13.5em 50% /
+      1.6em;
   }
 }
