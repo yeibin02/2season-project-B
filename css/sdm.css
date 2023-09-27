@@ -121,7 +121,7 @@
   max-width: 1440px;
   position: relative;
   left: 10%;
-  top: 15%;
+  top: 7%;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -178,6 +178,16 @@
   background-position: center;
   width: 1123px;
   height: 1016px;
+}
+.sdm_box_b_img_df {
+  max-width: 1920px;
+  width: 1500px;
+  height: 1000px;
+  margin-top: -30%;
+  background: url("../images/diffrent_package_back.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 /* ------------------------- */
@@ -253,6 +263,7 @@
     justify-content: center;
     align-items: center;
   }
+
   #sdmbox_b_all {
     position: relative;
     margin: 20px;

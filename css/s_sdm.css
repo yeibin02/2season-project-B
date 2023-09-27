@@ -7,6 +7,7 @@
 .s_sdm {
   display: flex;
   justify-content: center;
+  z-index: 999999999999999;
 }
 .s_sdm .inner {
   max-width: 1920px;
@@ -1061,6 +1062,9 @@
   font-family: "Jeju Myeongjo", serif;
   font-weight: 700;
 }
+#sdm_footer {
+  padding-top: 50%;
+}
 /* ------------------------------- */
 /* ----------반응형----------- */
 @media all and (max-width: 1484px) {
@@ -1270,14 +1274,10 @@
     font-size: 14px;
   }
 }
-@media all and (max-width: 680px) {
-}
 @media all and (max-width: 650px) {
   .sdmmain_07 {
     left: 56%;
   }
-}
-@media all and (max-width: 570px) {
 }
 @media all and (max-width: 524px) {
   #stu_header_wonkyu {
@@ -1326,18 +1326,14 @@
   .sdm_reservation p {
     width: 90%;
   }
-  /* .eight_2 {
-    display: none;
-  } */
+
   .eight_3 {
     display: none;
   }
   .eight_4 {
     display: none;
   }
-  /* .eight_6 {
-    display: none;
-  } */
+
   .eight_7 {
     display: none;
   }
