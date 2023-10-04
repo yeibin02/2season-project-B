@@ -7,6 +7,7 @@
   text-align: center;
   z-index: 1;
   letter-spacing: -0.08em;
+  font-family: "Noto Serif KR";
 }
 .timesale .inner {
   margin: 0px auto;
@@ -28,7 +29,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 49.5rem;
+  width: 50.5rem;
   padding-top: 2rem;
   margin: 5rem auto 0;
   background: url("../images/timesalebar.png") no-repeat center / 100%;

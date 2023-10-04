@@ -1790,8 +1790,8 @@ $(document).ready(function () {
       // 상품 문의 버튼을 포함할 <a> 태그를 생성합니다.
       const inquiryLink = $("<a>")
         .addClass("inquiry-link")
-        .attr("href", "https://weddingforyou.vercel.app/") // 이동할 페이지의 URL을 지정합니다.
-        .text("상품 문의");
+        .attr("href", "#") // 이동할 페이지의 URL을 지정합니다.
+        .text("문의 하기");
 
       // <a> 태그를 hallContainer에 추가합니다.
       hallContainer.append(inquiryLink);
