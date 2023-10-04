@@ -36,7 +36,7 @@
 .m-pk-text-wrap p span {
   font-family: "Noto Serif KR", "serif";
 }
-.m-pk-more-btn {
+.pk-buy-btn {
   font-family: "Noto Sans KR";
   font-size: 14px;
   color: #474747;
@@ -49,7 +49,7 @@
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-.m-pk-more-btn:hover {
+.pk-buy-btn:hover {
   color: #fff;
   border: 1px solid #887160;
   background-color: #887160;
@@ -121,7 +121,7 @@
   text-decoration: line-through;
 }
 .m-pk-timesale .sal {
-  color: #bf0049;
+  color: #e3545e;
   font-size: 21px;
 }
 /* 반응형 */
@@ -172,6 +172,9 @@
   }
   .m-pk-timesale .sal {
     font-size: 20px;
+  }
+  .m-pk-img-wrapper .m-pk-img-wrap li p {
+    font-size: 17px;
   }
 }
 @media all and (max-width: 540px) {
@@ -231,6 +234,33 @@
     font-size: 12px;
   }
   .m-pk-timesale .sal {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 320px) {
+  .m-pk-text-wrap h2 {
+    font-size: 38px;
+  }
+  .m-pk-text-wrap p {
+    font-size: 12px;
+  }
+  .m-pk-sale-wrap {
+    width: 300px;
+    padding: 20px 0;
+  }
+  .m-pk-sale-wrap h2 {
+    font-size: 14px;
+  }
+  .m-pk-sale-wrap h2 span {
+    font-size: 16px;
+  }
+  .m-pk-timesale .pri {
+    font-size: 12px;
+  }
+  .m-pk-timesale .sal {
+    font-size: 16px;
+  }
+  .m-pk-img-wrapper .m-pk-img-wrap li p {
     font-size: 16px;
   }
 }
