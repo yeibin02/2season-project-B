@@ -29,12 +29,6 @@
   font-size: 68px;
   /* font-weight: 500; */
   color: #ececec;
-  font-family: "Noto Serif KR", sans-serif;
-}
-.sdm_title h2 span {
-  font-size: 68px;
-  /* font-weight: 500; */
-  color: #ececec;
   font-family: "Noto Sans KR", sans-serif;
 }
 .sdm_box_b {
@@ -146,19 +140,18 @@
 .sdm_sec_second {
   width: 170px;
   height: 60px;
-  z-index: 1;
+  z-index: 9999999999999999999;
 }
 .sdm_sec_second button {
   background: none;
   font-size: 26px;
   width: 170px;
   height: 60px;
-  border: 2px solid #887160;
+  border: 3px solid #887160;
   padding: 10px;
   text-align: center;
   border-radius: 50px;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
 }
 .sdm_sec_second button a {
   color: #887160;
@@ -167,8 +160,7 @@
 .sdm_sec_second button:hover {
   background-color: #887160;
   color: #fff;
-  transition: 0.2s ease-in-out;
-  /* z-index: 999999; */
+  z-index: 999999;
 }
 .sdm_sec_second button:hover a {
   color: #fff;

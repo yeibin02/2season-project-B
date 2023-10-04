@@ -3,7 +3,7 @@
   position: relative;
   display: block;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 140px;
 }
 .contact-open-wrap {
   width: 100%;
@@ -18,23 +18,17 @@
 .open-text-wrap {
   position: absolute;
   display: block;
-  top: 18%;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
 }
 .open-text-wrap h2 {
-  font-size: 58px;
-  font-family: "Noto Serif KR", serif;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-size: 68px;
+  font-family: "Ragara";
 }
 .open-text-wrap p {
-  margin-top: 20px;
-  font-size: 17px;
-  line-height: 26px;
-  font-family: "Noto Serif KR", serif;
-  font-weight: 300;
+  text-transform: uppercase;
 }
 .back-wrap {
   padding: 20px 0;
@@ -44,6 +38,7 @@
 .back-wrap img {
   width: 10px;
   height: 15px;
+  margin-left: 240px;
 }
 .back-wrap a {
   font-size: 15px;
