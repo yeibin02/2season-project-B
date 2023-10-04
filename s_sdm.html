@@ -2,23 +2,23 @@
 <html lang="ko">
   <head>
     <meta
-    name="naver-site-verification"
-    content="ac8f45f467b14d6d0ce812c1547c0dc6ffb110b6"
-  />
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-5L3S46BJ");
-  </script>
-  <!-- End Google Tag Manager -->
+      name="naver-site-verification"
+      content="ac8f45f467b14d6d0ce812c1547c0dc6ffb110b6"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5L3S46BJ");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -164,31 +164,20 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="wrap">
-      <!-- header -->
-      <header class="header clearfix">
+      <header class="header clearfix" id="header">
         <div class="inner">
-          <div class="header-1">
-            <div class="logo">
-              <a href="index.html">
-                <img src="images/logo_black.png" alt="header-logo" />
-              </a>
-            </div>
-            <div class="s-menu">
-              <ul>
-                <li><a href="login.html">login</a></li>
-                <li><a href="#">my page</a></li>
-              </ul>
-            </div>
-            <button class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="images/logo_white.png" alt="header-logo" />
+            </a>
           </div>
-          <nav class="header-2">
+          <nav>
             <ul>
               <li>
-                <a href="s_package.html">package</a>
+                <a href="s_package.html" class="package-menu"
+                  >package
+                  <!-- <div class="balloon">click</div> -->
+                </a>
               </li>
               <li>
                 <a href="s_weddinghall.html">wedding hall</a>
@@ -200,19 +189,32 @@
                 <a href="s_notice.html">q&a</a>
               </li>
               <li>
-                <a href="#">review</a>
+                <a href="s_contact.html">contact</a>
               </li>
             </ul>
           </nav>
+          <div class="s-menu">
+            <ul>
+              <li><a href="login.html">login</a></li>
+              <li><a href="#">my page</a></li>
+            </ul>
+          </div>
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </header>
       <div class="hamburger-menu">
         <ul class="hamburger-menu-contents">
           <li><a href="s_package.html">PACKAGE</a></li>
+          <li><a href="s_about.html">ABOUT</a></li>
           <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
           <li><a href="s_sdm.html">S.D.M</a></li>
           <li><a href="s_notice.html">Q&A</a></li>
-          <li><a href="s_review.html">REVIEW</a></li>
+
+          <li><a href="s_contact.html">contact</a></li>
         </ul>
       </div>
       <!-- 문의하기 btn -->
@@ -224,6 +226,7 @@
           <p>문의하기</p>
         </div>
       </div>
+      <div class="modal-overlay"></div>
       <!-- sdm -->
       <div class="s_sdm clearfix">
         <div class="inner">

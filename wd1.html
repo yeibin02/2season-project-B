@@ -2,31 +2,29 @@
 <html lang="ko">
   <head>
     <meta
-
-    name="naver-site-verification"
-    content="ac8f45f467b14d6d0ce812c1547c0dc6ffb110b6"
-  />
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-5L3S46BJ");
-  </script>
-  <!-- End Google Tag Manager -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta
-    name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes"
-  />
-
+      name="naver-site-verification"
+      content="ac8f45f467b14d6d0ce812c1547c0dc6ffb110b6"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5L3S46BJ");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes"
+    />
 
     <!-- SEO -->
     <meta name="author" content="웨딩포유" />
@@ -130,7 +128,7 @@
     <!-- script 불러오기 -->
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
-    <script src="js/s_package.js"></script>
+    <script src="js/s_weddinghall.js"></script>
 
     <!-- css 불러오기 -->
     <link rel="stylesheet" href="css/style.css" />
@@ -145,13 +143,14 @@
         color: #887160;
       }
       .header nav ul li:first-child a {
-        border-color: #887160;
-        background-color: #887160;
-        color: #fff;
+        border-color: #191919;
       }
       .header nav ul li:first-child a:hover {
         border-color: #887160;
         background-color: #887160;
+      }
+      .header nav ul li:nth-child(2) a {
+        color: #887160;
       }
       .header .s-menu ul li a {
         color: #191919;
@@ -169,139 +168,71 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="wrap">
-      <!-- header -->
-      <header class="header clearfix" id="header">
-        <div class="inner">
-          <div class="header-logo">
-            <a href="index.html">
-              <img src="images/logo_black.png" alt="header-logo" />
-            </a>
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <a href="s_package.html" class="package-menu"
-                  >package
-                  <!-- <div class="balloon">click</div> -->
-                </a>
-              </li>
-              <li>
-                <a href="s_weddinghall.html">wedding hall</a>
-              </li>
-              <li>
-                <a href="s_sdm.html">s.d.m</a>
-              </li>
-              <li>
-                <a href="s_notice.html">q&a</a>
-              </li>
-              <li>
-                <a href="#">review</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="s-menu">
-            <ul>
-              <li><a href="login.html">login</a></li>
-              <li><a href="#">my page</a></li>
-            </ul>
-          </div>
-          <button class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+<div class="wrap">
+    <!-- header -->
+    <header class="header clearfix" id="header">
+      <div class="inner">
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="images/logo_black.png" alt="header-logo" />
+          </a>
         </div>
-      </header>
-      <div class="hamburger-menu">
-        <ul class="hamburger-menu-contents">
-          <li><a href="s_package.html">PACKAGE</a></li>
-          <li><a href="s_about.html">ABOUT</a></li>
-          <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
-          <li><a href="s_sdm.html">S.D.M</a></li>
-          <li><a href="s_notice.html">Q&A</a></li>
-          <li><a href="s_contact.html">contact</a></li>
-        </ul>
+        <nav>
+          <ul>
+            <li>
+              <a href="s_package.html" class="package-menu"
+                >package
+                <!-- <div class="balloon">click</div> -->
+              </a>
+            </li>
+            <li>
+              <a href="s_weddinghall.html">wedding hall</a>
+            </li>
+            <li>
+              <a href="s_sdm.html">s.d.m</a>
+            </li>
+            <li>
+              <a href="s_notice.html">q&a</a>
+            </li>
+            <li>
+              <a href="#">review</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="s-menu">
+          <ul>
+            <li><a href="login.html">login</a></li>
+            <li><a href="#">my page</a></li>
+          </ul>
+        </div>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <!-- 문의하기 btn -->
-      <div class="contact-btn">
-        <a href="s_contact.html">
-          <img src="images/contact_modal.png" alt="문의하기" />
-        </a>
-        <div class="con-hover">
-          <p>문의하기</p>
-        </div>
-      </div>
-      <!-- package-visual -->
-      <div class="package-visual clearfix">
-        <div class="inner">
-          <div class="package_box">
-            <div class="package_box_text">
-              <h3>PACKAGE</h3>
-              <p>A Special price in ' Wedding for you '</p>
-            </div>
-          </div>
-          <div class="package_sub_title">
-            <p>가을 특가 s.d.m 패키지</p>
-            <p>최대 67% 대박 할인 지금 바로 만나보세요.</p>
-          </div>
-          <div class="package_ssomnail">
-            <div class="package_ssomnail_first">
-              <div class="package_ssom_01" id="pack_ssome">
-                <div class="package_ssom_01_img"></div>
-                <div class="package_ssom_01_text">
-                  <p>촬영 + 본식</p>
-                  <h4>리유 스튜디오 + 에델린 + 앤드뮤</h4>
-                  <img src="images/zzick.png" alt="찍찍1" />
-                  <p><b>56%</b> 1,670,000 원</p>
-                  <button class="ps_first_button">자세히 보기</button>
-                  <br />
-                  <button class="ps_second_button">찜 하기</button>
-                </div>
-              </div>
-              <div class="package_ssom_02" id="pack_ssome">
-                <div class="package_ssom_02_img"></div>
-                <div class="package_ssom_01_text">
-                  <p>최저가 보장</p>
-                  <h4>그림비 + 모네뜨아르 + 이엘</h4>
-                  <img src="images/zzick2.png" alt="찍찍2" />
-                  <p><b>60%</b> 1,610,000 원</p>
-                  <button class="ps_first_button">자세히 보기</button>
-                  <br />
-                  <button class="ps_second_button">찜 하기</button>
-                </div>
-              </div>
-            </div>
-            <div class="package_ssomnail_second">
-              <div class="package_ssom_03" id="pack_ssome">
-                <div class="package_ssom_03_img"></div>
-                <div class="package_ssom_01_text">
-                  <p>한정수량</p>
-                  <h4>세미앙 + 모네뜨아르 + 겐 그레아</h4>
-                  <img src="images/zzick3.png" alt="찍찍3" />
-                  <p><b>48%</b> 1,855,000 원</p>
-                  <button class="ps_first_button">자세히 보기</button>
-                  <br />
-                  <button class="ps_second_button">찜 하기</button>
-                </div>
-              </div>
-              <div class="package_ssom_04" id="pack_ssome">
-                <div class="package_ssom_04_img"></div>
-                <div class="package_ssom_01_text">
-                  <p>10월 특가</p>
-                  <h4>ST 정우 + 메이제인 + 비올</h4>
-                  <img src="images/zzick4.png" alt="찍찍4" />
-                  <p><b>46%</b> 2,510,000 원</p>
-                  <button class="ps_first_button">자세히 보기</button>
-                  <br />
-                  <button class="ps_second_button">찜 하기</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    </header>
+    <div class="hamburger-menu">
+      <ul class="hamburger-menu-contents">
+        <li><a href="s_package.html">PACKAGE</a></li>
+        <li><a href="s_about.html">ABOUT</a></li>
+        <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
+        <li><a href="s_sdm.html">S.D.M</a></li>
+        <li><a href="s_notice.html">Q&A</a></li>
+        <li><a href="s_contact.html">contact</a></li>
+      </ul>
+    </div>
+
+    <!-- 문의하기 btn -->
+    <div class="contact-btn">
+      <a href="s_contact.html">
+        <img src="images/contact_modal.png" alt="문의하기" />
+      </a>
+      <div class="con-hover">
+        <p>문의하기</p>
       </div>
     </div>
+
     <footer class="footer clearfix">
       <div class="inner">
         <div class="footer-top">
@@ -375,5 +306,8 @@
         </div>
       </div>
     </footer>
+  </div>
+
+  
   </body>
 </html>
