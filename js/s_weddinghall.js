@@ -1804,4 +1804,29 @@ $(document).ready(function () {
   // 페이지 로드 시 메뉴얼 정보 생성
   createWeddingHallElements(weddingHallData);
   // 검색 버튼 클릭 이벤트 핸들러
+
+  // 문의하기 버튼 클릭 이벤트 핸들러
+  $(".inquiry-link").click(function () {
+    // 클릭된 버튼의 클래스 값을 가져옵니다.
+    const buttonClass = $(this).attr("class");
+
+    // 버튼의 클래스에 따라 파일 경로를 설정합니다.
+    let filePath;
+
+    if (buttonClass.includes("wd1")) {
+      // wd1 클래스가 포함된 경우, wd1.html 파일로 이동합니다.
+      filePath = "wd1.html"; // wd1.html 파일의 상대 경로로 설정합니다.
+    } else if (buttonClass.includes("wd2")) {
+      // wd2 클래스가 포함된 경우, wd2.html 파일로 이동합니다.
+      filePath = "wd2.html"; // wd2.html 파일의 상대 경로로 설정합니다.
+    } else if (buttonClass.includes("wd3")) {
+      // wd3 클래스가 포함된 경우, wd3.html 파일로 이동합니다.
+      filePath = "wd3.html"; // wd3.html 파일의 상대 경로로 설정합니다.
+    }
+
+    // 파일로 이동합니다.
+    if (filePath) {
+      window.location.href = filePath;
+    }
+  });
 });

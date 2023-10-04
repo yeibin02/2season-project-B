@@ -3,8 +3,27 @@
   width: 100%;
   padding: 100px 0;
 }
-.pre-pk-inner {
-  width: 1000px;
+.premium-pk-wrap {
+  width: 50%;
+}
+.pre-pk-img-wrap {
+  position: relative;
+  background: url("../images/eight_05.png") no-repeat center;
+  background-size: cover;
+  width: 700px;
+  height: 800px;
+}
+.premium-pk-buy {
+  width: 50%;
+}
+.s-pk-buy-wrap {
+  display: flex;
+}
+.kecTuB {
+  width: 100%;
+  height: 10px;
+  margin: 40px 0px 37px;
+  background-color: rgb(244, 245, 249);
 }
 .jsSaWY {
   display: flex;
@@ -31,13 +50,13 @@
   margin-top: 6px;
 }
 .premium-pk-text h2 {
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 500;
   color: #282828;
-  line-height: 25px;
+  line-height: 32px;
 }
 .premium-pk-text h2 span {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
 }
 .price_box {
@@ -155,7 +174,7 @@
   width: 100%;
   height: 308px;
   margin-top: 20px;
-  background-color: rgb(249, 249, 249);
+  background-color: rgb(250, 250, 250);
   border-radius: 8px;
   border: 1px solid rgb(238, 240, 244);
   padding: 29px 20px 26px;
@@ -185,10 +204,10 @@
   font-weight: 400;
 }
 .ktIZjX .discount_list > h5 {
-  color: rgb(255, 0, 0);
+  color: #e3545e;
 }
 .ktIZjX .discount_list > p {
-  color: rgb(255, 0, 0);
+  color: #e3545e;
 }
 .ktIZjX .last_list > h5 {
   color: rgb(38, 38, 38);
@@ -209,8 +228,8 @@
   width: 100%;
   height: 64px;
   border-radius: 6px;
-  background-color: rgb(255, 245, 248);
-  border: 1px solid rgb(255, 216, 229);
+  background-color: #fff5f5;
+  border: 1px solid #eec1c3;
 }
 .cGPHJk > p {
   line-height: 23px;
@@ -222,7 +241,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  color: rgb(253, 67, 129);
+  color: #e3545e;
 }
 .cGPHJk > p > span {
   font-size: 17px;
