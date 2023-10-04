@@ -19,24 +19,28 @@
   justify-content: center;
 }
 .visual_swiper_back01 {
-  background: url("../images/real_back_14.jpg") no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-}
-.visual_swiper_back02 {
+  width: 100%;
   background: url("../images/real_back_15.png") no-repeat;
   background-size: cover;
   background-position: center;
 }
+.visual_swiper_back02 {
+  width: 100%;
+  background: url("../images/real_back_06.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .visual_swiper_back03 {
-  background: url("../images/real_back_09.jpg") no-repeat;
+  width: 100%;
+  background: url("../images/real_back_16.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
 .visual_swiper_back04 {
-  background: url("../images/real_back_18.jpg") no-repeat;
+  width: 100%;
+  background: url("../images/real_back_07.jpg") no-repeat;
   background-size: cover;
-  background-position: bottom center;
+  background-position: center;
 }
 .visual_swiper .swiper-slide::before {
   position: absolute;
@@ -129,6 +133,9 @@
   }
 }
 @media all and (max-width: 480px) {
+  .visual .inner {
+    max-width: 480px;
+  }
   .visual_swiper_text {
     width: 60%;
   }

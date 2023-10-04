@@ -24,9 +24,9 @@ window.addEventListener("load", function () {
     spaceBetween: 30,
     effect: "fade",
     centeredSlides: true,
-    speed: 4000,
+    speed: 3000,
     autoplay: {
-      delay: 4000,
+      delay: 3000,
       disableOnInteraction: false,
     },
     pagination: {
