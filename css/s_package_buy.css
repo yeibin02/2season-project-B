@@ -65,12 +65,17 @@
   padding: 20px;
   border-bottom: 1px solid rgb(221, 221, 221);
 }
+.pk-buy-menu:last-child{
+ border-bottom: none;
+}
 
 .pk-menu-bar-box {
   width: 100%;
   border: 1px solid rgb(221, 221, 221);
   border-top: none;
+  display: none;
 }
+
 .kecTuB {
   width: 100%;
   height: 10px;
