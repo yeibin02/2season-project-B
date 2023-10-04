@@ -9,7 +9,6 @@
   letter-spacing: -0.08em;
 }
 .timesale .inner {
-  width: 100%;
   margin: 0px auto;
   padding: unset;
 }
@@ -169,18 +168,17 @@
     font-size: 1.33em;
   }
   .ts-font strong {
-    height: 1.37em;
-    margin-top: 0.6em;
+    height: 1.07em;
+    margin-top: 0.2em;
     line-height: 1.07em;
   }
-  .timesale-box h4,
-  .timesale-box h4 > em {
+  .timesale-box h4 {
     padding: 0;
     margin-top: 0.3em;
     font-size: 3.76em;
   }
   .count-time {
-    width: 20em;
+    width: 19.5em;
     height: 5.14em;
     margin: 1.71em auto 0;
   }
@@ -212,49 +210,55 @@
     width: 15em;
   }
 }
-@media screen and (max-width: 581px) {
-  #wrap > div.timesale.clearfix > div > div > h4 > em {
-    font-size: 1.5em;
-  }
-  .ts-price {
-    width: 18em;
-    font-size: 1.7em;
-    background: #151c2b url("../images/ts-price-bt.png") no-repeat 13.5em 52% /
-      0.9em;
-  }
-}
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
   .timesale .timesale-box {
-    width: 29.5em;
-    height: 28.3em;
-    padding-top: 2rem;
-    margin: 5rem auto 0;
-    background: url("../images/timesalebar.png") no-repeat center / 100%;
-    overflow: hidden;
-    box-sizing: border-box;
+    width: 24.85em;
+    height: 23.76em;
+    margin: 2.38em auto 0;
+    padding-top: 3.2em;
+  }
+  .timesale-box h4 {
+    font-size: 2.9em;
   }
   .count-time em {
-    font-size: 1em;
-  }
-  .count-time {
-    margin: 0 auto;
-    line-height: 5.14em;
+    font-size: 1.5em;
   }
   #countdown {
-    width: 13em;
-    padding: 0;
-  }
-  .timesale .inner > h3 {
-    font-size: 2.5em;
+    padding-top: 0.5em;
   }
   .ts-price {
-    width: 14.5em;
-    font-size: 1em;
-    padding-right: 2em;
-    background: #151c2b url("../images/ts-price-bt.png") no-repeat 12.5em 52% /
-      0.9em;
+    width: 13em;
+    font-size: 1.2em;
+    background: #151c2b url("../images/ts-price-bt.png") no-repeat 11.5rem 50%/1.4rem;
+    padding-right: 1.5em;
   }
-  .timesale-box:after {
-    background: #e8e9e9 url(../images/timesalecolor.png) no-repeat center / 100%;
+}
+@media screen and (max-width: 360px) {
+  .timesale .timesale-box {
+    width: 20.85em;
+    height: 19.76em;
+    margin: 2.38em auto 0;
+    padding-top: 3.2em;
+  }
+  .timesale-box h4 {
+    font-size: 2.5em;
+  }
+  .count-time {
+    margin: 1em;
+    height: 3em;
+  }
+  .count-time em {
+    font-size: 1.3em;
+  }
+  #countdown {
+    padding-top: 0.5em;
+  }
+  .ts-price {
+    width: 13em;
+    font-size: 1em;
+    background: #151c2b url("../images/ts-price-bt.png") no-repeat 11.5em 50%/1em;
+    padding-right: 1.5em;
+    margin-top: 0em;
+    line-height: 2.57em;
   }
 }
