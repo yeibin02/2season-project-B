@@ -40,18 +40,6 @@ html.active {
 .header nav ul li{
   margin: 30px;
 }
-.header nav ul li:first-child a{
-  position: relative;
-  border: 1px solid #fff;
-  border-radius: 30px;
-  padding: 6px 18px;
-}
-.header nav ul li:first-child a:hover{
-  background-color: #887160;
-  border: 1px solid #887160;
-  color: #fff;
-
-}
 .header .balloon {  
   position: absolute; 
   top: calc(100% + 10px);
