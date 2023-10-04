@@ -133,22 +133,21 @@
     <script src="js/s_sdm.js"></script>
 
     <!-- css 불러오기 -->
-    <link rel="stylesheet" href="css/style.css" />
     <style>
-      .header-2 ul li:nth-child(3) a {
-        color: #baa693;
+      .header{
+        background-color: #fff;
       }
-      .header-2 ul li:nth-child(3)::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -10px;
-        width: 120%;
-        opacity: 1;
-        height: 2px;
-        background-color: #baa693;
-        transition: width 0.5s, opacity 0.5s;
+      .header nav ul li a{
+        color: #191919;
+      }
+      .header nav ul li a:hover{
+        color: #887160;
+      }
+      .header nav ul li:nth-child(3) a{
+        color: #887160;
+      }
+      .header .s-menu ul li a{
+        color: #191919;
       }
     </style>
   </head>
@@ -165,30 +164,19 @@
     <!-- End Google Tag Manager (noscript) -->
     <div class="wrap">
       <!-- header -->
-      <header class="header clearfix">
+      <header class="header clearfix" id="header">
         <div class="inner">
-          <div class="header-1">
-            <div class="logo">
-              <a href="index.html">
-                <img src="images/logo_black.png" alt="header-logo" />
-              </a>
-            </div>
-            <div class="s-menu">
-              <ul>
-                <li><a href="login.html">login</a></li>
-                <li><a href="#">my page</a></li>
-              </ul>
-            </div>
-            <button class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="images/logo_black.png" alt="header-logo">
+            </a>
           </div>
-          <nav class="header-2">
+          <nav>
             <ul>
               <li>
-                <a href="s_package.html">package</a>
+                <a href="s_package.html" class="package-menu">package
+                <!-- <div class="balloon">click</div> -->
+                </a>
               </li>
               <li>
                 <a href="s_weddinghall.html">wedding hall</a>
@@ -200,19 +188,31 @@
                 <a href="s_notice.html">q&a</a>
               </li>
               <li>
-                <a href="#">review</a>
+                <a href="s_contact.html">contact</a>
               </li>
             </ul>
           </nav>
+          <div class="s-menu">
+            <ul>
+              <li><a href="login.html">login</a></li>
+              <li><a href="#">my page</a></li>
+            </ul>
+          </div>
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </header>
       <div class="hamburger-menu">
         <ul class="hamburger-menu-contents">
           <li><a href="s_package.html">PACKAGE</a></li>
+          <li><a href="s_about.html">ABOUT</a></li>
           <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
           <li><a href="s_sdm.html">S.D.M</a></li>
           <li><a href="s_notice.html">Q&A</a></li>
-          <li><a href="s_review.html">REVIEW</a></li>
+          <li><a href="s_contact.html">contact</a></li>
         </ul>
       </div>
       <!-- 문의하기 btn -->

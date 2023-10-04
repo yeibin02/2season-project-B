@@ -155,6 +155,23 @@
     <!-- css 불러오기 -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/s_sdm_makeup.css" />
+    <style>
+      .header{
+        background-color: #fff;
+      }
+      .header nav ul li a{
+        color: #191919;
+      }
+      .header nav ul li a:hover{
+        color: #887160;
+      }
+      .header nav ul li:nth-child(3) a{
+        color: #887160;
+      }
+      .header .s-menu ul li a{
+        color: #191919;
+      }
+    </style>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -169,30 +186,19 @@
     <!-- End Google Tag Manager (noscript) -->
     <div class="wrap">
       <!-- header -->
-      <header class="header clearfix">
+      <header class="header clearfix" id="header">
         <div class="inner">
-          <div class="header-1">
-            <div class="logo">
-              <a href="index.html">
-                <img src="images/logo_black.png" alt="header-logo" />
-              </a>
-            </div>
-            <div class="s-menu">
-              <ul>
-                <li><a href="login.html">login</a></li>
-                <li><a href="#">my page</a></li>
-              </ul>
-            </div>
-            <button class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="images/logo_black.png" alt="header-logo">
+            </a>
           </div>
-          <nav class="header-2">
+          <nav>
             <ul>
               <li>
-                <a href="s_package.html">package</a>
+                <a href="s_package.html" class="package-menu">package
+                <!-- <div class="balloon">click</div> -->
+                </a>
               </li>
               <li>
                 <a href="s_weddinghall.html">wedding hall</a>
@@ -204,10 +210,21 @@
                 <a href="s_notice.html">q&a</a>
               </li>
               <li>
-                <a href="#">review</a>
+                <a href="s_contact.html">contact</a>
               </li>
             </ul>
           </nav>
+          <div class="s-menu">
+            <ul>
+              <li><a href="login.html">login</a></li>
+              <li><a href="#">my page</a></li>
+            </ul>
+          </div>
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </header>
       <div class="hamburger-menu">
@@ -217,7 +234,7 @@
           <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
           <li><a href="s_sdm.html">S.D.M</a></li>
           <li><a href="s_notice.html">Q&A</a></li>
-          <li><a href="s_review.html">REVIEW</a></li>
+          <li><a href="s_contact.html">contact</a></li>
         </ul>
       </div>
 
