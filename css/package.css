@@ -38,12 +38,14 @@
 }
 .pk-buy-btn {
   font-family: "Noto Sans KR";
-  font-size: 14px;
-  color: #474747;
+  font-size: 26px;
+  color: #887160;
   text-transform: uppercase;
   background: transparent;
-  padding: 6px 20px;
-  border: 1px solid #474747;
+  width: 170px;
+  height: 60px;
+  /* padding: 6px 20px; */
+  border: 2px solid #887160;
   border-radius: 50px;
   margin-bottom: 50px;
   cursor: pointer;
@@ -51,7 +53,7 @@
 }
 .pk-buy-btn:hover {
   color: #fff;
-  border: 1px solid #887160;
+  border: 2px solid #887160;
   background-color: #887160;
   transition: 0.2s ease-in-out;
 }
@@ -61,13 +63,13 @@
 }
 .m-pk-img-wrap li img {
   width: 100%;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
+  /* cursor: pointer;
+  transition: 0.2s ease-in-out; */
 }
-.m-pk-img-wrap li:hover img {
+/* .m-pk-img-wrap li:hover img {
   scale: 1.07;
   transition: 0.2s ease-in-out;
-}
+} */
 .m-pk-img-wrap > li {
   width: 300px;
   text-align: center;
@@ -92,7 +94,7 @@
   color: #474747;
 }
 .m-pk-sale-wrap {
-  border: 1px solid #474747;
+  border: 2px solid #887160;
   width: 600px;
   padding: 40px 0;
   margin: 0 auto;
