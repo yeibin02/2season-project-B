@@ -28,7 +28,6 @@
   top: 0;
   width: 450px;
   height: 550px;
-  border: 1px solid #000;
   border-radius: 20px;
   padding: 30px;
 }
@@ -37,11 +36,40 @@
   justify-content: space-between;
   padding-bottom: 10px;
 }
+.pk-buy-btn2 {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  margin: 0px auto;
+  background-color: rgb(255, 255, 255);
+  padding-left: 18px;
+  cursor: pointer;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 10px;
+}
 .pk-buy-select-box {
   width: 100%;
   height: 48px;
-  border: 1px solid #000;
   border-radius: 10px;
+}
+.pk-buy-select-box div {
+  display: inline-flex;
+  width: calc(100% - 40px);
+  height: 100%;
+  align-items: center;
+}
+.pk-buy-menu {
+  padding: 20px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.pk-menu-bar-box {
+  width: 100%;
+  border: 1px solid rgb(221, 221, 221);
+  border-top: none;
 }
 .kecTuB {
   width: 100%;
