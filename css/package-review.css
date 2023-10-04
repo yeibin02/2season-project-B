@@ -60,44 +60,6 @@
   transition: 0.2s ease-in-out;
 }
 /* 모달창 */
-.package-modal {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: none;
-  z-index: 999;
-}
-.modal-wrap-btn {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.modal-wrap-close {
-  display: flex;
-  flex-direction: column;
-  flex-direction: row-reverse;
-}
-#modalImage1 {
-  background: no-repeat center;
-  background-size: cover;
-  width: 500px;
-  height: 700px;
-}
-#modalImage {
-  height: 700px;
-}
-.modal-wraper {
-  display: flex;
-  width: 100vw;
-  height: 80vh;
-  align-items: center;
-  justify-content: center;
-}
-.package-close {
-  cursor: pointer;
-}
 .modal-overlay {
   display: none;
   position: fixed;
@@ -105,42 +67,51 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 998;
+}
+.package-modal {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  z-index: 999;
+}
+.modal-wraper {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+#modalImage {
+  position: relative;
+  background: no-repeat center;
+  background-size: cover;
+  width: 45%;
+}
+.modal-wrap-close {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row-reverse;
 }
 .package-close {
   position: absolute;
-  font-size: 33px;
-  color: #ffffff;
-  background-color: #887160;
+  top: -385px;
+  right: 40px;
+  font-size: 32px;
+  color: #000;
   text-align: center;
   width: 35px;
   height: 35px;
   line-height: 30px;
+  cursor: pointer;
 }
 .package-close:hover {
-  color: #000000;
+  color: #887160;
 }
-.pk-review-more {
-  position: absolute;
-  top: 630px;
-  font-family: "Noto Serif KR", serif;
-  font-size: 22px;
-  padding: 5px 15px;
-  border-radius: 50px;
-  text-transform: uppercase;
-  border: 1px solid #000;
-  cursor: pointer;
-  background: none;
-  transition: 0.15s ease-in-out;
-}
-.pk-review-more:hover {
-  background-color: #aa9688;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  transition: 0.15s ease-in-out;
-}
-
 @media all and (max-width: 768px) {
   .pk-review-text-wrap h2 {
     font-size: 60px;
