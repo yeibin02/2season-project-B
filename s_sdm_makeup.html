@@ -147,19 +147,28 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/s_sdm_makeup.css" />
     <style>
-      .header{
+
+      .header {
         background-color: #fff;
       }
-      .header nav ul li a{
+      .header nav ul li a {
         color: #191919;
       }
-      .header nav ul li a:hover{
+      .header nav ul li a:hover {
         color: #887160;
       }
-      .header nav ul li:nth-child(3) a{
+      .header nav ul li:first-child a {
+        border-color: #191919;
+      }
+      .header nav ul li:first-child a:hover {
+        border-color: #887160;
+        background-color: #887160;
+      }
+      .header nav ul li:nth-child(2) a {
         color: #887160;
       }
-      .header .s-menu ul li a{
+      .header .s-menu ul li a {
+
         color: #191919;
       }
     </style>
@@ -183,14 +192,19 @@
         <div class="inner">
           <div class="header-logo">
             <a href="index.html">
-              <img src="images/logo_black.png" alt="header-logo">
+
+              <img src="images/logo_black.png" alt="header-logo" />
+
             </a>
           </div>
           <nav>
             <ul>
               <li>
-                <a href="s_package.html" class="package-menu">package
-                <!-- <div class="balloon">click</div> -->
+
+                <a href="s_package.html" class="package-menu"
+                  >package
+                  <!-- <div class="balloon">click</div> -->
+
                 </a>
               </li>
               <li>
@@ -230,7 +244,6 @@
           <li><a href="s_contact.html">contact</a></li>
         </ul>
       </div>
-
       <div class="modal-overlay"></div>
       <!-- visual -->
       <div class="s_sdm_makeup">
