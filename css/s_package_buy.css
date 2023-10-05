@@ -567,13 +567,25 @@
 }
 @media all and (max-width: 1024px) {
   .pre-pk-img-wrap {
-    width: 514px;
+    width: 463px;
     height: 600px;
+  }
+  .premium-pk-wrap {
+    width: 55%;
+  }
+  .premium-pk-text h2 {
+    font-size: 18px;
+  }
+  .premium-pk-text h2 span{
+    font-size: 22px;
   }
 }
 @media all and (max-width: 768px) {
   .pre-pk-img-wrap {
     width: 400px;
     height: 700px;
+  }
+  .premium-pk-wrap {
+    width: 50%;
   }
 }

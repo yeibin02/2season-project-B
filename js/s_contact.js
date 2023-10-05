@@ -71,7 +71,7 @@ $(document).ready(function () {
       return false;
     }
     if (!agreement) {
-      alert("약관에 동의하셔야 회원가입을 하실 수 있습니다.");
+      alert("약관에 동의하셔야 문의하실 수 있습니다.");
       return false;
     }
 
