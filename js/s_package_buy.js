@@ -1,12 +1,23 @@
 $(document).ready(function () {
+  // .pk-buy-box 요소와 .premium-pk-buy 요소를 가져옵니다.
+  var pkBuyBox = document.querySelector(".pk-buy-box");
+  var premiumPkBuy = document.querySelector(".premium-pk-buy");
+
   // 스크롤 이벤트 리스너를 추가합니다.
   window.addEventListener("scroll", function () {
+    // .pk-buy-box 요소가 .premium-pk-buy 내에서 움직일 수 있는 최대 거리를 계산합니다.
+    var maxDistance = premiumPkBuy.clientHeight - pkBuyBox.clientHeight;
+
     // 스크롤된 거리를 가져옵니다.
     var scrollDistance = window.scrollY;
 
-    // ".pk-buy-box" 요소의 위치를 업데이트합니다.
-    var pkBuyBox = document.querySelector(".pk-buy-box");
-    pkBuyBox.style.top = scrollDistance + "px";
+    // .pk-buy-box 요소의 위치를 업데이트합니다.
+    // 스크롤 위치에 따라 이동하게 됩니다.
+    if (scrollDistance >= maxDistance) {
+      pkBuyBox.style.transform = "translateY(" + maxDistance + "px)";
+    } else if (scrollDistance >= 0) {
+      pkBuyBox.style.transform = "translateY(" + scrollDistance + "px)";
+    }
   });
 
   var menuVisible = false; // 메뉴바의 현재 표시 상태를 저장합니다.
@@ -26,24 +37,4 @@ $(document).ready(function () {
       pkMenuBar.style.display = "none"; // 메뉴바를 숨깁니다.
     }
   });
-
-  // ".pk-buy-box" 요소의 위치를 업데이트합니다.
-  $(".pk-buy-box").css("top", scrollDistance + "px");
 });
-
-var menuVisible = false; // 메뉴바의 현재 표시 상태를 저장합니다.
-
-$(".pk-buy-btn2").click(function () {
-  // 메뉴바의 표시 상태를 토글합니다.
-  menuVisible = !menuVisible;
-
-  // 버튼의 왼쪽 아래와 오른쪽 아래 모서리를 직각으로 만듭니다.
-  if (menuVisible) {
-    $(this).css("border-radius", "10px 10px 0 0");
-    $(".pk-menu-bar-box").css("display", "block"); // 메뉴바를 보이게 합니다.
-  } else {
-    $(this).css("border-radius", "10px");
-    $(".pk-menu-bar-box").css("display", "none"); // 메뉴바를 숨깁니다.
-  }
-});
-
