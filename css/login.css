@@ -8,7 +8,8 @@
   align-items: center;
 }
 .loginbox{
-  width: 550px;
+  width: 520px;
+  height: 700px;
   border: 2px solid #baa693;
   border-radius: 10px;
   text-align: center;
@@ -18,7 +19,11 @@
 .login-logo img{
   width: 360px;
   height: 120px;
-  margin: 3vw 0;
+  margin: 50px 0;
+}
+#login-form{
+  width: 400px;
+  margin: 0 auto;
 }
 #username,
 #password{
@@ -49,6 +54,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .sns-login-title-box hr{
   display: inline-block;
@@ -73,8 +80,18 @@
 }
 .sns-login-box{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 10px;
+}
+#naver_id_login img{
+  border-radius: 50%;
+}
+.kakao_id_login{
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 @media screen and (max-width: 1440px) {
 }
