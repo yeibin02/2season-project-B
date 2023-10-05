@@ -3,11 +3,24 @@
   width: 100%;
   margin-top: 100px;
 }
+.hall-list-wrap .inner {
+  display: flex;
+}
+.hall-info-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .hall-list-img {
   position: relative;
   display: block;
   width: 100%;
   margin-bottom: 100px;
+}
+.hall-list-img img {
+  width: 100%;
+  object-fit: cover;
 }
 .hall-list-img p {
   position: absolute;
@@ -18,29 +31,107 @@
   font-size: bold;
   color: #fff;
 }
-
 #hall-info {
   width: 100%;
-  display: flex;
-  margin-bottom: 40px;
+  border-bottom: 2px solid #887160;
+  margin-bottom: 30px;
 }
 .hall-info-imgbox {
-  width: 600px;
-  height: 600px;
+  margin-bottom: 50px;
 }
-
 .hall-info-imgbox img {
   width: 100%;
   object-fit: cover;
 }
-.hall-info-box1 {
-  margin-left: 30px;
-}
+
 .hall-info-box1 h2 {
-  font-size: 42px;
+  font-size: 22px;
   margin-bottom: 40px;
+  font-weight: bold;
 }
 .hall-info-box1 p {
-  font-size: 20px;
+  font-size: 14px;
   padding-bottom: 30px;
+}
+
+.hall-buy-box {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+#inquiry-form {
+  height: 280px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px 1px #888;
+}
+
+#inquiry-form label {
+  font-size: 20px;
+}
+#inquiry-form label:first-child {
+  margin-right: 18px;
+}
+
+#message {
+  display: flex;
+  width: 275px;
+  margin-top: 10px;
+}
+#name {
+  width: 200px;
+  height: 25px;
+}
+#email {
+  width: 200px;
+  height: 25px;
+}
+#calling {
+  width: 275px;
+  height: 40px;
+  margin-top: 25px;
+  border: none;
+  background-color: #887160;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.hall-info-text1 {
+  display: flex;
+  color: #444;
+}
+.hall-info-text1 p:first-child {
+  margin-right: 5px;
+}
+.intro {
+  font-size: 13px;
+  color: rgb(125, 125, 125);
+}
+.hall-schedule p {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(17, 17, 17);
+  margin-bottom: 10px;
+}
+.hall-schedule p:last-child {
+  font-size: 14px;
+  font-weight: 400px;
+  color: rgb(38, 38, 38);
+}
+.hall-schedule-help {
+  padding: 14px 15px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  border-radius: 8px;
+  color: rgb(38, 38, 38);
+  margin-bottom: 25px;
+  background-color: rgb(248, 248, 248);
+}
+.hall-schedule-help ul li {
+  font-size: 13px;
+  display: flex;
+  margin: 0 auto 7px;
 }

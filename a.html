@@ -256,26 +256,46 @@
           <p>웨딩 홀 상세보기</p>
         </div>
         <div class="inner">
-          <div id="hall-info">
-            <!-- 웨딩 홀 정보 표시 -->
+          <!-- 홀 정보 표시 -->
+          <div class="hall-info-wrap">
+            <div id="hall-info">
+              <!-- 웨딩 홀 정보 표시 -->
+            </div>
+            <div class="hall-schedule">
+              <p>예식 일정 정보</p>
+              <p>예식을 희망하는 날짜 선택 후 예약센터로 신청하세요.</p>
+            </div>
+            <div class="hall-schedule-help">
+              <ul>
+                <li>
+                  신청하신 날짜에 가능한 시간별,보증인원,할인가 등을
+                  안내드립니다.
+                </li>
+                <li>
+                  방문 상담 희망 일시를 기준으로 상담스케줄을 예약 해 드립니다.
+                </li>
+              </ul>
+            </div>
+            <div class="hall-calendar"></div>
           </div>
-
-          <form id="inquiry-form">
-            <label for="name">이름:</label>
-            <input type="text" id="name" name="name" /><br /><br />
-
-            <label for="email">이메일:</label>
-            <input type="email" id="email" name="email" /><br /><br />
-
-            <label for="message">예약 내용:</label><br />
-            <textarea id="message" name="message" rows="4" cols="50"></textarea
-            ><br /><br />
-
-            <input type="submit" value="예약 하기" />
-          </form>
-
-          <!-- 문의 결과를 표시할 곳 -->
-          <div id="result"></div>
+          <div class="hall-buy-box">
+            <form id="inquiry-form">
+              <label for="name">이름 :</label>
+              <input type="text" id="name" name="name" /><br /><br />
+              <label for="email">이메일 :</label>
+              <input type="email" id="email" name="email" /><br /><br />
+              <label for="message" id="message3">예약 내용:</label><br />
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="30"
+              ></textarea>
+              <input type="submit" id="calling" value="예약 하기" />
+              <!-- 문의 결과를 표시할 곳 -->
+              <div id="result"></div>
+            </form>
+          </div>
         </div>
       </div>
       <!-- footer -->

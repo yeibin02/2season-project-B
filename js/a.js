@@ -41,8 +41,12 @@ window.addEventListener("load", function () {
         <img src="${hallInfo.imageSrc}" alt="웨딩홀 이미지">
         </div>
         <div class ="hall-info-box1">
+                
+                <div class ="hall-info-text1"><p>웨딩홀</p>
+                <p>ㅣ${hallInfo.location}</p>
+                </div>
                 <h2>${hallInfo.name}</h2>
-                <p>위치: ${hallInfo.location}</p>
+                <p class="intro">${hallInfo.introDuction}</p>
                 <p>홀 종류: ${hallInfo.hallType}</p>
                 <p>메뉴 종류: ${hallInfo.menuType}</p>
                 <p>식사 비용: ${hallInfo.mealCost}</p>
