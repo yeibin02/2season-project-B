@@ -27,7 +27,6 @@
   position: absolute;
   top: 0;
   width: 450px;
-  height: 550px;
   border-radius: 20px;
   padding: 30px;
 }
@@ -61,6 +60,9 @@
   height: 100%;
   align-items: center;
 }
+.pk-buy-select div {
+  margin: 20px 0;
+}
 .pk-buy-menu {
   padding: 20px;
   border-bottom: 1px solid rgb(221, 221, 221);
@@ -68,12 +70,106 @@
 .pk-buy-menu:last-child {
   border-bottom: none;
 }
-
+.pk-buy-menu p {
+  margin-top: 10px;
+}
+.pk-buy-font {
+  color: rgb(170, 170, 170);
+}
 .pk-menu-bar-box {
   width: 100%;
   border: 1px solid rgb(221, 221, 221);
   border-top: none;
   display: none;
+}
+.pk-buy-select > div {
+  font-size: 12px;
+  color: rgb(72, 102, 228);
+}
+.pk-buy-menu em {
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+}
+
+.pk-buy-text1 {
+  font-size: 12px;
+  color: rgb(72, 102, 228);
+}
+.pk-buy-text2 {
+  font-size: 12px;
+  color: rgb(255, 0, 0);
+}
+.pk-menu-btn {
+  overflow-y: scroll;
+  max-height: 300px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.pk-menu {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(248, 248, 248);
+  border: 1px solid rgb(235, 236, 239);
+  margin-bottom: 5px;
+}
+.pk-menu p {
+  margin-top: 10px;
+}
+.pk-menu:last-child {
+  margin-bottom: 0;
+}
+.pk-menu em {
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+}
+.pk-buy-box h5 {
+  margin: 20px 0;
+  font-weight: 600;
+}
+.pk-totle-buy {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.pk-totle-buy p:first-child {
+  margin-bottom: 5px;
+}
+.pk-totle-one {
+  display: flex;
+  justify-content: space-between;
+}
+.pk-totle-two {
+  color: rgb(255, 0, 0);
+  display: flex;
+  justify-content: space-between;
+}
+.pk-totle-main {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.pk-totle-main p {
+  font-weight: 500;
+}
+.pk-totle-main span {
+  font-size: 20px;
+}
+.pk-totle-btn {
+  width: 100%;
+}
+.pk-totle-btn button {
+  background-color: #2f2f2f;
+  float: left;
+  color: #fff;
+  font-weight: bold;
+  height: 40px;
+  width: 50%;
+  border: none;
+  cursor: pointer;
+}
+.pk-totle-btn button:first-child {
+  border-right: 1px solid #fff;
 }
 
 .kecTuB {

@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta
-      name="naver-site-verification"
-      content="ac8f45f467b14d6d0ce812c1547c0dc6ffb110b6"
-    />
+
+<head>
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -16,9 +13,8 @@
         j.async = true;
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-5L3S46BJ");
+      })(window, document, "script", "dataLayer", "GTM-NFH6CXG7");
     </script>
-    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -92,7 +88,6 @@
 
     <!-- title -->
     <title>login</title>
-
     <!-- Google Tag Manager -->
 
     <!-- End Google Tag Manager -->
@@ -127,80 +122,150 @@
 
     <!-- script 불러오기 -->
     <script src="js/header.js"></script>
-
-    <script src="js/footer.js"></script>
-
     <script src="js/login.js"></script>
 
 
     <!-- css 불러오기 -->
     <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-  </head>
-  <body>
+    <!-- kakao javascript key
+            a6c411e172cbab98ef566e8c59376f9d -->
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.4.0/kakao.min.js"
+    integrity="sha384-mXVrIX2T/Kszp6Z0aEWaA8Nm7J6/ZeWXbL8UpGRjKwWe56Srd/iyNmWMBhcItAjH" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5L3S46BJ"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- 문의하기 btn -->
-    <div class="contact-btn">
-      <a href="s_contact.html">
-        <img src="images/contact_modal.png" alt="문의하기" />
-      </a>
-      <div class="con-hover">
-        <p>문의하기</p>
-      </div>
-    </div>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFH6CXG7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div class="loginwrap">
-      <div id="container">
-        <div class="form-box">
-          <!-- <div class="ribbon"><img src="images/loginribbone.png" alt="loginribbone"></div> -->
-          <a href="index.html"><div class="loginlogo"></div></a>
-          <form id="login-form" name="login-form" action="#" method="post">
-            <input
-              id="Id"
-              class="login-form-input"
-              type="text"
-              name="your-Id"
-              placeholder="ID"
-              required
-            />
-            <input
-              id="password"
-              class="login-form-input"
-              type="password"
-              name="your-password"
-              placeholder="Password"
-              required
-            />
-            <button class="login-form-btn" type="submit">Login</button>
-            <p class="logintext">
-              <a href="#">Forgot password?</a> or
-              <a href="signup.html">Sign up</a>
-            </p>
-            <div class="snslogintext">
-              <hr />
-              <p>SNS 계정으로 로그인</p>
-              <hr />
+        <div class="loginbox">
+            <h1 class="login-logo">
+                <a href="index.html">
+                    <img src="images/logo_black.png" alt="logo">
+                </a>
+            </h1>
+            <form id="login-form">
+                <label for="username"></label>
+                <input type="text" id="username" name="username" placeholder="ID" required>
+                <br />
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="PASSWORD" required>
+                <br />
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <a href="signup.html">Sign up</a>
+
+            <div class="sns-login-title-box">
+                <hr>
+                <div class="sns-login-title">SNS 계정으로 로그인</div>
+                <hr>
             </div>
-            <div class="snslogin">
-              <a href="#"
-                ><img src="images/kakao-talk.png" alt="kakaologin"
-              /></a>
-              <a href="#"><img src="images/google.png" alt="googlelogin" /></a>
-              <a href="#"
-                ><img src="images/네이버 아이콘.png" alt="naverlogin"
-              /></a>
+
+            <div class="sns-login-box">
+                <!-- 네이버 로그인 버튼 노출 영역 -->
+                <div id="naver_id_login"></div>
+                <!-- //네이버 로그인 버튼 노출 영역 -->
+
+                <!-- kakao 로그인 버튼 노출 영역 -->
+                <a id="kakao-login-btn" href="javascript:loginWithKakao()">
+                    <img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg" width="222"
+                        alt="카카오 로그인 버튼" />
+                </a>
+                <div class="google-login">
+                    googlelogin
+                </div>
             </div>
-          </form>
+            <p id="token-result"></p>
+            <!-- //kakao 로그인 버튼 노출 영역 -->
         </div>
-      </div>
     </div>
-  </body>
+    <script type="text/javascript">
+        var naver_id_login = new naver_id_login("mdfrDMTfOnaxFATJJqAI", "http://192.168.0.140:5500/callback.html");
+        var state = naver_id_login.getUniqState();
+        naver_id_login.setButton("green", 2, 40);
+        naver_id_login.setDomain("YOUR_SERVICE_URL");
+        naver_id_login.setState(state);
+        naver_id_login.setPopup();
+        naver_id_login.init_naver_id_login();
+    </script>
+  
+  
+  <!-- kakao login -->
+  <script>
+      Kakao.init('a6c411e172cbab98ef566e8c59376f9d'); // 사용하려는 앱의 JavaScript 키 입력
+  </script>
+  
+  <script>
+      function loginWithKakao() {
+        Kakao.Auth.authorize({
+          redirectUri: 'http://192.168.0.140:5500/callback.html',
+        });
+      }
+    
+      function requestUserInfo() {
+        Kakao.API.request({
+          url: '/v2/user/me',
+        })
+          .then(function(res) {
+            alert(JSON.stringify(res));
+          })
+          .catch(function(err) {
+            alert(
+              'failed to request user information: ' + JSON.stringify(err)
+            );
+          });
+      }
+      
+      // 아래는 데모를 위한 UI 코드입니다.
+      displayToken()
+      function displayToken() {
+        var token = getCookie('authorize-access-token');
+    
+        if(token) {
+          Kakao.Auth.setAccessToken(token);
+          Kakao.Auth.getStatusInfo()
+            .then(function(res) {
+              if (res.status === 'connected') {
+                document.getElementById('token-result').innerText
+                  = 'login success, token: ' + Kakao.Auth.getAccessToken();
+              }
+            })
+            .catch(function(err) {
+              Kakao.Auth.setAccessToken(null);
+            });
+        }
+      }
+    
+      function getCookie(name) {
+        var parts = document.cookie.split(name + '=');
+        if (parts.length === 2) { return parts[1].split(';')[0]; }
+      }
+    </script>
+    <script>
+        const loginForm = document.getElementById("login-form");
+        loginForm.addEventListener("submit", function (e) {
+            e.preventDefault()
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const users = JSON.parse(localStorage.getItem("users")) || [];
+            const authenticatedUser = users.find(
+                (user) => user.username === username && user.password === password
+            );
+            if (authenticatedUser) {
+                alert("로그인이 성공하였습니다.");
+                // encodeURIComponent(username)사용자이름에 공백이나 특수 문자와 같은 문자가 포함될 수 있으니
+                window.location.href = "index.html?username=" + encodeURIComponent(username);
+            } else {
+                alert("로그인 정보가 올바르지 않습니다. 다시 시도해주세요.");
+                loginForm.reset();
+            }
+        });
+    </script>
+</body>
+
 </html>

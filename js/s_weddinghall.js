@@ -222,7 +222,7 @@ $(document).ready(function () {
       menuType: "뷔페",
       mealCost: "85,000원",
       capacity: "최대 500명",
-      id: "all seoul sall gangnam hotel bf 300 79won sc",
+      id: "all seoul sall gangnam hotel bf 300 79won sc wd1",
     },
     {
       imageSrc: "images/wd2.jpg",
@@ -1788,10 +1788,7 @@ $(document).ready(function () {
       hallContainer.append(rightContainer);
 
       // 상품 문의 버튼을 포함할 <a> 태그를 생성합니다.
-      const inquiryLink = $("<a>")
-        .addClass("inquiry-link")
-        .attr("href", "#") // 이동할 페이지의 URL을 지정합니다.
-        .text("문의 하기");
+      const inquiryLink = $("<a>").addClass("inquiry-link").text("문의 하기");
 
       // <a> 태그를 hallContainer에 추가합니다.
       hallContainer.append(inquiryLink);
@@ -1805,28 +1802,28 @@ $(document).ready(function () {
   createWeddingHallElements(weddingHallData);
   // 검색 버튼 클릭 이벤트 핸들러
 
-  // 문의하기 버튼 클릭 이벤트 핸들러
-  $(".inquiry-link").click(function () {
-    // 클릭된 버튼의 클래스 값을 가져옵니다.
-    const buttonClass = $(this).attr("class");
+  $(".weddingHallsList").on("click", ".inquiry-link", function (e) {
+    e.preventDefault(); // 기본 링크 동작 방지
 
-    // 버튼의 클래스에 따라 파일 경로를 설정합니다.
-    let filePath;
+    // 클릭된 버튼이 속한 .mix 요소를 가져옵니다.
+    const mixElement = $(this).closest(".mix");
 
-    if (buttonClass.includes("wd1")) {
-      // wd1 클래스가 포함된 경우, wd1.html 파일로 이동합니다.
-      filePath = "wd1.html"; // wd1.html 파일의 상대 경로로 설정합니다.
-    } else if (buttonClass.includes("wd2")) {
-      // wd2 클래스가 포함된 경우, wd2.html 파일로 이동합니다.
-      filePath = "wd2.html"; // wd2.html 파일의 상대 경로로 설정합니다.
-    } else if (buttonClass.includes("wd3")) {
-      // wd3 클래스가 포함된 경우, wd3.html 파일로 이동합니다.
-      filePath = "wd3.html"; // wd3.html 파일의 상대 경로로 설정합니다.
-    }
+    // .mix 요소에서 클래스 값을 추출합니다.
+    const mixClass = mixElement.attr("class");
 
-    // 파일로 이동합니다.
-    if (filePath) {
+    // 클래스에서 wd1부터 wd150까지의 숫자를 추출합니다.
+    const match = mixClass.match(/wd(\d+)/);
+
+    if (match) {
+      // 추출된 숫자를 기반으로 HTML 파일 경로를 생성합니다.
+      const wdNumber = match[1];
+      const filePath = `wd${wdNumber}.html`;
+
+      // 생성된 HTML 파일로 이동합니다.
       window.location.href = filePath;
+    } else {
+      // 클래스에서 숫자를 찾지 못한 경우에 대한 예외 처리를 할 수 있습니다.
+      console.log("클래스에서 숫자를 찾을 수 없습니다.");
     }
   });
 });

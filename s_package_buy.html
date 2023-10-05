@@ -144,12 +144,6 @@
     />
     <!-- script 불러오기 -->
     <script src="js/header.js"></script>
-    <script src="js/visual.js"></script>
-    <script src="js/timesale.js"></script>
-    <script src="js/package.js"></script>
-    <script src="js/package-review.js"></script>
-    <script src="js/wedding-hall.js"></script>
-    <script src="js/gallery.js"></script>
     <script src="js/s_package_buy.js"></script>
     <!-- css 불러오기 -->
     <link rel="stylesheet" href="css/style.css" />
@@ -272,7 +266,7 @@
                   <div>
                     <span>최대 혜택 적용 시</span>
                     <div class="price_text has_coupon">
-                      <p>2,540,000원<span class="price_discount">52%</span></p>
+                      <p id="pk-price-totle">2,540,000원<span class="price_discount">52%</span></p>
                     </div>
                     <div class="price_detail_text">
                       개별 구매 시 5,295,000원
@@ -621,6 +615,70 @@
                         <p>[본식]VDSLR 다큐</p>
                       </li>
                     </ul>
+
+                  </div>
+                  <h5>패키지 구성상품</h5>
+                  <div class="pk-menu-btn">
+                    
+                    <section class="pk-menu">
+                      <em>사진ㅣ어반스튜디오</em>
+                     <p>[토탈촬영] 위뜨_화이트 (드레스,턱시도,헤어메이크업 포함)</p>
+                     <br>
+                     <span class="pk-buy-text1">상품의 필수 옵션을 선택해주세요.<br>
+                      (추가 할인이 가능한 옵션이 있어요)
+                    </span>
+                    </section>
+                    <section class="pk-menu">
+                      <em>드레스ㅣ레이첼웨딩</em>
+                      <p>[본식] 드레스 1벌</p>
+                      <br>
+                      <em>수량 변경 불가</em>
+                      
+                      <p class="pk-buy-text2">
+                        선택 가능한 옵션이 없습니다.
+                      </p>
+                    </section>
+                    <section class="pk-menu">
+                      <em>헤어/메이크업ㅣ엘펠라뷰티살롱</em>
+                      <p>[본식] 신부신랑 헤어메이크업(실장)</p>
+                      <br>
+                      <span class="pk-buy-text1">
+                        상품의 필수 옵션을 선택해주세요.
+                      </span>
+                    </section>
+                    <section class="pk-menu">
+                      <em>사진ㅣ비아쥬스냅</em>
+                      <p>[본식스냅] 원판+스냅 40P 1인촬영</p>
+                      <br>
+                      <em>수량 변경 불가</em>
+                      <p class="pk-buy-text2">선택 가능한 옵션이 없습니다.</p>
+                    </section>
+                    <section class="pk-menu">
+                      <em>영상앨범ㅣ오렌지TV</em>
+                      <p>[본식] VDSLR 다큐</p>
+                      <br>
+                      <span class="pk-buy-text1">
+                        상품의 필수 옵션을 선택해주세요.
+                      </span>
+                    </section>
+                  </div>
+                  <div class="pk-totle-buy">
+                    <div class="pk-totle-one">
+                    <p>개별 조합 금액</p>
+                    <span class="totle-price1">2,940,000원</span>
+                  </div>
+                  <div class="pk-totle-two">
+                    <p>패키지 추가 할인</p>
+                    <span class="totle-price2">- 300,000 원</span>
+                  </div>
+                  <div class="pk-totle-main">
+                    <p>총금액</p>
+                    <span class="totle-price-main">2,640,000원</span>
+                  </div>
+                  </div>
+                  <div class="pk-totle-btn">
+                    <button>상품 담기</button>
+                    <button class="pk-totle-buy-btn" id="buyButton">바로 결제</button>
                   </div>
                 </div>
               </div>
