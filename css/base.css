@@ -110,7 +110,7 @@ input:-webkit-autofill {
 }
 @media screen and (max-width: 480px) {
   .contact-btn img {
-    width: 80px;
+    width: 90px;
   }
 }
 
@@ -134,4 +134,14 @@ input:-webkit-autofill {
 }
 .top-button:hover {
   background-color: #887160;
+}
+@media screen and (max-width: 768px) {
+  .top-button {
+    right: 36px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .top-button {
+    right: 29.5px;
+  }
 }
