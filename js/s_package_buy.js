@@ -14,13 +14,19 @@ $(document).ready(function () {
     // 메뉴바의 표시 상태를 토글합니다.
     menuVisible = !menuVisible;
 
-    // 표시 상태에 따라 메뉴바를 보이거나 숨깁니다.
+    // 버튼의 왼쪽 아래와 오른쪽 아래 모서리를 직각으로 만듭니다.
     if (menuVisible) {
-      $(".pk-menu-bar").slideDown(); // 메뉴바를 보이게 합니다.
       $(this).css("border-radius", "10px 10px 0 0");
+      $(".pk-menu-bar-box").css("display", "block"); // 메뉴바를 보이게 합니다.
     } else {
       $(this).css("border-radius", "10px");
-      $(".pk-menu-bar").slideUp(); // 메뉴바를 숨깁니다.
+      $(".pk-menu-bar-box").css("display", "none"); // 메뉴바를 숨깁니다.
     }
   });
+
+  var totleBuy = document.querySelector(".pk-totle-buy-btn");
+
+  totleBuy.addEventListener("click", function(){
+    
+  })
 });
