@@ -3,9 +3,9 @@
 /* 서브 패키지 */
 .package-visual .inner {
   max-width: 1920px;
-  /* background: url("../images/pak_sub_back.png") no-repeat;
+  background: url("../images/backbackback.png") no-repeat;
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
 }
 .package_box {
   display: flex;
@@ -13,10 +13,11 @@
   justify-content: center;
   align-items: center;
   background: url("../images/vs_16.jpg") no-repeat;
-  background-position: 50% 30%;
+  background-position: 50% 25%;
   background-size: cover;
   width: 100%;
   height: 50vh;
+  margin-top: 140px;
 }
 .package_box::before {
   z-index: 1;
@@ -35,9 +36,10 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  top: 50%;
+  top: 40%;
   position: absolute;
   text-align: center;
+  user-select: none;
 }
 .package_box_text h3 {
   font-size: 58px;
@@ -54,22 +56,23 @@
 .package_sub_title {
   max-width: 1440px;
   position: relative;
-  /* background: aqua; */
-  padding-top: 5%;
+  padding-top: 100px;
   width: 100%;
   height: 100px;
   margin: 0 auto;
-  font-size: 38px;
-  font-weight: 500;
+  font-size: 48px;
   line-height: 50px;
+  font-weight: 500;
   font-family: "Noto Sans KR", sans-serif;
   color: #282828;
+  user-select: none;
+}
+.package_sub_title_none {
+  display: none;
 }
 .package_ssomnail {
-  margin-top: -30px;
   max-width: 1440px;
-  padding-top: 5%;
-  /* background-color: aqua; */
+  padding-top: 70px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -90,22 +93,23 @@
   justify-content: space-between;
   align-items: center;
   padding: 5%;
+  margin-top: -15%;
 }
 #pack_ssome {
   width: 700px;
-  height: 400px;
-  /* background-color: aquamarine; */
+  height: 700px;
   position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .package_ssom_01_text {
   position: relative;
-  width: 290px;
+  width: 470px;
   height: 390px;
   font-weight: 500;
-  /* background-color: aqua; */
   display: block;
-  padding: 20px;
   padding-top: 30px;
   font-size: 16px;
   line-height: 22px;
@@ -135,7 +139,7 @@
   font-weight: 600;
 }
 .package_ssom_01_text button {
-  width: 140px;
+  width: 130px;
   height: 40px;
   background: none;
   border: 2px solid #887160;
@@ -147,45 +151,154 @@
   color: #fff;
   cursor: pointer;
 }
-.ps_first_button {
-  margin-top: 18px;
+.zzick_button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.zzick_button a {
+  color: #887160;
+}
+#ps_furst_hover:hover a {
+  color: #fff;
 }
 .ps_second_button {
-  margin-top: 5px;
+  margin-left: 5px;
 }
 .package_ssom_01_img {
-  background: url("../images/real_back_16.jpg") no-repeat;
+  background: url("../images/pk_ssome_01.png") no-repeat;
   background-size: cover;
   background-position: center;
-  width: 370px;
+  width: 470px;
   height: 390px;
   position: relative;
   display: block;
+  transition: all 0.5s;
+}
+.package_ssom_01_img:hover {
+  background: url("../images/pk_ssome_02.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
 }
 .package_ssom_02_img {
-  background: url("../images/sutdio666.png") no-repeat;
+  background: url("../images/pk_ssome_06.png") no-repeat;
   background-size: cover;
   background-position: center;
-  width: 370px;
+  width: 470px;
   height: 390px;
   position: relative;
   display: block;
+  transition: all 0.5s;
+}
+.package_ssom_02_img:hover {
+  background: url("../images/pk_ssome_03.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
 }
 .package_ssom_03_img {
-  background: url("../images/real_back_03.jpg") no-repeat;
+  background: url("../images/pk_ssome_07.png") no-repeat;
   background-size: cover;
   background-position: center;
-  width: 370px;
+  width: 470px;
   height: 390px;
   position: relative;
   display: block;
+  transition: all 0.5s;
+}
+.package_ssom_03_img:hover {
+  background: url("../images/pk_ssome_04.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
 }
 .package_ssom_04_img {
-  background: url("../images/studio_some05.jpg") no-repeat;
+  background: url("../images/pk_ssome_05.png") no-repeat;
   background-size: cover;
   background-position: center;
-  width: 370px;
+  width: 470px;
   height: 390px;
   position: relative;
   display: block;
+  transition: all 0.5s;
+}
+.package_ssom_04_img:hover {
+  background: url("../images/pk_ssome_08.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+}
+/* -------------반응형--------------- */
+@media all and (max-width: 1024px) {
+  .package_sub_title {
+    font-size: 42px;
+    left: 10%;
+  }
+  .package_ssomnail {
+    margin-top: 4%;
+  }
+  .package_ssomnail_first {
+    flex-direction: column;
+  }
+  .package_ssomnail_second {
+    flex-direction: column;
+    margin-top: -90px;
+  }
+  .package_ssom_02_img {
+    margin-top: -10%;
+  }
+  .package_ssom_03_img {
+    margin-top: -20%;
+  }
+  .package_ssom_04_img {
+    margin-top: -30%;
+  }
+}
+@media all and (max-width: 480px) {
+  #pack_ssome {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .package_sub_title {
+    display: none;
+  }
+  .package_sub_title_none {
+    padding-top: 20%;
+    padding-bottom: 5%;
+    display: block;
+    font-size: 42px;
+    line-height: 26px;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #887160;
+    left: 0;
+  }
+  .package_ssomnail {
+    margin-top: -40px;
+  }
+  .package_ssom_01_img {
+    width: 310px;
+  }
+  .package_ssom_02_img {
+    width: 310px;
+  }
+  .package_ssom_03_img {
+    width: 310px;
+  }
+  .package_ssom_04_img {
+    width: 310px;
+  }
+  .package_ssom_02 {
+    margin-top: -80px;
+  }
+  .package_ssom_01_text {
+    width: 310px;
+  }
 }
