@@ -185,7 +185,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
     <script type="text/javascript">
-        var naver_id_login = new naver_id_login("mdfrDMTfOnaxFATJJqAI", "http://192.168.0.140:5500/callback.html");
+        var naver_id_login = new naver_id_login("mdfrDMTfOnaxFATJJqAI", "https://weddingforyoub.vercel.app/callback.html");
         var state = naver_id_login.getUniqState();
         naver_id_login.setButton("green", 2, 40);
         naver_id_login.setDomain("YOUR_SERVICE_URL");
@@ -203,7 +203,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script>
       function loginWithKakao() {
         Kakao.Auth.authorize({
-          redirectUri: 'http://192.168.0.140:5500/callback.html',
+          redirectUri: 'https://weddingforyoub.vercel.app/callback.html',
         });
       }
     
@@ -259,7 +259,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             if (authenticatedUser) {
                 alert("로그인이 성공하였습니다.");
                 // encodeURIComponent(username)사용자이름에 공백이나 특수 문자와 같은 문자가 포함될 수 있으니
-                window.location.href = "index.html?username=" + encodeURIComponent(username);
+                window.location.href = "callback.html?username=" + encodeURIComponent(username);
             } else {
                 alert("로그인 정보가 올바르지 않습니다. 다시 시도해주세요.");
                 loginForm.reset();
