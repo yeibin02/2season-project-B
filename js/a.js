@@ -37,14 +37,17 @@ window.addEventListener("load", function () {
         // 웨딩 홀 정보를 페이지에 표시합니다.
         const hallInfoElement = document.getElementById("hall-info");
         hallInfoElement.innerHTML = `
+        <div class = "hall-info-imgbox">
+        <img src="${hallInfo.imageSrc}" alt="웨딩홀 이미지">
+        </div>
+        <div class ="hall-info-box1">
                 <h2>${hallInfo.name}</h2>
-                <img src="${hallInfo.imageSrc}" alt="웨딩홀 이미지">
                 <p>위치: ${hallInfo.location}</p>
                 <p>홀 종류: ${hallInfo.hallType}</p>
                 <p>메뉴 종류: ${hallInfo.menuType}</p>
                 <p>식사 비용: ${hallInfo.mealCost}</p>
                 <p>보증 인원: ${hallInfo.capacity}</p>
-                
+                </div>
             `;
       } else {
         // hallId에 해당하는 웨딩 홀 정보를 찾지 못한 경우 처리
