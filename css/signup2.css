@@ -1,85 +1,58 @@
 /* signup2 */
-#signup2-form{
-  margin-top: -10px;
+.signupwrap{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.formlist > div{
+.signupbox{
+  width: 550px;
+  border: 2px solid #baa693;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px;
+}
+.signup-form > div{
   height: 50px;
-  width: 35vw;
-  /* background-color: antiquewhite; */
+  width: 100%;
   border: 1px solid #dfdfdf;
+  display: flex;
+  align-items: center;
 }
-.formlist div.focus{
-  border: 1px solid #887160;
+.signup-form > div:first-child{
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
-.formlist div.error{
-  border: 1px solid #ff0000;
+.verification-code-box{
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
-.formlist div.success{
-  border: 1px solid #dfdfdf;
-}
-.formlist input{
+.signup-form input{
   width: 85%;
   border: none;
   font-size: 16px;
   color: #887160;
+  outline: none;
 }
-.formlist-1{
-  margin: 14px 0;
-}
-.formlist i{
-  font-size: 16px;
-}
-.formlist .id-box {
-  display: flex;
-  align-items: center;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  /* background-color: red; */
-}
-.formlist .id-box i{
-  width: 50px;
+.signup-form i{
+  width: 55px;
   text-align: center;
 }
-.formlist .password-box{
-  display: flex;
-  align-items: center;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+.signup-form div.focus{
+  border: 1px solid #887160;
 }
-.formlist .password-box i{
-  width: 50px;
-  text-align: center;
+.signup-form div.error{
+  border: 1px solid #ff0000;
 }
-/* .formlist .email-box{
-  display: flex;
-  align-items: center;
+.signup-form div.success{
+  border: 1px solid #dfdfdf;
 }
-.formlist .email-box i{
-  width: 50px;
-  text-align: center;
-} */
-.formlist .name-box{
-  display: flex;
-  align-items: center;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-}
-.formlist .name-box i{
-  width: 50px;
-  text-align: center;
-}
-.formlist .birthday-box{
-  display: flex;
-  align-items: center;
-}
-.formlist .birthday-box i{
-  width: 50px;
-  text-align: center;
-}
+
 .gender-box{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .gender-box .gender-check-box{
   width: 32%;
@@ -87,12 +60,13 @@
   text-align: center;
   line-height: 40px;
   border: 1px solid #dfdfdf;
+  cursor: pointer;
 }
-.gender-box .gender-check-box:nth-child(1){
+.gender-box .gender-check-box:first-child{
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-.gender-box .gender-check-box:nth-child(3){
+.gender-box .gender-check-box:last-child{
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
@@ -102,97 +76,45 @@
 .gender-box .gender-check-box label{
   cursor: pointer;
 }
-/* .gender-box .genderlist{
-  height: 50px;
+.phoneNum-box{
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.verification-code-box{
   display: flex;
   justify-content: center;
-  align-items: center;
-  display: flex;
+  gap: 10px;
 }
-.gender-box .genderlist .genderlistitem{
-  width: 33%;
-  text-align: center;
-  margin-top: -15px;
-}
-.gender-box .genderlist .genderlistitem input{
-  width: 0;
-}
-.gender-box .genderlist .genderlistitem label{
-  display: block;
-  cursor: pointer;
-  width: 100%;
-  padding: 18px 0;
-} */
-.formlist .phoneNum-box{
-  display: flex;
-  align-items: center;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-}
-.formlist .phoneNum-box i{
-  width: 50px;
-  text-align: center;
-}
-.formlist .verification-code-box{
-  display: flex;
-  /* justify-content: center; */
-  padding-left: 30px;
-  align-items: center;
-  width: 100%;
-}
-.formlist .verification-code-box input{
+#veriInput{
   width: 70%;
 }
-.formlist .timer #timeLimit{
-  width: 80px;
-  font-size: 17px;
-  text-align: center;
+
+.submit-button{
+  border: none !important;
+  display: flex;
+  flex-direction: column;
 }
-.formlist #completion{
-  width: 80px;
-  height: 30px;
-}
-#submit{
-  position: absolute;
-  bottom: 0;
-  width: 35vw;
+.submit-button button{
+  /* bottom: 0; */
+  width: 100%;
   height: 52px;
   line-height: 52px;
   border: none;
-  margin-bottom: 50px;
   border-radius: 6px;
   font-size: 18px;
   background-color: #ccc;
   color: #ffffff;
   font-family: arial !important;
-  /* display: none; */
 }
-#submit.active{
-  background-color: #baa693;
+.colorrequest,
+.signup-submit{
+  background-color: #baa693 !important;
   cursor: pointer;
 }
-#submit.active:hover{
-  background-color: #aa9786;
-  color: #ffffff;
-}
-#lastSubmit{
-  position: absolute;
-  bottom: 0;
-  width: 35vw;
-  height: 52px;
-  line-height: 52px;
-  border: none;
-  margin-bottom: 50px;
-  border-radius: 6px;
-  font-size: 18px;
-  background-color: #baa693;
-  color: #ffffff;
-  font-family: arial !important;
-  display: none;
-  cursor: pointer;
-}
-#lastSubmit:hover{
-  background-color: #9c8b7b;
+.signup-info{
+  border: none !important;
+  height: 25px !important;
+  text-align: left;
 }
 @media screen and (max-width: 480px) {
     
