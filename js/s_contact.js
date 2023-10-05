@@ -1,17 +1,23 @@
 $(document).ready(function () {
   // 숫자만 입력
-  $("html").on("keydown", ".tel, .numberOnly", function (e) {
-    console.log(e.keyCode);
+  $("html").on("keydown", "#tel, .numberOnly", function (e) {
+    // 숫자 입력 시 메시지를 부드럽게 사라지게 함
+    $("#message").fadeOut();
+
     if (
       (e.keyCode >= 48 && e.keyCode <= 57) ||
       (e.keyCode >= 96 && e.keyCode <= 105)
     ) {
-      return;
+      // 숫자 입력 시 메시지를 지움
+      $("#message").text("");
     } else if (e.keyCode == 8) {
       return;
     } else {
       e.stopPropagation();
       e.preventDefault();
+
+      // 숫자 이외의 입력 시 메시지를 부드럽게 나타나게 함
+      $("#message").text("숫자만 입력해주세요!").fadeIn();
     }
   });
 
@@ -65,7 +71,7 @@ $(document).ready(function () {
       return false;
     }
     if (!agreement) {
-      alert("약관에 동의하셔야 회원가입을 하실 수 있습니다.");
+      alert("약관에 동의하셔야 문의하실 수 있습니다.");
       return false;
     }
 

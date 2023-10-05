@@ -28,30 +28,33 @@
 }
 .m-pk-text-wrap p {
   font-family: "Noto Sans KR";
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 30px;
   color: #474747;
   margin-bottom: 50px;
 }
 .m-pk-text-wrap p span {
   font-family: "Noto Serif KR", "serif";
 }
-.pk-buy-btn {
+.m-pk-more-btn {
   font-family: "Noto Sans KR";
-  font-size: 14px;
-  color: #474747;
+  font-size: 26px;
+  color: #887160;
   text-transform: uppercase;
   background: transparent;
-  padding: 6px 20px;
-  border: 1px solid #474747;
+  width: 170px;
+  height: 60px;
+  border: 2px solid #887160;
   border-radius: 50px;
   margin-bottom: 50px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  background: none;
+  padding-bottom: 5px;
 }
-.pk-buy-btn:hover {
+.m-pk-more-btn:hover {
   color: #fff;
-  border: 1px solid #887160;
+  border: 2px solid #887160;
   background-color: #887160;
   transition: 0.2s ease-in-out;
 }
@@ -61,12 +64,6 @@
 }
 .m-pk-img-wrap li img {
   width: 100%;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-.m-pk-img-wrap li:hover img {
-  scale: 1.07;
-  transition: 0.2s ease-in-out;
 }
 .m-pk-img-wrap > li {
   width: 300px;
@@ -92,7 +89,7 @@
   color: #474747;
 }
 .m-pk-sale-wrap {
-  border: 1px solid #474747;
+  border: 2px solid #887160;
   width: 600px;
   padding: 40px 0;
   margin: 0 auto;
@@ -116,13 +113,14 @@
   margin: 0;
   padding: 10px;
 }
-.m-pk-timesale .pri {
-  color: #8c8c8c;
-  text-decoration: line-through;
+.m-pk-timesale img {
+  width: 27%;
 }
+
 .m-pk-timesale .sal {
   color: #e3545e;
-  font-size: 21px;
+  font-size: 22px;
+  font-weight: 500;
 }
 /* 반응형 */
 @media all and (max-width: 1495px) {
@@ -152,6 +150,12 @@
   .pk-li-wrap {
     border-radius: 20px;
   }
+  .m-pk-more-btn {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    padding-bottom: 2px;
+  }
 }
 @media all and (max-width: 768px) {
   .m-pk-text-wrap h2 {
@@ -175,6 +179,9 @@
   }
   .m-pk-img-wrapper .m-pk-img-wrap li p {
     font-size: 17px;
+  }
+  .m-pk-timesale img {
+    width: 30%;
   }
 }
 @media all and (max-width: 540px) {
@@ -235,6 +242,9 @@
   }
   .m-pk-timesale .sal {
     font-size: 16px;
+  }
+  .m-pk-timesale img {
+    width: 40%;
   }
 }
 @media all and (max-width: 320px) {

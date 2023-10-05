@@ -127,13 +127,28 @@
 
     <!-- script 불러오기 -->
     <script src="js/header.js"></script>
-
-    <script src="js/footer.js"></script>
-
     <script src="js/s_package.js"></script>
+    <script src="js/s_contact.js"></script>
 
     <!-- css 불러오기 -->
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .header{
+        background-color: #fff;
+      }
+      .header nav ul li a{
+        color: #191919;
+      }
+      .header nav ul li a:hover{
+        color: #887160;
+      }
+      .header nav ul li:nth-child(5) a{
+        color: #887160;
+      }
+      .header .s-menu ul li a{
+        color: #191919;
+      }
+    </style>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -146,21 +161,20 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="wrap">
+    <div class="wrap" id="wrap">
       <!-- header -->
       <header class="header clearfix" id="header">
         <div class="inner">
           <div class="header-logo">
             <a href="index.html">
-              <img src="images/logo_white.png" alt="header-logo" />
+              <img src="images/logo_black.png" alt="header-logo">
             </a>
           </div>
           <nav>
             <ul>
               <li>
-                <a href="s_package.html" class="package-menu"
-                  >package
-                  <!-- <div class="balloon">click</div> -->
+                <a href="s_package.html" class="package-menu">package
+                <!-- <div class="balloon">click</div> -->
                 </a>
               </li>
               <li>
@@ -197,10 +211,11 @@
           <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
           <li><a href="s_sdm.html">S.D.M</a></li>
           <li><a href="s_notice.html">Q&A</a></li>
-
-          <li><a href="s_review.html">REVIEW</a></li>
+          <li><a href="s_contact.html">contact</a></li>
         </ul>
       </div>
+      <!-- top button -->
+      <a href="#wrap"><div class="top-button">top</div></a>
       <!-- 문의하기 btn -->
       <div class="contact-btn">
         <a href="s_contact.html">

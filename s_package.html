@@ -127,7 +127,6 @@
 
     <!-- script 불러오기 -->
     <script src="js/header.js"></script>
-    <script src="js/footer.js"></script>
     <script src="js/s_package.js"></script>
 
     <!-- css 불러오기 -->
@@ -142,14 +141,8 @@
       .header nav ul li a:hover {
         color: #887160;
       }
-      .header nav ul li:first-child a {
-        border-color: #887160;
-        background-color: #887160;
-        color: #fff;
-      }
-      .header nav ul li:first-child a:hover {
-        border-color: #887160;
-        background-color: #887160;
+      .header nav ul li:nth-child(1) a {
+        color: #887160;
       }
       .header .s-menu ul li a {
         color: #191919;
@@ -167,7 +160,9 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="wrap">
+    <div class="wrap" id="wrap">
+      <!-- top button -->
+      <a href="#wrap"><div class="top-button">top</div></a>
       <!-- header -->
       <header class="header clearfix" id="header">
         <div class="inner">
@@ -194,7 +189,7 @@
                 <a href="s_notice.html">q&a</a>
               </li>
               <li>
-                <a href="#">review</a>
+                <a href="s_contact.html">CONTACT</a>
               </li>
             </ul>
           </nav>
@@ -218,7 +213,7 @@
           <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
           <li><a href="s_sdm.html">S.D.M</a></li>
           <li><a href="s_notice.html">Q&A</a></li>
-          <li><a href="s_review.html">REVIEW</a></li>
+          <li><a href="s_contact.html">contact</a></li>
         </ul>
       </div>
       <!-- 문의하기 btn -->

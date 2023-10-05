@@ -127,14 +127,12 @@
 
     <!-- script 불러오기 -->
     <script src="js/header.js"></script>
-
-    <script src="js/footer.js"></script>
-
     <script src="js/s_sdm.js"></script>
 
     <!-- css 불러오기 -->
     <link rel="stylesheet" href="css/style.css" />
     <style>
+
       .header{
         background-color: #fff;
       }
@@ -170,7 +168,9 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="wrap">
+    <div class="wrap" id="wrap">
+      <!-- top button -->
+      <a href="#wrap"><div class="top-button">top</div></a>
       <!-- header -->
       <header class="header clearfix" id="header">
         <div class="inner">
@@ -197,7 +197,7 @@
                 <a href="s_notice.html">q&a</a>
               </li>
               <li>
-                <a href="#">review</a>
+                <a href="s_contact.html">contact</a>
               </li>
             </ul>
           </nav>
@@ -217,10 +217,11 @@
       <div class="hamburger-menu">
         <ul class="hamburger-menu-contents">
           <li><a href="s_package.html">PACKAGE</a></li>
+          <li><a href="s_about.html">ABOUT</a></li>
           <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
           <li><a href="s_sdm.html">S.D.M</a></li>
           <li><a href="s_notice.html">Q&A</a></li>
-          <li><a href="s_review.html">REVIEW</a></li>
+          <li><a href="s_contact.html">contact</a></li>
         </ul>
       </div>
       <!-- 문의하기 btn -->
@@ -232,6 +233,7 @@
           <p>문의하기</p>
         </div>
       </div>
+      <div class="modal-overlay"></div>
       <!-- sdm -->
       <div class="s_sdm clearfix">
         <div class="inner">
