@@ -67,17 +67,25 @@
   padding: 20px;
   border-bottom: 1px solid rgb(221, 221, 221);
 }
+<<<<<<< HEAD
 .pk-buy-menu p {
   margin-top: 10px;
 }
 .pk-buy-font {
   color: rgb(170, 170, 170);
 }
+=======
+.pk-buy-menu:last-child{
+ border-bottom: none;
+}
+
+>>>>>>> 5f7a989e3dba7d5c2b1e967d9712462893e2c159
 .pk-menu-bar-box {
   width: 100%;
   border: 1px solid rgb(221, 221, 221);
   border-top: none;
   display: none;
+<<<<<<< HEAD
 }
 .pk-buy-select > div {
   font-size: 12px;
@@ -167,7 +175,10 @@
 }
 .pk-totle-btn button:first-child {
   border-right: 1px solid #fff;
+=======
+>>>>>>> 5f7a989e3dba7d5c2b1e967d9712462893e2c159
 }
+
 .kecTuB {
   width: 100%;
   height: 10px;

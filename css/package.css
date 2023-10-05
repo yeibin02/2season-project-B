@@ -36,7 +36,7 @@
 .m-pk-text-wrap p span {
   font-family: "Noto Serif KR", "serif";
 }
-.pk-buy-btn {
+.m-pk-more-btn {
   font-family: "Noto Sans KR";
   font-size: 26px;
   color: #887160;
@@ -52,7 +52,7 @@
   background: none;
   padding-bottom: 5px;
 }
-.pk-buy-btn:hover {
+.m-pk-more-btn:hover {
   color: #fff;
   border: 2px solid #887160;
   background-color: #887160;
@@ -150,6 +150,12 @@
   .pk-li-wrap {
     border-radius: 20px;
   }
+  .m-pk-more-btn {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    padding-bottom: 2px;
+  }
 }
 @media all and (max-width: 768px) {
   .m-pk-text-wrap h2 {
@@ -173,6 +179,9 @@
   }
   .m-pk-img-wrapper .m-pk-img-wrap li p {
     font-size: 17px;
+  }
+  .m-pk-timesale img {
+    width: 30%;
   }
 }
 @media all and (max-width: 540px) {
@@ -233,6 +242,9 @@
   }
   .m-pk-timesale .sal {
     font-size: 16px;
+  }
+  .m-pk-timesale img {
+    width: 40%;
   }
 }
 @media all and (max-width: 320px) {

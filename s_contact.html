@@ -127,9 +127,6 @@
 
     <!-- script 불러오기 -->
     <script src="js/header.js"></script>
-
-    <script src="js/footer.js"></script>
-
     <script src="js/s_package.js"></script>
     <script src="js/s_contact.js"></script>
 
@@ -164,7 +161,9 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="wrap">
+    <div class="wrap" id="wrap">
+      <!-- top button -->
+      <a href="#wrap"><div class="top-button">top</div></a>
       <header class="header clearfix" id="header">
         <div class="inner">
           <div class="header-logo">
@@ -262,6 +261,7 @@
                     placeholder="연락처를 입력해주세요"
                     required
                   />
+                  <div id="message"></div>
                 </div>
               </div>
               <div class="contact-form-item">
