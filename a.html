@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <link rel="canonical" href="http://www.mysite.com/article/article1.html" />
     <meta
       name="naver-site-verification"
-      content="ac8f45f467b14d6d0ce812c1547c0dc6ffb110b6"
+      content="e394674f760eb584c248e383e2623c424f9d655a"
     />
     <!-- Google Tag Manager -->
     <script>
@@ -16,7 +17,7 @@
         j.async = true;
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-5L3S46BJ");
+      })(window, document, "script", "dataLayer", "GTM-NFH6CXG7");
     </script>
     <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
@@ -52,7 +53,6 @@
       name="twitter:description"
       content="웨딩포유은 가장 최선의 방법으로 고객님에게 결과를 가져다 드립니다."
     />
-
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/logo_black.png" />
     <link
@@ -104,13 +104,9 @@
 
     <!-- css 초기화 -->
     <link rel="stylesheet" href="css/reset.css" />
-    <!-- jquery 적용 -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
     <!-- Swiper Js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!-- mixitup Js -->
-
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <!-- Link Swiper's css -->
     <link
       rel="stylesheet"
@@ -125,10 +121,30 @@
     <!-- CSS3 적용 -->
     <!-- <script src="js/prefixfree.min.js"></script> -->
 
+    <!-- jquery 적용 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- slide -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
     <!-- script 불러오기 -->
     <script src="js/header.js"></script>
-
-
+    <script src="js/a.js"></script>
     <!-- css 불러오기 -->
     <link rel="stylesheet" href="css/style.css" />
     <style>
@@ -141,35 +157,36 @@
       .header nav ul li a:hover {
         color: #887160;
       }
-      .header nav ul li:first-child a {
-        border-color: #191919;
-      }
-      .header nav ul li:first-child a:hover {
-        border-color: #887160;
-        background-color: #887160;
-      }
-      .header nav ul li:nth-child(2) a {
+      .header nav ul li:nth-child(1) a {
         color: #887160;
       }
       .header .s-menu ul li a {
         color: #191919;
       }
     </style>
+
+    <!-- Flickity 스타일시트 가져오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
+    />
+    <!-- Flickity 및 classie 스크립트 가져오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5L3S46BJ"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NFH6CXG7"
         height="0"
         width="0"
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <div class="wrap" id="wrap">
-      <!-- top button -->
-      <a href="#wrap"><div class="top-button">top</div></a>
       <!-- header -->
       <header class="header clearfix" id="header">
         <div class="inner">
@@ -196,7 +213,7 @@
                 <a href="s_notice.html">q&a</a>
               </li>
               <li>
-                <a href="#">review</a>
+                <a href="s_contact.html">contact</a>
               </li>
             </ul>
           </nav>
@@ -232,6 +249,30 @@
           <p>문의하기</p>
         </div>
       </div>
+      <div class="hall-list-wrap">
+        <h1>웨딩 홀 상품 문의</h1>
+
+        <div id="hall-info">
+          <!-- 웨딩 홀 정보 표시 -->
+        </div>
+
+        <form id="inquiry-form">
+          <label for="name">이름:</label>
+          <input type="text" id="name" name="name" /><br /><br />
+
+          <label for="email">이메일:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+
+          <label for="message">문의 내용:</label><br />
+          <textarea id="message" name="message" rows="4" cols="50"></textarea
+          ><br /><br />
+
+          <input type="submit" value="문의 제출" />
+        </form>
+
+        <!-- 문의 결과를 표시할 곳 -->
+        <div id="result"></div>
+      </div>
       <!-- footer -->
       <footer class="footer clearfix">
         <div class="inner">
@@ -253,26 +294,52 @@
               </ul>
             </div>
             <div class="footer2 footer-middle-content">
+              <a href="s_package.html"><h3>wedding hall</h3></a>
+              <ul>
+                <a href="#"><li>일반 홀</li></a>
+                <a href="#"><li>컨벤션 홀</li></a>
+                <a href="#"><li>야외/하우스 홀</li></a>
+                <a href="#"><li>채플 홀</li></a>
+                <a href="#"><li>호텔 홀</li></a>
+              </ul>
+            </div>
+            <div class="footer3 footer-middle-content">
               <a href="s_sdm.html"><h3>sdm</h3></a>
               <ul>
-                <a href="#"><li>스튜디오</li></a>
+                <a href="s_sdm.html#sdm_studio"><li>스튜디오</li></a>
                 <a href="#"><li>드레스</li></a>
                 <a href="#"><li>메이크업</li></a>
               </ul>
             </div>
-            <div class="footer3 footer-middle-content">
+            <div class="footer4 footer-middle-content">
               <a href="s_notice.html"><h3>q&a</h3></a>
               <ul>
                 <a href="#"><li>자주 묻는 질문</li></a>
                 <a href="#"><li>질문하기</li></a>
               </ul>
             </div>
-            <div class="footer4 footer-middle-content">
+            <div class="footer5 footer-middle-content">
               <a href="s_review.html"><h3>review</h3></a>
               <ul>
                 <a href="#"><li>패키지 리뷰</li></a>
                 <a href="#"><li>고객 리뷰</li></a>
               </ul>
+            </div>
+            <div class="footer-middle-mobile-content">
+              <a href="#"><h4>package</h4></a>
+              <a href="#"><h4>wedding hall</h4></a>
+              <a href="#"><h4>sdm</h4></a>
+              <a href="#"><h4>q&a</h4></a>
+              <a href="#"><h4>review</h4></a>
+            </div>
+            <div class="footer-middle-mobile-content-contact">
+              <a href="#">
+                <div class="footer-contact">
+                  <p>contact</p>
+                  <img src="images/enter_887160.png" alt="contact" />
+                  <img src="images/enter_black.png" alt="contact" />
+                </div>
+              </a>
             </div>
           </div>
           <div class="footer-bottom">
