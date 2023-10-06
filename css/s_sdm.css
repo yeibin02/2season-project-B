@@ -1306,12 +1306,13 @@
   }
   .sdmmain_04 {
     left: 0;
+    margin-top: -100px;
     width: 240px;
   }
   .sdmmain_07 {
     right: 0;
     width: 150px;
-    overflow: hidden;
+    top: 55%;
   }
   .sdmmain_07 img {
     width: 100%;
@@ -1381,10 +1382,13 @@
     width: 320px;
   }
   .dress_wrap {
-    margin-top: 35%;
+    margin-top: 3%;
   }
   .dress_logo {
     margin-top: -15%;
+  }
+  .dress_img {
+    margin-top: -30%;
   }
   .makeup_wrap_title {
     width: 90%;

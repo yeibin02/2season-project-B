@@ -26,12 +26,13 @@
   user-select: none;
 }
 .sdm_title h2 {
-  font-size: 68px;
+  font-size: 52px;
+  letter-spacing: 0.5px;
   /* font-weight: 500; */
   color: #ececec;
   font-family: "Noto Serif KR", sans-serif;
 }
-.sdm_title h2 span{
+.sdm_title h2 span {
   font-family: "Noto Sans KR", sans-serif;
 }
 .sdm_box_b {
@@ -135,7 +136,7 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 .sdm_sec_first {
-  font-size: 38px;
+  font-size: 32px;
   line-height: 48px;
   font-weight: 500;
   padding-bottom: 2%;
@@ -148,8 +149,8 @@
 .sdm_sec_second button {
   background: none;
   font-size: 26px;
-  width: 170px;
-  height: 60px;
+  width: 120px;
+  height: 48px;
   border: 2px solid #887160;
   padding: 10px;
   text-align: center;
@@ -160,12 +161,17 @@
 .sdm_sec_second button a {
   color: #887160;
   font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sdm_sec_second button:hover {
   background-color: #887160;
   color: #fff;
   z-index: 1;
   transition: 0.2s ease-in-out;
+  border: none;
 }
 .sdm_sec_second button:hover a {
   color: #fff;
@@ -267,7 +273,7 @@
     max-width: 480px;
   }
   .sdm_title {
-    width: 80%;
+    width: 90%;
     line-height: 60px;
   }
   .sdm_title h2 {
@@ -288,6 +294,7 @@
   }
   .sdm_sec_first {
     font-size: 24px;
+    line-height: 33px;
   }
   .sdm_sec_second {
     padding-top: 2%;
@@ -316,7 +323,7 @@
   }
   .sdm_secondtext {
     position: relative;
-    top: -3%;
+    top: -18%;
     left: 0;
     z-index: 2;
     /* flex-direction: column; */
@@ -327,13 +334,16 @@
   .sdm_box_b_img_df {
     display: none;
   }
+  .smdbox_1024 {
+    display: none;
+  }
   .smdbox_480 {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
     width: 100%;
-    margin-top: 50%;
+    margin-top: 120%;
   }
   .sdmbox_480_1 {
     display: block;
