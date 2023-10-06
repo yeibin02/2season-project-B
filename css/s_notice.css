@@ -126,7 +126,27 @@
 .question2 .notice-write:hover{
     background-color: #aa9786;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 636px) {
+    .question2 .question2-content .question2-title li:nth-child(2){
+        width: 30%;
+    }
+    .question2-title li:last-child{
+        display: none;
+    }
+    .question2-contents li:first-child div{
+        display: none;
+    }
+    .question2 .question2-content .question2-contents li:nth-child(2){
+        width: 30%;
+    }
+    .question2-contents li:last-child{
+        display: none;
+    }
+    .question2 .notice-write{
+        width: 60px;
+        height: 30px;
+        font-size: 16px;
+    }
 }
 @media all and (max-width: 768px) {
 }
