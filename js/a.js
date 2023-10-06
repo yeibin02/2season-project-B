@@ -58,10 +58,45 @@ window.addEventListener("load", function () {
     .catch((error) => {
       console.error("JSON 파일을 불러오는 중 오류가 발생했습니다.", error);
     });
+  //   예약 하기 클릭 시 모달창 띄우기
+  $(".hall-calendar-btn").click(function () {
+    $(".header").css("display", "none");
+    //백그라운드 어둡게 하기
+    $(".modal-overlay").css("display", "block");
+    $(".hall-info-modal").css("display", "block");
+  });
+
   // 예약하기
-  var hallCalendarBtn = document.getElementById("hall-calendar-btn");
-  hallCalendarBtn.addEventListener("click", function () {
-    alert("예약이 완료되었습니다.");
+  const form = document.getElementById("hall-modal-form");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // 폼 데이터 가져오기
+    const name = document.getElementById("name").value;
+    const contact = document.getElementById("contact").value;
+    const email = document.getElementById("email").value;
+    const date = document.getElementById("date").value;
+
+    // 여기에서 폼 데이터를 처리하고 예약을 완료 여부를 확인합니다.
+    // 이 예제에서는 예약이 항상 성공한다고 가정합니다.
+
+    // 예약이 성공적으로 완료되면 알림 창을 띄웁니다.
+    alert(
+      "이름: " +
+        name +
+        "\n" +
+        "연락처:" +
+        contact +
+        "\n" +
+        "이메일: " +
+        email +
+        "\n" +
+        "날짜: " +
+        date +
+        "\n" +
+        "예약이 완료되었습니다. 감사합니다!"
+    );
+
     window.location.href = "index.html";
   });
 });
