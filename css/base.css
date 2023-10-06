@@ -112,6 +112,28 @@ input:-webkit-autofill {
   .contact-btn img {
     width: 90px;
   }
+  .con-hover {
+    right: 5px;
+    bottom: 165px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .contact-btn img {
+    width: 90px;
+  }
+  .con-hover {
+    right: 5px;
+    bottom: 165px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .contact-btn img {
+    width: 90px;
+  }
+  .con-hover {
+    right: 0px;
+    bottom: 165px;
+  }
 }
 
 /* top btn */

@@ -37,4 +37,13 @@ $(document).ready(function () {
       pkMenuBar.style.display = "none"; // 메뉴바를 숨깁니다.
     }
   });
+  $(".pk-totle-buy-btn").click(function () {
+    $(".pk-buy-box2").addClass("modal-open");
+  });
+  $(".pk-totle-buy-btn").click(function () {
+    location.href = "login.html";
+  });
+  $(".pk-totle-btn button").click(function () {
+    location.href = "login.html";
+  });
 });

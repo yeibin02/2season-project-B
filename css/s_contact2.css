@@ -18,3 +18,12 @@
   white-space: auto;
   margin-bottom: 40px;
 }
+@media all and (max-width: 420px) {
+  .term {
+    padding: 100px 30px;
+    width: 380px;
+  }
+  .term-head {
+    font-size: 14px;
+  }
+}
