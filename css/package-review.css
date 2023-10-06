@@ -147,6 +147,29 @@
     text-align: center;
   }
 }
+@media all and (max-width: 420px) {
+  .pk-review-text-wrap h2 {
+    font-size: 48px;
+  }
+  .pk-review-text-wrap p {
+    font-size: 14px;
+  }
+  .pk-review-click-btn {
+    top: 83%;
+    width: 80px;
+    height: 35px;
+    font-size: 14px;
+    text-align: center;
+  }
+  #modalImage {
+    width: 95%;
+  }
+  .package-close {
+    font-size: 26px;
+    top: -173px;
+    right: 15px;
+  }
+}
 @media all and (max-width: 360px) {
   .pk-review-text-wrap h2 {
     font-size: 40px;

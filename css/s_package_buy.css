@@ -66,6 +66,7 @@
   margin: 20px 0;
 }
 .pk-buy-menu {
+  cursor: pointer;
   padding: 20px;
   border-bottom: 1px solid rgb(221, 221, 221);
 }
@@ -590,6 +591,7 @@
   font-weight: 500;
 }
 .pk-totle-btn2 {
+  display: none;
   position: fixed;
   bottom: 0;
   z-index: 999;
@@ -605,22 +607,47 @@
   width: 100%;
   margin: 0 auto;
   display: none;
-  z-index: 999999999;
-
+  z-index: 99999999;
   background-color: #fff;
 }
 .pk-buy-box2.modal-open {
   display: block;
   top: 0;
 }
-.premium-pk2{
+.premium-pk2 {
   display: none;
 }
+.pk-buy-text {
+  font-size: 12px;
+  color: #c5c5c5;
+}
+.pk-menu-bar-box li:first-child span {
+  line-height: 15px;
+  font-size: 12px;
+  color: #c5c5c5;
+}
+.pk-buy2-btn-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.pr-pk-buy2-btn,
+.pr-pk-buy2-btn2 {
+  background-color: #2f2f2f;
+  float: left;
+  color: #fff;
+  font-weight: bold;
+  height: 40px;
+  width: 49%;
+  border: none;
+  cursor: pointer;
+}
 @media all and (max-width: 1024px) {
-  .premium-pk{
+  .premium-pk {
     display: none;
   }
-  .premium-pk2{
+  .premium-pk2 {
     display: block;
   }
   .pre-pk-img-wrap {
@@ -658,13 +685,71 @@
   .premium-pk-buy {
     padding-left: 0px;
   }
+  .pk-buy-box2 h5 {
+    font-weight: 500;
+  }
+  .pk-buy-select h5 {
+    font-weight: 500;
+    margin: 0;
+  }
 }
 @media all and (max-width: 420px) {
   .s-pk-buy-wrap {
     flex-direction: column;
   }
-
   .premium-pk-buy {
     padding-left: 0px;
+  }
+  .premium-pk {
+    display: none;
+  }
+  .pk-buy-box2 h5 {
+    margin: 20px 0;
+  }
+  .premium-pk2-wrap {
+    padding: 15px;
+  }
+  .premium-pk-text2 h2 {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .premium-pk-text2 h2 span {
+    font-size: 18px;
+  }
+  .premium-pk-pri {
+    padding: 0;
+  }
+  .pk-totle-btn2 button {
+    height: 60px;
+    font-size: 16px;
+  }
+  .pre-pk-img-wrap2 {
+    height: 500px;
+  }
+  .pk-totle-btn2.visible {
+    display: block;
+  }
+}
+@media all and (max-width: 360px) {
+  .s-pk-buy-wrap {
+    flex-direction: column;
+  }
+  .premium-pk-buy {
+    padding-left: 0px;
+  }
+  .premium-pk {
+    display: none;
+  }
+}
+@media all and (max-width: 320px) {
+  .s-pk-buy-wrap {
+    flex-direction: column;
+  }
+  .premium-pk-buy {
+    padding-left: 0px;
+  }
+  .premium-pk {
+    display: none;
   }
 }

@@ -22,28 +22,39 @@ $(document).ready(function () {
 
   var menuVisible = false; // 메뉴바의 현재 표시 상태를 저장합니다.
 
-  document.querySelector(".pk-buy-btn2").addEventListener("click", function () {
-    // 메뉴바의 표시 상태를 토글합니다.
-    menuVisible = !menuVisible;
+  //로그인 안 되었을 때
+  // $(".pk-totle-buy-btn").click(function () {
+  //   location.href = "login.html";
+  // });
+  // $(".pk-totle-btn button").click(function () {
+  //   location.href = "login.html";
+  // });
 
-    // 표시 상태에 따라 메뉴바를 보이거나 숨깁니다.
-    var pkMenuBar = document.querySelector(".pk-menu-bar-box");
-    if (menuVisible) {
-      pkMenuBar.style.display = "block"; // 메뉴바를 보이게 합니다.
-      pkMenuBar.style.borderRadius = "0 0 10px 10px";
-      this.style.borderRadius = "10px 10px 0 0";
-    } else {
-      this.style.borderRadius = "10px";
-      pkMenuBar.style.display = "none"; // 메뉴바를 숨깁니다.
-    }
-  });
-  $(".pk-totle-buy-btn").click(function () {
+  //반응형
+  $(".pk-totle-buy-btn2").click(function () {
     $(".pk-buy-box2").addClass("modal-open");
   });
-  $(".pk-totle-buy-btn").click(function () {
-    location.href = "login.html";
+
+  //로그인 되었을 때
+  // pr-pk-buy2-btn 버튼이 클릭되었을 때의 이벤트 핸들러
+  $(".pr-pk-buy2-btn").click(function () {
+    alert("결제가 완료되었습니다.");
+    location.href = "s_package.html";
   });
-  $(".pk-totle-btn button").click(function () {
-    location.href = "login.html";
+  $(".pk-totle-buy-btn").click(function () {
+    alert("결제가 완료되었습니다.");
+    location.href = "s_package.html";
+  });
+  //
+  $(window).scroll(function () {
+    // 스크롤된 높이
+    var scrollHeight = $(window).scrollTop();
+
+    // pk-totle-btn2가 보이게 하는 조건을 설정 (예시로 100px 스크롤 내린 경우)
+    if (scrollHeight > 0) {
+      $(".pk-totle-btn2").addClass("visible");
+    } else {
+      $(".pk-totle-btn2").removeClass("visible");
+    }
   });
 });
