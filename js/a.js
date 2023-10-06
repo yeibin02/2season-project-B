@@ -4,23 +4,16 @@ window.addEventListener("load", function () {
   const hallId = urlParams.get("id");
 
   // 상품 문의 양식을 제출할 때의 이벤트 핸들러를 설정합니다.
-  const inquiryForm = document.getElementById("inquiry-form");
-  const resultElement = document.getElementById("result");
+  const hallListInfo = document.getElementById("hall-list-info");
 
-  inquiryForm.addEventListener("submit", function (e) {
+  hallListInfo.addEventListener("submit", function (e) {
     e.preventDefault(); // 기본 제출 동작을 막습니다.
 
     // 사용자가 입력한 데이터를 가져옵니다.
-    const formData = new FormData(inquiryForm);
-
-    // 여기에서 상품 문의를 처리하는 로직을 추가합니다.
-    // 예를 들어, 서버로 데이터를 전송하고 처리한 후 결과를 표시할 수 있습니다.
-
-    // 이 예제에서는 간단히 결과를 표시합니다.
-    resultElement.innerHTML = "<p>상품 문의가 제출되었습니다. 감사합니다!</p>";
+    const formData = new FormData(hallListInfo);
 
     // 양식을 초기화합니다.
-    inquiryForm.reset();
+    hallListInfo.reset();
   });
 
   // JSON 파일을 불러옵니다.
@@ -47,11 +40,13 @@ window.addEventListener("load", function () {
                 </div>
                 <h2>${hallInfo.name}</h2>
                 <p class="intro">${hallInfo.introDuction}</p>
-                <p>홀 종류: ${hallInfo.hallType}</p>
-                <p>메뉴 종류: ${hallInfo.menuType}</p>
-                <p>식사 비용: ${hallInfo.mealCost}</p>
-                <p>보증 인원: ${hallInfo.capacity}</p>
+                <p><i class="fa-solid fa-hotel" style="color: #0f0f0f;"></i><em>홀 종류:</em> ${hallInfo.hallType}</p>
+                <p><i class="fa-solid fa-utensils" style="color: #0f0f0f;"></i><em>메뉴 종류:</em> ${hallInfo.menuType}</p>
+                <p><i class="fa-solid fa-receipt" style="color: #0f0f0f;"></i><em>식사 비용:</em> ${hallInfo.mealCost}</p>
+                <p><i class="fa-solid fa-people-group" style="color: #0f0f0f;"></i><em>보증 인원:</em> ${hallInfo.capacity}</p>
+                <button class="hall-info-wdbtn">예약 하기</button>
                 </div>
+                
             `;
       } else {
         // hallId에 해당하는 웨딩 홀 정보를 찾지 못한 경우 처리
@@ -63,4 +58,124 @@ window.addEventListener("load", function () {
     .catch((error) => {
       console.error("JSON 파일을 불러오는 중 오류가 발생했습니다.", error);
     });
+  // 예약하기
+  var hallCalendarBtn = document.getElementById("hall-calendar-btn");
+  hallCalendarBtn.addEventListener("click", function () {
+    alert("예약이 완료되었습니다.");
+    window.location.href = "index.html";
+  });
 });
+
+// 달력
+window.addEventListener("load", function () {
+  buildCalendar();
+}); // 웹 페이지가 로드되면 buildCalendar 실행
+
+let nowMonth = new Date(); // 현재 달을 페이지를 로드한 날의 달로 초기화
+let today = new Date(); // 페이지를 로드한 날짜를 저장
+today.setHours(0, 0, 0, 0); // 비교 편의를 위해 today의 시간을 초기화
+
+// 달력 생성 : 해당 달에 맞춰 테이블을 만들고, 날짜를 채워 넣는다.
+function buildCalendar() {
+  let firstDate = new Date(nowMonth.getFullYear(), nowMonth.getMonth(), 1); // 이번달 1일
+  let lastDate = new Date(nowMonth.getFullYear(), nowMonth.getMonth() + 1, 0); // 이번달 마지막날
+
+  let tbody_Calendar = document.querySelector(".Calendar > tbody");
+  document.getElementById("calYear").innerText = nowMonth.getFullYear(); // 연도 숫자 갱신
+  document.getElementById("calMonth").innerText = leftPad(
+    nowMonth.getMonth() + 1
+  ); // 월 숫자 갱신
+
+  while (tbody_Calendar.rows.length > 0) {
+    // 이전 출력결과가 남아있는 경우 초기화
+    tbody_Calendar.deleteRow(tbody_Calendar.rows.length - 1);
+  }
+
+  let nowRow = tbody_Calendar.insertRow(); // 첫번째 행 추가
+
+  for (let j = 0; j < firstDate.getDay(); j++) {
+    // 이번달 1일의 요일만큼
+    let nowColumn = nowRow.insertCell(); // 열 추가
+  }
+
+  for (
+    let nowDay = firstDate;
+    nowDay <= lastDate;
+    nowDay.setDate(nowDay.getDate() + 1)
+  ) {
+    // day는 날짜를 저장하는 변수, 이번달 마지막날까지 증가시키며 반복
+
+    let nowColumn = nowRow.insertCell(); // 새 열을 추가하고
+    nowColumn.innerText = leftPad(nowDay.getDate()); // 추가한 열에 날짜 입력
+
+    if (nowDay.getDay() == 0) {
+      // 일요일인 경우 글자색 빨강으로
+      nowColumn.style.color = "#DC143C";
+    }
+    if (nowDay.getDay() == 6) {
+      // 토요일인 경우 글자색 파랑으로 하고
+      nowColumn.style.color = "#0000CD";
+      nowRow = tbody_Calendar.insertRow(); // 새로운 행 추가
+    }
+
+    if (nowDay < today) {
+      // 지난날인 경우
+      nowColumn.className = "pastDay";
+    } else if (
+      nowDay.getFullYear() == today.getFullYear() &&
+      nowDay.getMonth() == today.getMonth() &&
+      nowDay.getDate() == today.getDate()
+    ) {
+      // 오늘인 경우
+      nowColumn.className = "today";
+      nowColumn.onclick = function () {
+        choiceDate(this);
+      };
+    } else {
+      // 미래인 경우
+      nowColumn.className = "futureDay";
+      nowColumn.onclick = function () {
+        choiceDate(this);
+      };
+    }
+  }
+}
+
+// 날짜 선택
+function choiceDate(nowColumn) {
+  if (document.getElementsByClassName("choiceDay")[0]) {
+    // 기존에 선택한 날짜가 있으면
+    document
+      .getElementsByClassName("choiceDay")[0]
+      .classList.remove("choiceDay"); // 해당 날짜의 "choiceDay" class 제거
+  }
+  nowColumn.classList.add("choiceDay"); // 선택된 날짜에 "choiceDay" class 추가
+}
+
+// 이전달 버튼 클릭
+function prevCalendar() {
+  nowMonth = new Date(
+    nowMonth.getFullYear(),
+    nowMonth.getMonth() - 1,
+    nowMonth.getDate()
+  ); // 현재 달을 1 감소
+  buildCalendar(); // 달력 다시 생성
+}
+// 다음달 버튼 클릭
+function nextCalendar() {
+  nowMonth = new Date(
+    nowMonth.getFullYear(),
+    nowMonth.getMonth() + 1,
+    nowMonth.getDate()
+  ); // 현재 달을 1 증가
+  buildCalendar(); // 달력 다시 생성
+}
+
+// input값이 한자리 숫자인 경우 앞에 '0' 붙혀주는 함수
+function leftPad(value) {
+  if (value < 10) {
+    value = "0" + value;
+    return value;
+  }
+  return value;
+}

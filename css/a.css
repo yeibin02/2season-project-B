@@ -4,19 +4,20 @@
   margin-top: 100px;
 }
 .hall-list-wrap .inner {
+  width: 1200px;
   display: flex;
 }
 .hall-info-wrap {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 0 10px;
 }
 
 .hall-list-img {
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 100px;
 }
 .hall-list-img img {
   width: 100%;
@@ -33,11 +34,26 @@
 }
 #hall-info {
   width: 100%;
+  display: flex;
+  justify-content: space-around;
   border-bottom: 2px solid #887160;
   margin-bottom: 30px;
 }
+.hall-info-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hall-info-box1 {
+  width: 50%;
+  float: left;
+  padding: 0 20px;
+}
 .hall-info-imgbox {
+  width: 50%;
   margin-bottom: 50px;
+  float: left;
 }
 .hall-info-imgbox img {
   width: 100%;
@@ -45,7 +61,7 @@
 }
 
 .hall-info-box1 h2 {
-  font-size: 22px;
+  font-size: 40px;
   margin-bottom: 40px;
   font-weight: bold;
 }
@@ -53,51 +69,18 @@
   font-size: 14px;
   padding-bottom: 30px;
 }
-
-.hall-buy-box {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-#inquiry-form {
-  height: 280px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 1px 2px 2px 1px #888;
-}
-
-#inquiry-form label {
+.hall-info-box1 p:nth-child(n + 4) {
   font-size: 20px;
+  padding-bottom: 50px;
 }
-#inquiry-form label:first-child {
-  margin-right: 18px;
+.hall-info-box1 > p > i {
+  width: 25px;
+  margin-right: 20px;
+}
+.hall-info-box1 > p > em {
+  font-weight: 500;
 }
 
-#message {
-  display: flex;
-  width: 275px;
-  margin-top: 10px;
-}
-#name {
-  width: 200px;
-  height: 25px;
-}
-#email {
-  width: 200px;
-  height: 25px;
-}
-#calling {
-  width: 275px;
-  height: 40px;
-  margin-top: 25px;
-  border: none;
-  background-color: #887160;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 10px;
-  cursor: pointer;
-}
 .hall-info-text1 {
   display: flex;
   color: #444;
@@ -134,4 +117,107 @@
   font-size: 13px;
   display: flex;
   margin: 0 auto 7px;
+}
+.hall-info-wdbtn {
+  border: none;
+  width: 130px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #887160;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+}
+.back-wrap-wd {
+  padding: 20px 0;
+}
+.back-wrap-wd img {
+  width: 10px;
+  height: 15px;
+}
+.back-wrap-wd a {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* 달력 */
+.hall-calendar {
+  text-align: center;
+  margin: 0 auto;
+}
+td {
+  width: 150px;
+  height: 100px;
+}
+
+.Calendar {
+  text-align: center;
+}
+
+.Calendar > thead > tr:first-child > td {
+  font-family: "Questrial", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.Calendar > thead > tr:last-child > td {
+  font-family: "Questrial", sans-serif;
+  font-weight: 600;
+}
+
+.Calendar > tbody > tr > td > p {
+  font-family: "Montserrat", sans-serif;
+  height: 45px;
+  width: 45px;
+  border-radius: 45px;
+  transition-duration: 0.2s;
+  line-height: 45px;
+  margin: 2.5px;
+  display: block;
+  text-align: center;
+}
+
+.pastDay {
+  color: lightgray;
+}
+
+.today {
+  background-color: #f5d042;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.futureDay {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.futureDay:hover {
+  background: #eee;
+}
+
+.futureDay.choiceDay,
+.today.choiceDay {
+  background: #3c4881;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.hall-calendar-btn {
+  width: 130px;
+  height: 40px;
+  border: none;
+  background-color: #887160;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 480px) {
 }
