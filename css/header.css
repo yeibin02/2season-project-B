@@ -104,8 +104,8 @@ html.active {
 .hamburger {
   position: absolute;
   display: none;
-  right: 0px;
-  top: 60%;
+  right: 30px;
+  top: 50%;
   transform: translateY(-50%);
   width: 30px;
   height: 22px;
@@ -151,11 +151,11 @@ html.active {
 
 .hamburger-menu {
   position: fixed;
-  top: 80px;
+  padding: 80px;
   left: 100%;
   display: block;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: 100vh;
   background-color: #fff;
   opacity: 0;
   transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -180,38 +180,17 @@ html.active {
   color: #555;
 }
 
-@media all and (max-width: 930px) {
-}
-@media all and (max-width: 700px) {
-.s-menu {
-  width: 140px;
-}
-.s-menu ul li {
-  margin: 10px 5px;
-}
-}
-@media all and (max-width: 550px) {
-  .header .inner {
-    width: 90vw;
+@media all and (max-width: 1090px) {
+  .header nav ul li a{
+    font-size: 13px;
   }
-  .header-1 {
-    height: 60px;
-  }
-  .header-1 .logo {
-    width: 120px;
-    height: 40px;
-  }
-  .header-1 .logo img {
-    width: 120px;
-    height: 40px;
-  }
+}
+@media all and (max-width: 1021px) {
   .s-menu,
-  .header-2 ul {
+  .header nav {
     display: none;
   }
   .hamburger{
     display: block;
   }
-}
-@media all and (max-width: 360px) {
 }
