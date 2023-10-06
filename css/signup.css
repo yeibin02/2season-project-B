@@ -133,7 +133,7 @@ input[type="checkbox"],
 #submit{
   position: absolute;
   bottom: 0;
-  width: 35vw;
+  width: calc(100% - 90px);
   height: 52px;
   line-height: 52px;
   border: none;
