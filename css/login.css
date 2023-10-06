@@ -99,9 +99,13 @@
   overflow: hidden;
   border-radius: 50%;
   border: 1px solid #ccc;
+  position: relative;
 }
-.abcRioButtonIcon{
-  scale: 1.1;
+.abcRioButtonContentWrapper{
+  scale: 1.5;
+  margin-left: 23px;
+  margin-top: 1px;
+  height: 40px;
 }
 @media screen and (max-width: 1440px) {
 }
