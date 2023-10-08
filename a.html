@@ -187,6 +187,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div class="wrap" id="wrap">
+      <div class="modal-overlay"></div>
       <!-- header -->
       <header class="header clearfix" id="header">
         <div class="inner">
@@ -240,22 +241,15 @@
           <li><a href="s_contact.html">contact</a></li>
         </ul>
       </div>
-      <!-- 문의하기 btn -->
-      <div class="contact-btn">
-        <a href="s_contact.html">
-          <img src="images/contact_modal.png" alt="문의하기" />
-        </a>
-        <div class="con-hover">
-          <p>문의하기</p>
-        </div>
-      </div>
+
       <!-- 서브 웨딩홀 상세 -->
-      <div class="hall-list-wrap" >
+      <div class="hall-list-wrap">
         <div class="hall-list-img">
           <img src="images/s-wd-main1.png" alt="웨딩홀" />
           <!-- 출력값을 여기안에 담아놓음 -->
           <p id="hall-list-info">웨딩 홀 상세보기</p>
         </div>
+
         <div class="inner">
           <!-- 홀 정보 표시 -->
           <div class="hall-info-wrap">
@@ -311,11 +305,34 @@
 
                   <tbody></tbody>
                 </table>
-                <button class="hall-calendar-btn" id="hall-calendar-btn">예약하기</button>
+                <button class="hall-calendar-btn" id="hall-calendar-btn">
+                  예약하기
+                </button>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="hall-info-modal">
+        <form class="hall-modal-wrap" id="hall-modal-form">
+          <label>이름<em>*</em><input type="text" id="name" required /></label>
+          <label
+            >연락처<em>*</em><input type="tel" id="contact" required
+          /></label>
+          <label>이메일<input type="email" id="email" /></label>
+          <label for="Date"
+            >예약 날짜
+            <input
+              type="date"
+              id="date"
+              max="2030-06-20"
+              min="2023-10-13"
+              value="2023-10-13"
+              required
+            />
+          </label>
+          <button class="hall-modal-btn" type="submit">예약 완료</button>
+        </form>
       </div>
       <!-- footer -->
       <footer class="footer clearfix">

@@ -147,6 +147,9 @@
   }
 }
 @media all and (max-width: 1024px) {
+  .package {
+    margin-top: -100px;
+  }
   .pk-li-wrap {
     border-radius: 20px;
   }
@@ -206,6 +209,9 @@
   }
 }
 @media all and (max-width: 480px) {
+  .package {
+    margin-top: -100px;
+  }
   .m-pk-img-wrap {
     width: 100%;
     display: flex;

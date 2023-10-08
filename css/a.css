@@ -4,8 +4,7 @@
   margin-top: 100px;
 }
 .hall-list-wrap .inner {
-  width: 1200px;
-  display: flex;
+  max-width: 1200px;
 }
 .hall-info-wrap {
   width: 100%;
@@ -20,7 +19,8 @@
   width: 100%;
 }
 .hall-list-img img {
-  width: 100%;
+  width: 100vw;
+  height: 30vh;
   object-fit: cover;
 }
 .hall-list-img p {
@@ -34,10 +34,13 @@
 }
 #hall-info {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
   border-bottom: 2px solid #887160;
   margin-bottom: 30px;
+}
+#hall-info p {
+  font-size: 22px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 .hall-info-info {
   width: 100%;
@@ -65,10 +68,7 @@
   margin-bottom: 40px;
   font-weight: bold;
 }
-.hall-info-box1 p {
-  font-size: 14px;
-  padding-bottom: 30px;
-}
+
 .hall-info-box1 p:nth-child(n + 4) {
   font-size: 20px;
   padding-bottom: 50px;
@@ -89,10 +89,12 @@
   margin-right: 5px;
 }
 .intro {
+  display: block;
   font-size: 13px;
   color: rgb(125, 125, 125);
 }
 .hall-schedule p {
+  display: block;
   font-size: 18px;
   font-weight: 700;
   color: rgb(17, 17, 17);
@@ -215,9 +217,109 @@ td {
   margin-bottom: 50px;
   cursor: pointer;
 }
+/* 예약창 */
+.hall-info-modal {
+  width: 100%;
+  display: none;
+  position: relative;
+}
+.hall-modal-wrap {
+  position: fixed;
+  display: flex;
+  width: 300px;
+  height: 500px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  border-radius: 20px;
+}
+.hall-modal-wrap label {
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+.hall-modal-wrap label em {
+  color: rgb(248, 102, 34);
+}
+.hall-modal-wrap input {
+  float: right;
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+}
+.hall-modal-btn {
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #bdaca0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hall-modal-btn:hover {
+  color: #bdaca0;
+  background-color: #fff;
+  border: 1px solid #bdaca0;
+}
+
 @media all and (max-width: 1024px) {
+  td {
+    width: 100px;
+    height: 100px;
+  }
+  .hall-info-info {
+    align-items: center;
+  }
+  .hall-info-box1 {
+    width: 100%;
+    float: none;
+    padding: 0 20px;
+  }
+  .hall-info-imgbox {
+    width: 100%;
+    float: none;
+    margin-bottom: 50px;
+  }
 }
 @media all and (max-width: 768px) {
 }
 @media all and (max-width: 480px) {
+  #hall-list-info {
+    font-size: 28px;
+  }
+}
+@media all and (max-width: 360px) {
+  td {
+    width: 100px;
+    height: 50px;
+  }
+  .hall-info-imgbox {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  #hall-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  #hall-list-info {
+    font-size: 24px;
+  }
+  .hall-info-box1 h2 {
+    font-size: 35px;
+  }
+  
+}
+@media all and (max-width: 30px) {
+  #hall-list-info {
+    font-size: 22px;
+  }
 }
