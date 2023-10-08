@@ -175,9 +175,24 @@ html.active {
   font-size: 24px;
   color: #887160;
   border-bottom: 1px solid #e5e5e5;
+  text-transform: uppercase;
+}
+.hamburger-menu-contents li:last-child a{
+  border-bottom: none;
 }
 .hamburger-menu-contents li a:hover {
   color: #555;
+}
+
+.hamburger-menu-contents ul{
+  display: flex;
+  justify-content: center;
+}
+.hamburger-menu-contents ul li{
+  /* width: 50%; */
+}
+.hamburger-menu-contents ul li a{
+  font-size: 13px;
 }
 
 @media all and (max-width: 1090px) {
