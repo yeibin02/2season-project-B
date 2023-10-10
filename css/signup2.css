@@ -7,7 +7,8 @@
   align-items: center;
 }
 .signupbox{
-  width: 550px;
+  width: 520px;
+  height: 700px;
   border: 2px solid #baa693;
   border-radius: 10px;
   text-align: center;
@@ -16,7 +17,8 @@
 }
 .signup-form > div{
   height: 50px;
-  width: 100%;
+  width: 456px;
+  /* margin: 0 auto; */
   border: 1px solid #dfdfdf;
   display: flex;
   align-items: center;

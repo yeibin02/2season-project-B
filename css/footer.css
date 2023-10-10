@@ -153,15 +153,10 @@
   .footer .footer-bottom p {
     font-size: 12px;
     padding: 3px 0;
+    text-align: center;
   }
   .footer .footer-bottom a {
     color: #887160;
-  }
-  .footer .footer-bottom1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   .footer .footer-bottom2 {
     position: absolute;

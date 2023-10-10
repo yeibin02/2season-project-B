@@ -15,8 +15,8 @@ padding: 20px;
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 550px;
-height: 40vw;
+width: 520px;
+height: 700px;
 min-height: 750px;
 padding: 30px 20px;
 border: 2px solid #baa693;
@@ -133,7 +133,7 @@ input[type="checkbox"],
 #submit{
   position: absolute;
   bottom: 0;
-  width: 35vw;
+  width: calc(100% - 90px);
   height: 52px;
   line-height: 52px;
   border: none;

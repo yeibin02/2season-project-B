@@ -1,5 +1,325 @@
 /* 홀 상세페이지 */
+.hall-list-wrap {
+  width: 100%;
+  margin-top: 100px;
+}
+.hall-list-wrap .inner {
+  max-width: 1200px;
+}
+.hall-info-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.hall-list-img {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.hall-list-img img {
+  width: 100vw;
+  height: 30vh;
+  object-fit: cover;
+}
+.hall-list-img p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 42px;
+  font-size: bold;
+  color: #fff;
+}
 #hall-info {
-  width: 400px;
+  width: 100%;
+  border-bottom: 2px solid #887160;
+  margin-bottom: 30px;
+}
+#hall-info p {
+  font-size: 22px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+.hall-info-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hall-info-box1 {
+  width: 50%;
+  float: left;
+  padding: 0 20px;
+}
+.hall-info-imgbox {
+  width: 50%;
+  margin-bottom: 50px;
+  float: left;
+}
+.hall-info-imgbox img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hall-info-box1 h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.hall-info-box1 p:nth-child(n + 4) {
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+.hall-info-box1 > p > i {
+  width: 25px;
+  margin-right: 20px;
+}
+.hall-info-box1 > p > em {
+  font-weight: 500;
+}
+
+.hall-info-text1 {
+  display: flex;
+  color: #444;
+}
+.hall-info-text1 p:first-child {
+  margin-right: 5px;
+}
+.intro {
+  display: block;
+  font-size: 13px;
+  color: rgb(125, 125, 125);
+}
+.hall-schedule p {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(17, 17, 17);
+  margin-bottom: 10px;
+}
+.hall-schedule p:last-child {
+  font-size: 14px;
+  font-weight: 400px;
+  color: rgb(38, 38, 38);
+}
+.hall-schedule-help {
+  padding: 14px 15px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  border-radius: 8px;
+  color: rgb(38, 38, 38);
+  margin-bottom: 25px;
+  background-color: rgb(248, 248, 248);
+}
+.hall-schedule-help ul li {
+  font-size: 13px;
+  display: flex;
+  margin: 0 auto 7px;
+}
+.hall-info-wdbtn {
+  border: none;
+  width: 130px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #887160;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+}
+.back-wrap-wd {
+  padding: 20px 0;
+}
+.back-wrap-wd img {
+  width: 10px;
+  height: 15px;
+}
+.back-wrap-wd a {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* 달력 */
+.hall-calendar {
+  text-align: center;
+  margin: 0 auto;
+}
+td {
+  width: 150px;
+  height: 100px;
+}
+
+.Calendar {
+  text-align: center;
+}
+
+.Calendar > thead > tr:first-child > td {
+  font-family: "Questrial", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.Calendar > thead > tr:last-child > td {
+  font-family: "Questrial", sans-serif;
+  font-weight: 600;
+}
+
+.Calendar > tbody > tr > td > p {
+  font-family: "Montserrat", sans-serif;
+  height: 45px;
+  width: 45px;
+  border-radius: 45px;
+  transition-duration: 0.2s;
+  line-height: 45px;
+  margin: 2.5px;
+  display: block;
+  text-align: center;
+}
+
+.pastDay {
+  color: lightgray;
+}
+
+.today {
+  background-color: #f5d042;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.futureDay {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.futureDay:hover {
+  background: #eee;
+}
+
+.futureDay.choiceDay,
+.today.choiceDay {
+  background: #3c4881;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.hall-calendar-btn {
+  width: 130px;
+  height: 40px;
+  border: none;
+  background-color: #887160;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+/* 예약창 */
+.hall-info-modal {
+  width: 100%;
+  display: none;
+  position: relative;
+}
+.hall-modal-wrap {
+  position: fixed;
+  display: flex;
+  width: 300px;
   height: 500px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  border-radius: 20px;
+}
+.hall-modal-wrap label {
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+.hall-modal-wrap label em {
+  color: rgb(248, 102, 34);
+}
+.hall-modal-wrap input {
+  float: right;
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+}
+.hall-modal-btn {
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #bdaca0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hall-modal-btn:hover {
+  color: #bdaca0;
+  background-color: #fff;
+  border: 1px solid #bdaca0;
+}
+
+@media all and (max-width: 1024px) {
+  td {
+    width: 100px;
+    height: 100px;
+  }
+  .hall-info-info {
+    align-items: center;
+  }
+  .hall-info-box1 {
+    width: 100%;
+    float: none;
+    padding: 0 20px;
+  }
+  .hall-info-imgbox {
+    width: 100%;
+    float: none;
+    margin-bottom: 50px;
+  }
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 480px) {
+  #hall-list-info {
+    font-size: 28px;
+  }
+}
+@media all and (max-width: 360px) {
+  td {
+    width: 100px;
+    height: 50px;
+  }
+  .hall-info-imgbox {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  #hall-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  #hall-list-info {
+    font-size: 24px;
+  }
+  .hall-info-box1 h2 {
+    font-size: 35px;
+  }
+  
+}
+@media all and (max-width: 30px) {
+  #hall-list-info {
+    font-size: 22px;
+  }
 }
