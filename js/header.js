@@ -52,4 +52,49 @@ window.addEventListener("load", function () {
   mainheader.addEventListener("mouseover", function(){
     header.classList.remove("active"); // header에서 클래스 제거
   });
+
+  // header img 변경
+  window.addEventListener('scroll', function () {
+    var logoImg = document.getElementById('logoImg');
+    var header = document.getElementById('header');
+    var scy = window.scrollY;
+    var navLinks = document.querySelectorAll('.header nav ul li a');
+    var sMenuLinks = document.querySelectorAll('.header .s-menu ul li a');
+  
+    if (scy >= 1080) {
+      // 스크롤 위치가 1080px 이상인 경우
+      logoImg.src = 'images/logo_black.png';
+      header.style.backgroundColor = 'white';
+
+      // navLinks의 스타일 변경
+      navLinks.forEach(function(link) {
+        link.style.color = '#191919';
+        link.addEventListener('mouseenter', function () {
+          this.style.color = '#887160';
+        });
+        link.addEventListener('mouseleave', function () {
+          this.style.color = '#191919';
+        });
+      });
+
+      // sMenuLinks의 스타일 변경
+      sMenuLinks.forEach(function(link) {
+        link.style.color = '#191919';
+      });
+    } else {
+      // 스크롤 위치가 1080px 미만인 경우
+      logoImg.src = 'images/logo_white.png';
+      header.style.backgroundColor = 'transparent';
+
+      // navLinks의 스타일 변경
+      navLinks.forEach(function(link) {
+        link.style.color = '#fff';
+      });
+
+      // sMenuLinks의 스타일 변경
+      sMenuLinks.forEach(function(link) {
+        link.style.color = '#fff';
+      });
+    }
+  });
 });
