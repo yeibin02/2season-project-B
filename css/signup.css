@@ -1,28 +1,28 @@
 /* signup */
-.signupwrap{
+.signupwrap {
   background-color: #ffffff;
 }
 #container {
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-width: 100%;
-height: 100vh;
-padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
 }
 .form-box {
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 520px;
-height: 700px;
-min-height: 750px;
-padding: 30px 20px;
-border: 2px solid #baa693;
-border-radius: 10px;
-background-color: #ffffff;
-position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 520px;
+  height: 700px;
+  min-height: 750px;
+  padding: 30px 20px;
+  border: 2px solid #baa693;
+  border-radius: 10px;
+  background-color: #ffffff;
+  position: absolute;
 }
 .signuplogo {
   width: 360px;
@@ -34,35 +34,35 @@ position: absolute;
   background-repeat: no-repeat;
   background-color: #ffffff;
 }
-#signup-form{
+#signup-form {
   width: 90%;
 }
-.signup-content-box{
+.signup-content-box {
   /* margin-top: -35px; */
 }
-.signup-contents{
+.signup-contents {
   margin: 30px 0;
   margin-left: 15px;
 }
-.check-contents{
+.check-contents {
   margin-left: 25px;
   font-size: 14px;
   color: #999;
 }
-.signup-label{
+.signup-label {
   margin: 5px 0;
   position: relative;
   font-size: 17px;
   font-weight: 400;
 }
-.bold{
+.bold {
   display: block;
   font-size: 15px;
   font-weight: 600;
   color: #000;
 }
 input[type="checkbox"],
-.signupwrap .form-box .signup-content-box label{
+.signupwrap .form-box .signup-content-box label {
   cursor: pointer;
 }
 #checkAll,
@@ -76,40 +76,40 @@ input[type="checkbox"],
   height: 1px;
   overflow: hidden;
 }
-.signupwrap .form-box .signup-content-box label::before{
+.signupwrap .form-box .signup-content-box label::before {
   vertical-align: middle;
   display: inline-block;
-  content:"";
+  content: "";
   padding-left: 2px;
   width: 15px;
   height: 15px;
   line-height: 15px;
   margin-top: -2px;
-  margin-right:5px;
+  margin-right: 5px;
   border-radius: 3px;
   border: 2px solid #ccc;
 }
-.signupwrap .form-box .signup-content-box input:checked+label::before{
+.signupwrap .form-box .signup-content-box input:checked + label::before {
   margin-top: -2px !important;
   width: 15px;
   height: 15px;
   line-height: 15px;
   border: 2px solid #baa693;
   border-radius: 3px;
-  content: '✔';
+  content: "✔";
   font-size: 15px;
   padding-left: 2px;
   background-color: #baa693;
   color: #fff;
   /* color: #baa693 !important; */
-}    
-.signupwrap .form-box .signup-content-box input:focus+.signup-label::before{
-  outline:2px solid #000;
 }
-.essential{
+.signupwrap .form-box .signup-content-box input:focus + .signup-label::before {
+  outline: 2px solid #000;
+}
+.essential {
   color: #baa693;
 }
-.choice{
+.choice {
   color: #929294;
 }
 .terms_box {
@@ -121,16 +121,16 @@ input[type="checkbox"],
   border-radius: 6px;
   border: 1px solid #d6d6d6;
 }
-.signup-more{
+.signup-more {
   float: right;
   margin-right: 20px;
   color: #ccc;
   cursor: pointer;
 }
-.signup-more:hover{
+.signup-more:hover {
   color: #191919;
 }
-#submit{
+#submit {
   position: absolute;
   bottom: 0;
   width: calc(100% - 90px);
@@ -145,25 +145,40 @@ input[type="checkbox"],
   font-family: arial !important;
   /* display: none; */
 }
-#submit.active{
+#submit.active {
   background-color: #baa693;
   cursor: pointer;
 }
-#submit.active:hover{
+#submit.active:hover {
   background-color: #aa9786;
   color: #ffffff;
 }
-.submit a{
+.submit a {
   display: block;
   width: 100%;
   height: 100%;
 }
-.submit{
+.submit {
   width: 90%;
 }
 @media screen and (max-width: 480px) {
-  #container {
-    height: auto;
-    align-items: flex-start;
+  .form-box {
+    width: 340px;
+    height: 600px;
+    min-height: 600px;
+    padding: 10px 10px;
+  }
+  .signuplogo {
+    width: 310px;
+    background-size: 310px;
+  }
+  .signup-content-box label {
+    font-size: 14px;
+  }
+  .check-contents {
+    font-size: 12px;
+  }
+  #submit {
+    margin-left: 20px;
   }
 }
