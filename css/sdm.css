@@ -136,6 +136,7 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 .sdm_sec_first {
+  width: 100%;
   font-size: 32px;
   line-height: 48px;
   font-weight: 500;
@@ -266,6 +267,73 @@
   .sdm_secondtext {
     padding-top: 300px;
     position: relative;
+    z-index: 99;
+    left: 0;
+  }
+}
+@media all and (max-width: 768px) {
+  .sdm_back_b {
+    margin-top: -100px;
+    height: 4000px;
+  }
+  .smdbox_1024 {
+    display: none;
+  }
+  .sdm_title {
+    margin-top: 100px;
+  }
+  .sdmbox768 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -90%;
+  }
+  .sdmbox_768_1 {
+    display: block;
+    width: 100%;
+    height: 900px;
+    background: url("../images/dbdb_780_1.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .sdmbox_768_2 {
+    display: block;
+    width: 100%;
+    height: 900px;
+    background: url("../images/dbdb_780_2.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .sdmbox_768_3 {
+    display: block;
+    width: 100%;
+    height: 900px;
+    background: url("../images/dbdb_780_3.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+  }
+  .sdm_secondtext {
+    z-index: 99;
+    margin-top: -35%;
+    left: 0;
+  }
+  .smd_b_foot {
+    position: relative;
+    background-color: #e7e3dd;
+    margin-top: -145%;
+    z-index: 1;
+  }
+  .smd_b_foot_img {
+    width: 680px;
+  }
+  .sdm_sec_first {
+    width: 50%;
   }
 }
 @media all and (max-width: 480px) {
@@ -282,19 +350,22 @@
   }
   .smd_b_foot {
     position: relative;
+    width: 100%;
     background-color: #e7e3dd;
     z-index: 1;
   }
   .smd_b_foot_img {
-    width: 350px;
+    position: relative;
+    width: 330px;
     height: 606px;
-    margin-left: -10%;
-    margin-top: -30%;
-    /* margin-top: -330%; */
+    margin-top: -220%;
   }
   .sdm_sec_first {
-    font-size: 24px;
     line-height: 33px;
+    width: 90%;
+    left: 0;
+    font-size: 22px;
+    width: 300px;
   }
   .sdm_sec_second {
     padding-top: 2%;
@@ -323,9 +394,11 @@
   }
   .sdm_secondtext {
     position: relative;
-    top: -18%;
+    top: -8%;
     left: 0;
     z-index: 2;
+    width: 350px;
+    font-size: 33px;
     /* flex-direction: column; */
   }
   .sdm_sec_second {
@@ -343,7 +416,7 @@
     justify-content: baseline;
     align-items: center;
     width: 100%;
-    margin-top: 120%;
+    margin-top: -60%;
   }
   .sdmbox_480_1 {
     display: block;
@@ -374,5 +447,19 @@
     background-size: cover;
     position: relative;
     padding: 0;
+  }
+  .smdbox_1024 {
+    display: none;
+  }
+  .sdmbox768 {
+    display: none;
+  }
+  .sdm_back_b {
+    height: 2800px;
+  }
+  @media all and (max-width: 320px) {
+    .smd_b_foot_img {
+      width: 280px;
+    }
   }
 }

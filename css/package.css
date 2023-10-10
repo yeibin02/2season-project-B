@@ -186,6 +186,9 @@
   .m-pk-timesale img {
     width: 30%;
   }
+  .package_sub_title {
+    width: 100%;
+  }
 }
 @media all and (max-width: 540px) {
   .m-pk-text-wrap h2 {
@@ -224,6 +227,9 @@
   }
   .m-pk-img-wrap li {
     margin-bottom: 15px;
+  }
+  .m-pk-sale-wrap {
+    width: 340px;
   }
 }
 @media all and (max-width: 360px) {

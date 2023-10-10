@@ -79,6 +79,8 @@
 .package_sub_title p {
   padding-left: 20px;
   padding-top: 5px;
+  width: 100%;
+  left: 0;
 }
 .package_sub_title_none {
   display: none;
@@ -343,7 +345,13 @@
 /* -------------반응형--------------- */
 @media all and (max-width: 1024px) {
   .package_sub_title {
-    left: 10%;
+    width: 100%;
+    padding-left: 5%;
+  }
+  .package_sub_title p {
+    position: absolute;
+    width: 500px;
+    padding-left: 10%;
   }
   .package_ssomnail {
     margin-top: 2%;
