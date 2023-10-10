@@ -168,7 +168,6 @@
   font-weight: 600;
 
   font-size: 13px;
-
 }
 .package_ssom_01_text button:hover {
   background: #887160;
@@ -346,8 +345,11 @@
 /* ---------------------- */
 /* -------------반응형--------------- */
 @media all and (max-width: 1024px) {
-  .package_sub_title {
-    left: 10%;
+  .package_sub_title b {
+    padding-left: 20px;
+  }
+  .package_sub_title p {
+    margin-left: 10px;
   }
   .package_ssomnail {
     margin-top: 2%;
