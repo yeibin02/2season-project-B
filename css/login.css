@@ -118,7 +118,7 @@
 }
 @media screen and (max-width: 480px) {
   .loginbox {
-    width: 360px;
+    width: 340px;
     padding: 10px;
   }
   .login-logo img {
