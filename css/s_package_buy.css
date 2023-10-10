@@ -171,17 +171,6 @@
   border: none;
   cursor: pointer;
 }
-.pk-totle-btn button a {
-  font-weight: bold;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-.pk-totle-btn button:hover {
-  background-color: #555555;
-  color: #c5c5c5;
-}
-
 .pk-totle-btn button:first-child {
   border-right: 1px solid #fff;
 }
@@ -680,6 +669,9 @@
   .pk-buy-box {
     width: 450px;
   }
+  .pk-totle-btn2.visible {
+    display: block;
+  }
 }
 @media all and (max-width: 768px) {
   .premium-pk {
@@ -702,6 +694,9 @@
   .pk-buy-select h5 {
     font-weight: 500;
     margin: 0;
+  }
+  .pk-totle-btn2.visible {
+    display: block;
   }
 }
 @media all and (max-width: 420px) {
