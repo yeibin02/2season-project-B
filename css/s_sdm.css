@@ -11,6 +11,7 @@
 }
 .s_sdm .inner {
   max-width: 1920px;
+  height: 100%;
 }
 .s_sdm_wrap {
   position: relative;
