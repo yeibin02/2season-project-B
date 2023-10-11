@@ -1,5 +1,6 @@
 /* 푸터 */
 .footer {
+
   width: 100%;
   height: 100%;
   padding-top: 20px;
@@ -208,6 +209,7 @@
   .footer .footer-bottom1 {
     left: 28%;
     text-align: left;
+
   }
   .footer .footer-bottom2 {
     left: 80%;
