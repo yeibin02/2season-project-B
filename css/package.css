@@ -219,10 +219,6 @@
   .m-pk-img-wrap li {
     margin-bottom: 15px;
   }
-<<<<<<< HEAD
-  .m-pk-sale-wrap {
-    width: 340px;
-=======
   .m-pk-sale-wrap h2 {
     font-size: 16px;
   }
@@ -239,9 +235,8 @@
     width: 360px;
     padding: 20px 0;
   }
-  .m-pk-timesale img{
+  .m-pk-timesale img {
     width: 43%;
->>>>>>> 2b61efaa34d5e462a2a59776b1e68c34c8f6d2da
   }
 }
 @media all and (max-width: 380px) {
