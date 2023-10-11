@@ -457,9 +457,11 @@
   .sdm_back_b {
     height: 2800px;
   }
-  @media all and (max-width: 320px) {
-    .smd_b_foot_img {
-      width: 280px;
-    }
+}
+@media all and (max-width: 360px) {
+}
+@media all and (max-width: 320px) {
+  .smd_b_foot_img {
+    width: 280px;
   }
 }
