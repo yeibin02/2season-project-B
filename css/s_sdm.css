@@ -1117,6 +1117,9 @@
   .stu_modal_imgbox2 {
     width: 70%;
   }
+  .s_sdm_wrap {
+    max-width: 1024px;
+  }
 }
 
 @media all and (max-width: 888px) {
@@ -1136,6 +1139,12 @@
   }
 }
 @media all and (max-width: 768px) {
+  .sdmmain .inner {
+    max-width: 768px;
+  }
+  .sdmmain_01 {
+    left: 5%;
+  }
   .sdmmain_03 {
     display: none;
   }
@@ -1260,6 +1269,9 @@
   }
   .stu_modal_imgbox2 {
     width: 90%;
+  }
+  #sdm_footer {
+    padding-top: 67%;
   }
 }
 @media all and (max-width: 739px) {

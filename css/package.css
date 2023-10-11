@@ -38,19 +38,19 @@
 }
 .m-pk-more-btn {
   font-family: "Noto Sans KR";
-  font-size: 26px;
+  font-size: 18px;
   color: #887160;
   text-transform: uppercase;
   background: transparent;
-  width: 170px;
-  height: 60px;
+  width: 120px;
+  height: 48px;
   border: 2px solid #887160;
   border-radius: 50px;
   margin-bottom: 50px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
   background: none;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 .m-pk-more-btn:hover {
   color: #fff;
@@ -183,6 +183,9 @@
   .m-pk-timesale img {
     width: 30%;
   }
+  .package_sub_title {
+    width: 100%;
+  }
 }
 @media all and (max-width: 540px) {
   .m-pk-text-wrap h2 {
@@ -216,6 +219,10 @@
   .m-pk-img-wrap li {
     margin-bottom: 15px;
   }
+<<<<<<< HEAD
+  .m-pk-sale-wrap {
+    width: 340px;
+=======
   .m-pk-sale-wrap h2 {
     font-size: 16px;
   }
@@ -234,6 +241,7 @@
   }
   .m-pk-timesale img{
     width: 43%;
+>>>>>>> 2b61efaa34d5e462a2a59776b1e68c34c8f6d2da
   }
 }
 @media all and (max-width: 380px) {

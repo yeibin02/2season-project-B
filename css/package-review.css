@@ -42,18 +42,18 @@
   left: 50%;
   transform: translateX(-50%);
   font-family: "Noto Sans KR";
-  font-size: 26px;
+  font-size: 18px;
   color: #887160;
   text-transform: uppercase;
   background: transparent;
-  width: 170px;
-  height: 60px;
+  width: 120px;
+  height: 48px;
   border: 2px solid #887160;
   border-radius: 50px;
   margin-bottom: 50px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 .pk-review-click-btn:hover {
   color: #fff;
