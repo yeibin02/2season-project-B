@@ -92,13 +92,35 @@ window.addEventListener("load", function(){
   });
 
   colorRequest.addEventListener('click', function (e) {
-      e.preventDefault()
-      const verificationBox = document.getElementById('verificationCodeBox');
-      const phoneNumBox = document.querySelector('.phoneNum-box');
-
-      verificationBox.style.display = 'flex ';
-
-      phoneNumBox.style.borderRadius = '0';
+    e.preventDefault();
+  
+    // 사용자 이름 유효성 검사
+    const inputValue = nameInput.value.trim();
+    const validName = /^[a-zA-Z가-힣\s]*$/; // 한글, 영문, 공백만 허용
+  
+    // 생년월일 유효성 검사
+    const inputBirthValue = birthInput.value.trim();
+    const validBirth = /^\d{8}$/; // 8자리 숫자만 허용
+  
+    if (!validName.test(inputValue)) {
+      alert("올바른 이름을 입력해주세요.");
+      // 입력값에서 유효하지 않은 문자를 제거
+      nameInput.value = inputValue.replace(/[^a-zA-Z가-힣\s]/g, '');
+      return; // 유효성 검사 통과하지 않을 경우 이후 코드 실행을 막음
+    } else if (!validBirth.test(inputBirthValue)) {
+      alert("올바른 생년월일을 8자리 숫자로 입력해주세요.");
+      birthInput.value = inputBirthValue.replace(/\D/g, '');
+      return; // 유효성 검사 통과하지 않을 경우 이후 코드 실행을 막음
+    }
+  
+    const verificationBox = document.getElementById('verificationCodeBox');
+    const phoneNumBox = document.querySelector('.phoneNum-box');
+  
+    verificationBox.style.display = 'flex';
+    phoneNumBox.style.borderRadius = '0';
+  
+    // 타이머 시작
+    startTimer();
   });
 
   const completion = document.getElementById('completion');
@@ -177,4 +199,45 @@ lastSubmit.addEventListener("click", function (e) {
       window.location.href = "login.html";
     }
   });
+
+  // timeLimit 요소 가져오기
+const timeLimitElement = document.getElementById("timeLimit");
+
+// 초 단위로 초기 시간 설정
+let remainingTime = 180; // 3분
+
+// 시간을 업데이트하는 함수
+function updateTimer() {
+  const minutes = Math.floor(remainingTime / 60);
+  const seconds = remainingTime % 60;
+  const timeString = `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  timeLimitElement.textContent = timeString;
+
+  if (remainingTime <= 0) {
+    // 시간이 다 되었을 때 수행할 동작을 여기에서 수행
+    // 예를 들어, 버튼을 활성화하거나 타이머를 숨길 수 있습니다.
+    document.getElementById("completion").disabled = false;
+    timeLimitElement.style.display = "none";
+  } else {
+    // 남은 시간을 1초씩 감소시킴
+    remainingTime--;
+  }
+}
+
+// verificationBox가 flex로 표시될 때 타이머 시작
+function startTimer() {
+  remainingTime = 180; // 3분으로 초기화
+  updateTimer(); // 초기 표시
+  const timerInterval = setInterval(function () {
+    if (remainingTime <= 0) {
+      clearInterval(timerInterval); // 타이머를 멈춤
+    } else {
+      updateTimer();
+    }
+  }, 1000); // 1초마다 업데이트
+}
+
+
+
 })
+
