@@ -1,13 +1,13 @@
 /* login */
 
-.loginwrap{
+.loginwrap {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.loginbox{
+.loginbox {
   width: 520px;
   height: 700px;
   border: 2px solid #baa693;
@@ -16,29 +16,32 @@
   margin: 0 auto;
   padding: 30px;
 }
-.login-logo img{
+.login-logo img {
   width: 360px;
   height: 120px;
   margin: 50px 0;
 }
-#login-form{
+#login-form {
   width: 400px;
   margin: 0 auto;
 }
 #username,
-#password{
+#password {
   width: 100%;
   margin: 10px auto;
   padding: 15px 20px;
   border: none;
   border-radius: 23px;
-  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1), inset -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 8px rgba(0, 0, 0, .3);
+  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
   font-size: 1rem;
   outline: none;
   color: #baa693;
 }
-.login-button{
+.login-button {
   width: 100%;
   margin: 10px auto;
   margin-top: 20px;
@@ -50,27 +53,27 @@
   outline: none;
   color: #fff;
 }
-.sns-login-title-box{
+.sns-login-title-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
   margin-bottom: 20px;
 }
-.sns-login-title-box hr{
+.sns-login-title-box hr {
   display: inline-block;
   width: 40%;
   border: none;
   border-bottom: 1px solid #baa693;
   margin: 20px 0;
 }
-.sns-login-title{
+.sns-login-title {
   position: relative;
   display: inline;
   width: 45%;
   height: 20px;
 }
-.sns-login-title::before{
+.sns-login-title::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -78,22 +81,22 @@
   height: 1px;
   background-color: #baa693;
 }
-.sns-login-box{
+.sns-login-box {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-#naver_id_login img{
+#naver_id_login img {
   border-radius: 50%;
 }
-.kakao_id_login{
+.kakao_id_login {
   width: 40px;
   height: 40px;
   overflow: hidden;
   border-radius: 50%;
 }
-.google_id_login{
+.google_id_login {
   width: 40px;
   height: 40px;
   overflow: hidden;
@@ -101,7 +104,7 @@
   border: 1px solid #ccc;
   position: relative;
 }
-.abcRioButtonContentWrapper{
+.abcRioButtonContentWrapper {
   scale: 1.5;
   margin-left: 23px;
   margin-top: 1px;
@@ -114,4 +117,22 @@
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 480px) {
+  .loginbox {
+    width: 340px;
+    padding: 10px;
+  }
+  .login-logo img {
+    width: 320px;
+  }
+  #login-form {
+    width: 320px;
+  }
+  #username,
+  #password,
+  .login-button {
+    width: 320px;
+  }
+  .sns-login-box {
+    margin-top: 40px;
+  }
 }

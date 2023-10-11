@@ -23,29 +23,19 @@ $(document).ready(function () {
   var menuVisible = false; // 메뉴바의 현재 표시 상태를 저장합니다.
 
   //로그인 안 되었을 때
-  // $(".pk-totle-buy-btn").click(function () {
-  //   location.href = "login.html";
-  // });
-  // $(".pk-totle-btn button").click(function () {
-  //   location.href = "login.html";
-  // });
-
+  $(".pk-totle-buy-btn").click(function () {
+    location.href = "login.html";
+  });
+  $(".pk-totle-btn button").click(function () {
+    location.href = "login.html";
+  });
+  //로그인 되었을 때
+  
   //반응형
   $(".pk-totle-buy-btn2").click(function () {
     $(".pk-buy-box2").addClass("modal-open");
   });
-
-  //로그인 되었을 때
-  // pr-pk-buy2-btn 버튼이 클릭되었을 때의 이벤트 핸들러
-  $(".pr-pk-buy2-btn").click(function () {
-    alert("결제가 완료되었습니다.");
-    location.href = "s_package.html";
-  });
-  $(".pk-totle-buy-btn").click(function () {
-    alert("결제가 완료되었습니다.");
-    location.href = "s_package.html";
-  });
-  //
+  
   $(window).scroll(function () {
     // 스크롤된 높이
     var scrollHeight = $(window).scrollTop();

@@ -26,14 +26,15 @@
       name="viewport"
       content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes"
     />
+
     <!-- SEO -->
     <meta name="author" content="웨딩포유" />
-    <meta name="title" content="웨딩포유 :: 당신을 위한 결혼" />
+    <meta name="title" content="웨딩포유 :: " />
     <meta name="keywords" content="웨딩포유, 결혼, 웨딩, 스드메, 식장예약" />
     <meta name="description" content="더 쉽고 간편하게 더 저렴하게 결혼하자" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="웨딩포유 :: 당신을 위한 결혼" />
+    <meta property="og:title" content="웨딩포유 :: " />
     <meta
       property="og:description"
       content="웨딩포유은 가장 최선의 방법으로 고객님에게 결과를 가져다 드립니다."
@@ -46,7 +47,7 @@
     <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
-      content="웨딩포유 :: 당신을 위한 결혼"
+      content="웨딩포유 :: 지구를 지키는 확실한 행동"
     />
     <meta
       name="twitter:description"
@@ -143,7 +144,7 @@
     />
     <!-- script 불러오기 -->
     <script src="js/header.js"></script>
-    <script src="js/s_package_buy.js"></script>
+    <script src="js/callback_package_buy.js"></script>
     <!-- css 불러오기 -->
     <link rel="stylesheet" href="css/style.css" />
     <style>
@@ -217,8 +218,7 @@
           </nav>
           <div class="s-menu">
             <ul>
-              <li><a href="login.html">login</a></li>
-              <li><a href="signup.html">sign up</a></li>
+              <li><a href="index.html">logout</a></li>
             </ul>
           </div>
           <button class="hamburger">
@@ -238,11 +238,9 @@
           <li><a href="s_contact.html">contact</a></li>
           <li>
             <ul>
-              <li><a href="login.html">login</a></li>
-              <li><a href="signup.html">sign up</a></li>
+              <li><a href="callback.html">logout</a></li>
             </ul>
           </li>
-
         </ul>
       </div>
       <!-- 상세 설명 페이지 -->
@@ -621,375 +619,373 @@
             <button class="pk-totle-buy-btn2" id="buyButton">바로 결제</button>
           </div>
           <!-- <div class="pr-pk2-wrap"> -->
-            <div class="premium-pk2-wrap">
-              <div class="pre-pk-img-wrap2"></div>
-              <div class="premium-pk-text2">
-                <h2>
-                  <span>[프리미엄 패키지]</span>
-                  페레(토탈 화이트ver.)+레이첼웨딩+제니하우스
-                  청담힐+더화이트베일
-                </h2>
-                <div class="price_box">
-                  <div>
-                    <span>최대 혜택 적용 시</span>
-                    <div class="price_text has_coupon">
-                      <p id="pk-price-totle">
-                        2,540,000원<span class="price_discount">52%</span>
-                      </p>
-                    </div>
-                    <div class="price_detail_text">
-                      개별 구매 시 5,295,000원
-                    </div>
+          <div class="premium-pk2-wrap">
+            <div class="pre-pk-img-wrap2"></div>
+            <div class="premium-pk-text2">
+              <h2>
+                <span>[프리미엄 패키지]</span>
+                페레(토탈 화이트ver.)+레이첼웨딩+제니하우스 청담힐+더화이트베일
+              </h2>
+              <div class="price_box">
+                <div>
+                  <span>최대 혜택 적용 시</span>
+                  <div class="price_text has_coupon">
+                    <p id="pk-price-totle">
+                      2,540,000원<span class="price_discount">52%</span>
+                    </p>
                   </div>
-                </div>
-              </div>
-              <div class="sc-ihgnxF kecTuB"></div>
-              <!-- 포함 상품 -->
-              <div class="premium-pk-pri">
-                <div class="sc-dSCufp jsSaWY section_title">
-                  <p>포함 상품 &amp; 패키지 특전</p>
-                </div>
-                <ul class="plusPrice">
-                  <li class="plusPriceLi">
-                    <div class="plpk-wrap">
-                      <div class="plpk-sub-wrap">
-                        <div class="category">
-                          사진<span class="divider"></span>페레스튜디오
-                        </div>
-                        <h5>
-                          [토탈촬영] 위뜨_화이트 (드레스,턱시도,헤어메이크업
-                          포함)
-                        </h5>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="plusPriceLi">
-                    <div class="plpk-wrap">
-                      <div class="plpk-sub-wrap">
-                        <div class="category">
-                          드레스<span class="divider"></span>레이첼웨딩
-                        </div>
-                        <h5>[본식] 드레스 1벌</h5>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="plusPriceLi">
-                    <div class="plpk-wrap">
-                      <div class="plpk-sub-wrap">
-                        <div class="category">
-                          헤어/메이크업<span class="divider"></span>제니하우스
-                          청담힐
-                        </div>
-                        <h5>[본식] 신부신랑 헤어메이크업(실장)</h5>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="plusPriceLi">
-                    <div class="plpk-wrap">
-                      <div class="plpk-sub-wrap">
-                        <div class="category">
-                          사진<span class="divider"></span>비아쥬스냅
-                        </div>
-                        <h5>[본식스냅] 원판+스냅 40P 1인촬영</h5>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="plusPriceLi">
-                    <div class="plpk-wrap">
-                      <div class="plpk-sub-wrap">
-                        <div class="category">
-                          영상앨범<span class="divider"></span>더화이트베일
-                        </div>
-                        <h5>[본식] VDSLR 다큐</h5>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <!-- 패키지 특전 -->
-                <div class="pr-pk-special-wrap">
-                  <h3>패키지 특전</h3>
-                  <ul>
-                    <li>
-                      <h5>정상가</h5>
-                      <p>5,295,000 원</p>
-                    </li>
-                    <li>
-                      <h5>할인가</h5>
-                      <p>2,940,000 원</p>
-                    </li>
-                    <li class="discount_list">
-                      <h5>패키지 추가 할인</h5>
-                      <p>-300,000 원</p>
-                    </li>
-                    <li class="pr-last_list">
-                      <h5>최종 혜택가</h5>
-                      <p>2,640,000 원</p>
-                    </li>
-                  </ul>
-                  <div class="pk-item-sale">
-                    <p>패키지 구매 시<span>총 2,655,000원 절약</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="sc-ihgnxF kecTuB"></div>
-              <!-- 패키지 혜택 -->
-              <div class="pr-pk-benefit-wrap">
-                <div class="sc-dSCufp jsSaWY section_title">
-                  <p>패키지 혜택</p>
-                </div>
-                <ul>
-                  <li>
-                    <div class="benefit_count_box">
-                      <div class="benefit_count"><span>혜택 1</span></div>
-                    </div>
-                    <div class="info_box">
-                      <h5>사진<span class="divider"></span>페레스튜디오</h5>
-                      <p>10만원 할인</p>
-                      <p class="condition_text">토탈 촬영 시 적용 가능</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="benefit_count_box">
-                      <div class="benefit_count"><span>혜택 2</span></div>
-                    </div>
-                    <div class="info_box">
-                      <h5>사진<span class="divider"></span>페레스튜디오</h5>
-                      <p>화이트+블랙 믹스 촬영 서비스</p>
-                      <p class="condition_text">
-                        위뜨 화이트 or 위뜨 블랙 상품 이용 시 가능
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="benefit_count_box">
-                      <div class="benefit_count"><span>혜택 3</span></div>
-                    </div>
-                    <div class="info_box">
-                      <h5>사진<span class="divider"></span>페레스튜디오</h5>
-                      <p>드레스 착용 한옥씬 무료 촬영</p>
-                      <p class="condition_text">
-                        토탈촬영 드레스 착용 촬영 시 적용 가능
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="benefit_count_box">
-                      <div class="benefit_count"><span>혜택 4</span></div>
-                    </div>
-                    <div class="info_box">
-                      <h5>사진<span class="divider"></span>페레스튜디오</h5>
-                      <p>한복 착용 한옥씬 50% 할인</p>
-                      <p class="condition_text">
-                        토탈촬영 한복 착용 촬영 시 적용 가능
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="benefit_count_box">
-                      <div class="benefit_count"><span>혜택 5</span></div>
-                    </div>
-                    <div class="info_box">
-                      <h5>사진<span class="divider"></span>페레스튜디오</h5>
-                      <p>전구 야간씬 50% 할인</p>
-                      <p class="condition_text">
-                        토탈촬영 16시 촬영 시 적용 가능
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="benefit_count_box">
-                      <div class="benefit_count"><span>혜택 6</span></div>
-                    </div>
-                    <div class="info_box">
-                      <h5>사진<span class="divider"></span>비아쥬스냅</h5>
-                      <p>5만원 할인</p>
-                      <p class="condition_text">원판+스냅, 스냅 촬영 시 가능</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="sc-ihgnxF kecTuB"></div>
-              <!-- 상품 기본 정보 -->
-              <div class="pr-pk-info">
-                <div class="sc-dSCufp jsSaWY section_title">
-                  <p>상품 기본 정보</p>
-                </div>
-                <ul class="pr-pk-info-ul pr-pk-infoul">
-                  <li class="tab_button current">페레스튜디오</li>
-                  <li class="tab_button">레이첼웨딩</li>
-                  <li class="tab_button">제니하우스 청담힐</li>
-                  <!-- <li class="tab_button">더화이트베일</li> -->
-                </ul>
-                <div class="sc-kzqdkY pr-pk-info-item">
-                  <li>
-                    <h5>상품구성</h5>
-                    <p>
-                      <span class="dot"></span>앨범 1권 (20P) + 기본 액자 1개 +
-                      드레스 + 턱시도 + 신랑신부 헤어메이크업
-                    </p>
-                    <p class="desc">
-                      드레스 3벌, 턱시도 1벌, 신랑신부 헤어메이크업 1회 포함
-                    </p>
-                  </li>
-                  <li>
-                    <h5>촬영 소요 시간</h5>
-                    <p><span class="dot"></span>4시간</p>
-                    <p class="desc"></p>
-                  </li>
-                  <li>
-                    <h5>촬영 스케줄</h5>
-                    <p><span class="dot"></span>11시, 16시</p>
-                    <p class="desc"></p>
-                  </li>
-                  <li>
-                    <h5>보유 소품</h5>
-                    <p><span class="dot"></span>촬영용 부케</p>
-                    <p class="desc"></p>
-                  </li>
-                  <li>
-                    <h5>보유 드레스</h5>
-                    <p><span class="dot"></span>로자스포사 브랜드만 취급</p>
-                    <p class="desc">당일 4벌 입어보고 최종 3벌 셀렉</p>
-                  </li>
-                  <li>
-                    <h5>헤어 메이크업</h5>
-                    <p><span class="dot"></span>헤움 실장 직급 시술</p>
-                    <p class="desc">
-                      1. 헤어변형 1회 55,000원, 헤어피스 110,000원 비용발생 2.
-                      메이크업 부원장 지정 시, 55,000원 / 원장 지정 시,
-                      110,000원 추가비용 발생
-                    </p>
-                  </li>
-                  <li>
-                    <h5>촬영 의상 벌 수</h5>
-                    <p>
-                      <span class="dot"></span>5벌로 제한 (드레스 3벌 포함,
-                      한복, 캐주얼 최종 5벌)
-                    </p>
-                    <p class="desc">
-                      본인 한복 캐주얼을 제외한 고객님께서 별도로 준비하신
-                      드레스는 촬영이 불가함
-                    </p>
-                  </li>
-                  <li>
-                    <h5>헬퍼비</h5>
-                    <p><span class="dot"></span>200,000원 별도</p>
-                    <p class="desc">현장 결제</p>
-                  </li>
-                  <li>
-                    <h5>헤어 변형 출장 업체</h5>
-                    <p><span class="dot"></span>이용 가능</p>
-                    <p class="desc"></p>
-                  </li>
-                </div>
-              </div>
-              <div class="sc-ihgnxF kecTuB"></div>
-              <!-- 상품 이용 안내 -->
-              <div class="pr-pk-useinfo-wrap">
-                <div class="sc-dSCufp jsSaWY section_title">
-                  <p>상품 이용 안내</p>
-                </div>
-                <ul class="pr-pk-info-ul pr-pk-useinfo-ul">
-                  <li class="tab_button current">페레스튜디오</li>
-                  <li class="tab_button">레이첼웨딩</li>
-                  <li class="tab_button">제니하우스 청담힐</li>
-                  <!-- <li class="tab_button">더화이트베일</li> -->
-                </ul>
-                <!-- 상품 환불 규정 -->
-                <div class="pr-pk-cancle-wrap">
-                  <div class="pr-pk-cancle-rule">
-                    <h5>취소 및 환불규정</h5>
-                    <li>
-                      <p>
-                        ※웨딩촬영 &gt; 웨딩촬영 행사일 또는 행사 당일을 포함한
-                        50일 이내 고객님의 일방적인 일정변경 또는 이용취소 시,
-                        정상 상품 금액(이벤트 할인 제외)의 30%가 위약금으로
-                        발생됩니다. &gt; 웨딩촬영 행사일 또는 행사 당일을 포함한
-                        30일 이내 고객님의 일방적인 일정변경 또는 이용취소 시,
-                        정상 상품 금액(이벤트 할인 제외)의 50%가 위약금으로
-                        발생됩니다. &gt; 웨딩촬영 행사일 또는 행사 당일을 포함한
-                        15일 이내 고객님의 일방적인 일정변경 또는 이용취소 시,
-                        정상 상품 금액(이벤트 할인 제외) 100%가 위약금으로
-                        발생됩니다. ※토탈촬영 &gt;토탈촬영 행사일 또는 행사
-                        당일을 포함한 30일 이내 고객님의 일방적인 일정변경 또는
-                        이용취소 시, 정상 상품 금액(이벤트 할인 제외)의 50%가
-                        위약금으로 발생됩니다. &gt;토탈촬영 행사일 또는 행사
-                        당일을 포함한 7일 이내 고객님의 일방적인 일정변경 또는
-                        이용취소 시, 정상 상품 금액(이벤트 할인 제외)의 100%가
-                        위약금으로 발생됩니다.<br /><br />
-                      </p>
-                    </li>
-                  </div>
+                  <div class="price_detail_text">개별 구매 시 5,295,000원</div>
                 </div>
               </div>
             </div>
-          <!-- 결제 상품 담기 창 -->
-            <div class="premium-pk-buy2 clearfix">
-              <div class="pk-buy-text-wrap">
-                <div class="pk-buy-box2">
-                  
-                  <h5>패키지 구성상품</h5>
-                  <div class="pk-menu-btn">
-                    <section class="pk-menu">
-                      <em>사진ㅣ페레스튜디오</em>
-                      <p>
-                        [토탈촬영] 위뜨_화이트 (드레스,턱시도,헤어메이크업 포함)
-                      </p>
-                      <br />
-                      <span class="pk-buy-text1"
-                        >상품의 필수 옵션을 선택해주세요.<br />
-                        (추가 할인이 가능한 옵션이 있어요)
-                      </span>
-                    </section>
-                    <section class="pk-menu">
-                      <em>드레스ㅣ레이첼웨딩</em>
-                      <p>[본식] 드레스 1벌</p>
-                      <br />
-                      <em>수량 변경 불가</em>
-
-                      <p class="pk-buy-text2">선택 가능한 옵션이 없습니다.</p>
-                    </section>
-                    <section class="pk-menu">
-                      <em>헤어/메이크업ㅣ제니하우스 청담힐</em>
-                      <p>[본식] 신부신랑 헤어메이크업(실장)</p>
-                      <br />
-                      <span class="pk-buy-text1">
-                        상품의 필수 옵션을 선택해주세요.
-                      </span>
-                    </section>
-                    <section class="pk-menu">
-                      <em>사진ㅣ비아쥬스냅</em>
-                      <p>[본식스냅] 원판+스냅 40P 1인촬영</p>
-                      <br />
-                      <em>수량 변경 불가</em>
-                      <p class="pk-buy-text2">선택 가능한 옵션이 없습니다.</p>
-                    </section>
-                    <section class="pk-menu">
-                      <em>영상앨범ㅣ더화이트베일</em>
-                      <p>[본식] VDSLR 다큐</p>
-                      <br />
-                      <span class="pk-buy-text1">
-                        상품의 필수 옵션을 선택해주세요.
-                      </span>
-                    </section>
-                  </div>
-                  <div class="pk-totle-buy">
-                    <div class="pk-totle-one">
-                      <p>개별 조합 금액</p>
-                      <span class="totle-price1">2,940,000원</span>
-                    </div>
-                    <div class="pk-totle-two">
-                      <p>패키지 추가 할인</p>
-                      <span class="totle-price2">- 300,000 원</span>
-                    </div>
-                    <div class="pk-totle-main">
-                      <p>총금액</p>
-                      <span class="totle-price-main">2,640,000원</span>
-                    </div>
-              <div class="pk-buy2-btn-wrap">
-                <button class="pr-pk-buy2-btn pr-pk-buy2-btn2">상품담기</button>
-                <button class="pr-pk-buy2-btn prPkBuyTwoBtn">결제하기</button>
+            <div class="sc-ihgnxF kecTuB"></div>
+            <!-- 포함 상품 -->
+            <div class="premium-pk-pri">
+              <div class="sc-dSCufp jsSaWY section_title">
+                <p>포함 상품 &amp; 패키지 특전</p>
               </div>
+              <ul class="plusPrice">
+                <li class="plusPriceLi">
+                  <div class="plpk-wrap">
+                    <div class="plpk-sub-wrap">
+                      <div class="category">
+                        사진<span class="divider"></span>페레스튜디오
+                      </div>
+                      <h5>
+                        [토탈촬영] 위뜨_화이트 (드레스,턱시도,헤어메이크업 포함)
+                      </h5>
+                    </div>
+                  </div>
+                </li>
+                <li class="plusPriceLi">
+                  <div class="plpk-wrap">
+                    <div class="plpk-sub-wrap">
+                      <div class="category">
+                        드레스<span class="divider"></span>레이첼웨딩
+                      </div>
+                      <h5>[본식] 드레스 1벌</h5>
+                    </div>
+                  </div>
+                </li>
+                <li class="plusPriceLi">
+                  <div class="plpk-wrap">
+                    <div class="plpk-sub-wrap">
+                      <div class="category">
+                        헤어/메이크업<span class="divider"></span>제니하우스
+                        청담힐
+                      </div>
+                      <h5>[본식] 신부신랑 헤어메이크업(실장)</h5>
+                    </div>
+                  </div>
+                </li>
+                <li class="plusPriceLi">
+                  <div class="plpk-wrap">
+                    <div class="plpk-sub-wrap">
+                      <div class="category">
+                        사진<span class="divider"></span>비아쥬스냅
+                      </div>
+                      <h5>[본식스냅] 원판+스냅 40P 1인촬영</h5>
+                    </div>
+                  </div>
+                </li>
+                <li class="plusPriceLi">
+                  <div class="plpk-wrap">
+                    <div class="plpk-sub-wrap">
+                      <div class="category">
+                        영상앨범<span class="divider"></span>더화이트베일
+                      </div>
+                      <h5>[본식] VDSLR 다큐</h5>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- 패키지 특전 -->
+              <div class="pr-pk-special-wrap">
+                <h3>패키지 특전</h3>
+                <ul>
+                  <li>
+                    <h5>정상가</h5>
+                    <p>5,295,000 원</p>
+                  </li>
+                  <li>
+                    <h5>할인가</h5>
+                    <p>2,940,000 원</p>
+                  </li>
+                  <li class="discount_list">
+                    <h5>패키지 추가 할인</h5>
+                    <p>-300,000 원</p>
+                  </li>
+                  <li class="pr-last_list">
+                    <h5>최종 혜택가</h5>
+                    <p>2,640,000 원</p>
+                  </li>
+                </ul>
+                <div class="pk-item-sale">
+                  <p>패키지 구매 시<span>총 2,655,000원 절약</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="sc-ihgnxF kecTuB"></div>
+            <!-- 패키지 혜택 -->
+            <div class="pr-pk-benefit-wrap">
+              <div class="sc-dSCufp jsSaWY section_title">
+                <p>패키지 혜택</p>
+              </div>
+              <ul>
+                <li>
+                  <div class="benefit_count_box">
+                    <div class="benefit_count"><span>혜택 1</span></div>
+                  </div>
+                  <div class="info_box">
+                    <h5>사진<span class="divider"></span>페레스튜디오</h5>
+                    <p>10만원 할인</p>
+                    <p class="condition_text">토탈 촬영 시 적용 가능</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="benefit_count_box">
+                    <div class="benefit_count"><span>혜택 2</span></div>
+                  </div>
+                  <div class="info_box">
+                    <h5>사진<span class="divider"></span>페레스튜디오</h5>
+                    <p>화이트+블랙 믹스 촬영 서비스</p>
+                    <p class="condition_text">
+                      위뜨 화이트 or 위뜨 블랙 상품 이용 시 가능
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="benefit_count_box">
+                    <div class="benefit_count"><span>혜택 3</span></div>
+                  </div>
+                  <div class="info_box">
+                    <h5>사진<span class="divider"></span>페레스튜디오</h5>
+                    <p>드레스 착용 한옥씬 무료 촬영</p>
+                    <p class="condition_text">
+                      토탈촬영 드레스 착용 촬영 시 적용 가능
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="benefit_count_box">
+                    <div class="benefit_count"><span>혜택 4</span></div>
+                  </div>
+                  <div class="info_box">
+                    <h5>사진<span class="divider"></span>페레스튜디오</h5>
+                    <p>한복 착용 한옥씬 50% 할인</p>
+                    <p class="condition_text">
+                      토탈촬영 한복 착용 촬영 시 적용 가능
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="benefit_count_box">
+                    <div class="benefit_count"><span>혜택 5</span></div>
+                  </div>
+                  <div class="info_box">
+                    <h5>사진<span class="divider"></span>페레스튜디오</h5>
+                    <p>전구 야간씬 50% 할인</p>
+                    <p class="condition_text">
+                      토탈촬영 16시 촬영 시 적용 가능
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="benefit_count_box">
+                    <div class="benefit_count"><span>혜택 6</span></div>
+                  </div>
+                  <div class="info_box">
+                    <h5>사진<span class="divider"></span>비아쥬스냅</h5>
+                    <p>5만원 할인</p>
+                    <p class="condition_text">원판+스냅, 스냅 촬영 시 가능</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="sc-ihgnxF kecTuB"></div>
+            <!-- 상품 기본 정보 -->
+            <div class="pr-pk-info">
+              <div class="sc-dSCufp jsSaWY section_title">
+                <p>상품 기본 정보</p>
+              </div>
+              <ul class="pr-pk-info-ul pr-pk-infoul">
+                <li class="tab_button current">페레스튜디오</li>
+                <li class="tab_button">레이첼웨딩</li>
+                <li class="tab_button">제니하우스 청담힐</li>
+                <!-- <li class="tab_button">더화이트베일</li> -->
+              </ul>
+              <div class="sc-kzqdkY pr-pk-info-item">
+                <li>
+                  <h5>상품구성</h5>
+                  <p>
+                    <span class="dot"></span>앨범 1권 (20P) + 기본 액자 1개 +
+                    드레스 + 턱시도 + 신랑신부 헤어메이크업
+                  </p>
+                  <p class="desc">
+                    드레스 3벌, 턱시도 1벌, 신랑신부 헤어메이크업 1회 포함
+                  </p>
+                </li>
+                <li>
+                  <h5>촬영 소요 시간</h5>
+                  <p><span class="dot"></span>4시간</p>
+                  <p class="desc"></p>
+                </li>
+                <li>
+                  <h5>촬영 스케줄</h5>
+                  <p><span class="dot"></span>11시, 16시</p>
+                  <p class="desc"></p>
+                </li>
+                <li>
+                  <h5>보유 소품</h5>
+                  <p><span class="dot"></span>촬영용 부케</p>
+                  <p class="desc"></p>
+                </li>
+                <li>
+                  <h5>보유 드레스</h5>
+                  <p><span class="dot"></span>로자스포사 브랜드만 취급</p>
+                  <p class="desc">당일 4벌 입어보고 최종 3벌 셀렉</p>
+                </li>
+                <li>
+                  <h5>헤어 메이크업</h5>
+                  <p><span class="dot"></span>헤움 실장 직급 시술</p>
+                  <p class="desc">
+                    1. 헤어변형 1회 55,000원, 헤어피스 110,000원 비용발생 2.
+                    메이크업 부원장 지정 시, 55,000원 / 원장 지정 시, 110,000원
+                    추가비용 발생
+                  </p>
+                </li>
+                <li>
+                  <h5>촬영 의상 벌 수</h5>
+                  <p>
+                    <span class="dot"></span>5벌로 제한 (드레스 3벌 포함, 한복,
+                    캐주얼 최종 5벌)
+                  </p>
+                  <p class="desc">
+                    본인 한복 캐주얼을 제외한 고객님께서 별도로 준비하신
+                    드레스는 촬영이 불가함
+                  </p>
+                </li>
+                <li>
+                  <h5>헬퍼비</h5>
+                  <p><span class="dot"></span>200,000원 별도</p>
+                  <p class="desc">현장 결제</p>
+                </li>
+                <li>
+                  <h5>헤어 변형 출장 업체</h5>
+                  <p><span class="dot"></span>이용 가능</p>
+                  <p class="desc"></p>
+                </li>
+              </div>
+            </div>
+            <div class="sc-ihgnxF kecTuB"></div>
+            <!-- 상품 이용 안내 -->
+            <div class="pr-pk-useinfo-wrap">
+              <div class="sc-dSCufp jsSaWY section_title">
+                <p>상품 이용 안내</p>
+              </div>
+              <ul class="pr-pk-info-ul pr-pk-useinfo-ul">
+                <li class="tab_button current">페레스튜디오</li>
+                <li class="tab_button">레이첼웨딩</li>
+                <li class="tab_button">제니하우스 청담힐</li>
+                <!-- <li class="tab_button">더화이트베일</li> -->
+              </ul>
+              <!-- 상품 환불 규정 -->
+              <div class="pr-pk-cancle-wrap">
+                <div class="pr-pk-cancle-rule">
+                  <h5>취소 및 환불규정</h5>
+                  <li>
+                    <p>
+                      ※웨딩촬영 &gt; 웨딩촬영 행사일 또는 행사 당일을 포함한
+                      50일 이내 고객님의 일방적인 일정변경 또는 이용취소 시,
+                      정상 상품 금액(이벤트 할인 제외)의 30%가 위약금으로
+                      발생됩니다. &gt; 웨딩촬영 행사일 또는 행사 당일을 포함한
+                      30일 이내 고객님의 일방적인 일정변경 또는 이용취소 시,
+                      정상 상품 금액(이벤트 할인 제외)의 50%가 위약금으로
+                      발생됩니다. &gt; 웨딩촬영 행사일 또는 행사 당일을 포함한
+                      15일 이내 고객님의 일방적인 일정변경 또는 이용취소 시,
+                      정상 상품 금액(이벤트 할인 제외) 100%가 위약금으로
+                      발생됩니다. ※토탈촬영 &gt;토탈촬영 행사일 또는 행사 당일을
+                      포함한 30일 이내 고객님의 일방적인 일정변경 또는 이용취소
+                      시, 정상 상품 금액(이벤트 할인 제외)의 50%가 위약금으로
+                      발생됩니다. &gt;토탈촬영 행사일 또는 행사 당일을 포함한
+                      7일 이내 고객님의 일방적인 일정변경 또는 이용취소 시, 정상
+                      상품 금액(이벤트 할인 제외)의 100%가 위약금으로
+                      발생됩니다.<br /><br />
+                    </p>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 결제 상품 담기 창 -->
+          <div class="premium-pk-buy2 clearfix">
+            <div class="pk-buy-text-wrap">
+              <div class="pk-buy-box2">
+                <h5>패키지 구성상품</h5>
+                <div class="pk-menu-btn">
+                  <section class="pk-menu">
+                    <em>사진ㅣ페레스튜디오</em>
+                    <p>
+                      [토탈촬영] 위뜨_화이트 (드레스,턱시도,헤어메이크업 포함)
+                    </p>
+                    <br />
+                    <span class="pk-buy-text1"
+                      >상품의 필수 옵션을 선택해주세요.<br />
+                      (추가 할인이 가능한 옵션이 있어요)
+                    </span>
+                  </section>
+                  <section class="pk-menu">
+                    <em>드레스ㅣ레이첼웨딩</em>
+                    <p>[본식] 드레스 1벌</p>
+                    <br />
+                    <em>수량 변경 불가</em>
+
+                    <p class="pk-buy-text2">선택 가능한 옵션이 없습니다.</p>
+                  </section>
+                  <section class="pk-menu">
+                    <em>헤어/메이크업ㅣ제니하우스 청담힐</em>
+                    <p>[본식] 신부신랑 헤어메이크업(실장)</p>
+                    <br />
+                    <span class="pk-buy-text1">
+                      상품의 필수 옵션을 선택해주세요.
+                    </span>
+                  </section>
+                  <section class="pk-menu">
+                    <em>사진ㅣ비아쥬스냅</em>
+                    <p>[본식스냅] 원판+스냅 40P 1인촬영</p>
+                    <br />
+                    <em>수량 변경 불가</em>
+                    <p class="pk-buy-text2">선택 가능한 옵션이 없습니다.</p>
+                  </section>
+                  <section class="pk-menu">
+                    <em>영상앨범ㅣ더화이트베일</em>
+                    <p>[본식] VDSLR 다큐</p>
+                    <br />
+                    <span class="pk-buy-text1">
+                      상품의 필수 옵션을 선택해주세요.
+                    </span>
+                  </section>
+                </div>
+                <div class="pk-totle-buy">
+                  <div class="pk-totle-one">
+                    <p>개별 조합 금액</p>
+                    <span class="totle-price1">2,940,000원</span>
+                  </div>
+                  <div class="pk-totle-two">
+                    <p>패키지 추가 할인</p>
+                    <span class="totle-price2">- 300,000 원</span>
+                  </div>
+                  <div class="pk-totle-main">
+                    <p>총금액</p>
+                    <span class="totle-price-main">2,640,000원</span>
+                  </div>
+                  <div class="pk-buy2-btn-wrap">
+                    <button class="pr-pk-buy2-btn pr-pk-buy2-btn2">
+                      상품담기
+                    </button>
+                    <button class="pr-pk-buy2-btn prPkBuyTwoBtn">
+                      결제하기
+                    </button>
                   </div>
                 </div>
               </div>
@@ -997,93 +993,88 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- footer -->
-      <footer class="footer clearfix">
-        <div class="inner">
-          <div class="footer-top">
-            <div class="footer-logo">
-              <a href="index.html">
-                <img src="images/logo_black.png" alt="footerlogo" />
-              </a>
-            </div>
-          </div>
-          <div class="footer-middle">
-            <div class="footer1 footer-middle-content">
-              <a href="s_package.html"><h3>package</h3></a>
-              <ul>
-                <a href="#"><li>스튜디오</li></a>
-                <a href="#"><li>드레스</li></a>
-                <a href="#"><li>메이크업</li></a>
-                <a href="#"><li>웨딩홀</li></a>
-              </ul>
-            </div>
-            <div class="footer2 footer-middle-content">
-              <a href="s_package.html"><h3>wedding hall</h3></a>
-              <ul>
-                <a href="#"><li>일반 홀</li></a>
-                <a href="#"><li>컨벤션 홀</li></a>
-                <a href="#"><li>야외/하우스 홀</li></a>
-                <a href="#"><li>채플 홀</li></a>
-                <a href="#"><li>호텔 홀</li></a>
-              </ul>
-            </div>
-            <div class="footer3 footer-middle-content">
-              <a href="s_sdm.html"><h3>sdm</h3></a>
-              <ul>
-                <a href="s_sdm.html#sdm_studio"><li>스튜디오</li></a>
-                <a href="#"><li>드레스</li></a>
-                <a href="#"><li>메이크업</li></a>
-              </ul>
-            </div>
-            <div class="footer4 footer-middle-content">
-              <a href="s_notice.html"><h3>q&a</h3></a>
-              <ul>
-                <a href="#"><li>자주 묻는 질문</li></a>
-                <a href="#"><li>질문하기</li></a>
-              </ul>
-            </div>
-            <div class="footer5 footer-middle-content">
-              <a href="s_review.html"><h3>review</h3></a>
-              <ul>
-                <a href="#"><li>패키지 리뷰</li></a>
-                <a href="#"><li>고객 리뷰</li></a>
-              </ul>
-            </div>
-            <div class="footer-middle-mobile-content">
-              <a href="#"><h4>package</h4></a>
-              <a href="#"><h4>wedding hall</h4></a>
-              <a href="#"><h4>sdm</h4></a>
-              <a href="#"><h4>q&a</h4></a>
-              <a href="#"><h4>review</h4></a>
-            </div>
-            <div class="footer-middle-mobile-content-contact">
-            </div>
-          </div>
-          <div class="footer-bottom">
-              <p>
-                대표자: 실뱅 꼴라델 / 서울시 강남구 영동대로 517, 35층(삼성동,
-                아셈타워) / 사업자등록번호: 120-81-79834
-              </p>
-              <p>
-                통신판매업 신고번호 제 2015-서울강남-00052 호 (<a
-                  href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208179834&apv_perm_no=null"
-                  class="footer-underline"
-                  >사업자 정보 확인</a
-                >)
-              </p>
-              <p>
-                개인정보보호책임자: 한소희 / 호스팅 서비스: Rackspace Hosting
-              </p>
-              <p>
-                클라이언트서비스센터 02-3452-1921 메일 문의
-                <a href="" class="footer-underline"
-                  >clientservice.kr@gucci.com</a
-                >
-              </p>
+    <!-- footer -->
+    <footer class="footer clearfix">
+      <div class="inner">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <a href="callback.html">
+              <img src="images/logo_black.png" alt="footerlogo" />
+            </a>
           </div>
         </div>
-      </footer>
-    </div>
+        <div class="footer-middle">
+          <div class="footer1 footer-middle-content">
+            <a href="callback_s_package.html"><h3>package</h3></a>
+            <ul>
+              <a href="#"><li>스튜디오</li></a>
+              <a href="#"><li>드레스</li></a>
+              <a href="#"><li>메이크업</li></a>
+              <a href="#"><li>웨딩홀</li></a>
+            </ul>
+          </div>
+          <div class="footer2 footer-middle-content">
+            <a href="callback_s_package.html"><h3>wedding hall</h3></a>
+            <ul>
+              <a href="#"><li>일반 홀</li></a>
+              <a href="#"><li>컨벤션 홀</li></a>
+              <a href="#"><li>야외/하우스 홀</li></a>
+              <a href="#"><li>채플 홀</li></a>
+              <a href="#"><li>호텔 홀</li></a>
+            </ul>
+          </div>
+          <div class="footer3 footer-middle-content">
+            <a href="callback_s_sdm.html"><h3>sdm</h3></a>
+            <ul>
+              <a href="callback_s_sdm.html#sdm_studio"><li>스튜디오</li></a>
+              <a href="#"><li>드레스</li></a>
+              <a href="#"><li>메이크업</li></a>
+            </ul>
+          </div>
+          <div class="footer4 footer-middle-content">
+            <a href="callback_s_notice.html"><h3>q&a</h3></a>
+            <ul>
+              <a href="#"><li>자주 묻는 질문</li></a>
+              <a href="#"><li>질문하기</li></a>
+            </ul>
+          </div>
+          <div class="footer5 footer-middle-content">
+            <a href="callback_s_review.html"><h3>review</h3></a>
+            <ul>
+              <a href="#"><li>패키지 리뷰</li></a>
+              <a href="#"><li>고객 리뷰</li></a>
+            </ul>
+          </div>
+          <div class="footer-middle-mobile-content">
+            <a href="#"><h4>package</h4></a>
+            <a href="#"><h4>wedding hall</h4></a>
+            <a href="#"><h4>sdm</h4></a>
+            <a href="#"><h4>q&a</h4></a>
+            <a href="#"><h4>review</h4></a>
+          </div>
+          <div class="footer-middle-mobile-content-contact"></div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            대표자: 실뱅 꼴라델 / 서울시 강남구 영동대로 517, 35층(삼성동,
+            아셈타워) / 사업자등록번호: 120-81-79834
+          </p>
+          <p>
+            통신판매업 신고번호 제 2015-서울강남-00052 호 (<a
+              href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208179834&apv_perm_no=null"
+              class="footer-underline"
+              >사업자 정보 확인</a
+            >)
+          </p>
+          <p>개인정보보호책임자: 한소희 / 호스팅 서비스: Rackspace Hosting</p>
+          <p>
+            클라이언트서비스센터 02-3452-1921 메일 문의
+            <a href="" class="footer-underline">clientservice.kr@gucci.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

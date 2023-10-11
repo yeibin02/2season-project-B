@@ -1,12 +1,12 @@
 /* signup2 */
-.signupwrap{
+.signupwrap {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.signupbox{
+.signupbox {
   width: 520px;
   height: 700px;
   border: 2px solid #baa693;
@@ -15,7 +15,7 @@
   margin: 0 auto;
   padding: 30px;
 }
-.signup-form > div{
+.signup-form > div {
   height: 50px;
   width: 456px;
   /* margin: 0 auto; */
@@ -23,40 +23,40 @@
   display: flex;
   align-items: center;
 }
-.signup-form > div:first-child{
+.signup-form > div:first-child {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
-.verification-code-box{
+.verification-code-box {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
-.signup-form input{
+.signup-form input {
   width: 85%;
   border: none;
   font-size: 16px;
   color: #887160;
   outline: none;
 }
-.signup-form i{
+.signup-form i {
   width: 55px;
   text-align: center;
 }
-.signup-form div.focus{
+.signup-form div.focus {
   border: 1px solid #887160;
 }
-.signup-form div.error{
+.signup-form div.error {
   border: 1px solid #ff0000;
 }
-.signup-form div.success{
+.signup-form div.success {
   border: 1px solid #dfdfdf;
 }
 
-.gender-box{
+.gender-box {
   display: flex;
   justify-content: center;
 }
-.gender-box .gender-check-box{
+.gender-box .gender-check-box {
   width: 32%;
   height: 40px;
   text-align: center;
@@ -64,39 +64,39 @@
   border: 1px solid #dfdfdf;
   cursor: pointer;
 }
-.gender-box .gender-check-box:first-child{
+.gender-box .gender-check-box:first-child {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-.gender-box .gender-check-box:last-child{
+.gender-box .gender-check-box:last-child {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-.gender-box .gender-check-box input{
+.gender-box .gender-check-box input {
   width: 0;
 }
-.gender-box .gender-check-box label{
+.gender-box .gender-check-box label {
   cursor: pointer;
 }
-.phoneNum-box{
+.phoneNum-box {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
-.verification-code-box{
+.verification-code-box {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-#veriInput{
+#veriInput {
   width: 70%;
 }
 
-.submit-button{
+.submit-button {
   border: none !important;
   display: flex;
   flex-direction: column;
 }
-.submit-button button{
+.submit-button button {
   /* bottom: 0; */
   width: 100%;
   height: 52px;
@@ -109,15 +109,22 @@
   font-family: arial !important;
 }
 .colorrequest,
-.signup-submit{
+.signup-submit {
   background-color: #baa693 !important;
   cursor: pointer;
 }
-.signup-info{
+.signup-info {
   border: none !important;
   height: 25px !important;
   text-align: left;
 }
 @media screen and (max-width: 480px) {
-    
+  .signupbox {
+    width: 340px;
+    padding: 10px;
   }
+  .signup-form > div {
+    width: 310px;
+    padding: 5px;
+  }
+}

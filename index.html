@@ -28,12 +28,12 @@
 
     <!-- SEO -->
     <meta name="author" content="웨딩포유" />
-    <meta name="title" content="웨딩포유 :: " />
+    <meta name="title" content="웨딩포유 :: 당신을 위한 결혼" />
     <meta name="keywords" content="웨딩포유, 결혼, 웨딩, 스드메, 식장예약" />
     <meta name="description" content="더 쉽고 간편하게 더 저렴하게 결혼하자" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="웨딩포유 :: " />
+    <meta property="og:title" content="웨딩포유 :: 당신을 위한 결혼" />
     <meta
       property="og:description"
       content="웨딩포유은 가장 최선의 방법으로 고객님에게 결과를 가져다 드립니다."
@@ -44,10 +44,7 @@
     <meta property="og:url" content="http://127.0.0.1:5500/index.html" />
 
     <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="웨딩포유 :: 지구를 지키는 확실한 행동"
-    />
+    <meta name="twitter:title" content="웨딩포유 :: 당신을 위한 결혼" />
     <meta
       name="twitter:description"
       content="웨딩포유은 가장 최선의 방법으로 고객님에게 결과를 가져다 드립니다."
@@ -181,7 +178,7 @@
         <div class="inner">
           <div class="header-logo">
             <a href="index.html">
-              <img src="images/logo_white.png" alt="header-logo" />
+              <img id="logoImg" src="images/logo_white.png" alt="header-logo" />
             </a>
           </div>
           <nav>
@@ -209,7 +206,7 @@
           <div class="s-menu">
             <ul>
               <li><a href="login.html">login</a></li>
-              <li><a href="#">my page</a></li>
+              <li><a href="signup.html">sign up</a></li>
             </ul>
           </div>
           <button class="hamburger">
@@ -225,7 +222,14 @@
           <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
           <li><a href="s_sdm.html">S.D.M</a></li>
           <li><a href="s_notice.html">Q&A</a></li>
-          <li><a href="s_contact.html">CONTACT</a></li>
+
+          <li><a href="s_contact.html">contact</a></li>
+          <li>
+            <ul>
+              <li><a href="login.html">login</a></li>
+              <li><a href="signup.html">signup</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
       <!-- 문의하기 btn -->
@@ -317,7 +321,7 @@
 
       <!-- BEST SDM -->
 
-      <div class="sdm clearfix">
+      <div class="sdm clearfix" id="sdm_call">
         <div class="inner">
           <div class="sdm_back_b">
             <div class="sdm_title" data-aos="zoom-in">
@@ -437,9 +441,7 @@
                 할인 적용된 가격을 한 눈에 알아보세요!
               </p>
 
-
-              <button class="pk-buy-btn">상품 구매</button>
-
+              <button class="m-pk-more-btn">more</button>
             </div>
 
             <div class="m-pk-img-wrapper">
@@ -531,30 +533,62 @@
                 <!-- 시간이 출력됩니다 -->
               </strong>
             </div>
-            <a href="#" class="ts-price">패키지 혜택 받고 예약하기</a>
+            <a href="#sdm_call" class="ts-price">패키지 혜택 받고 예약하기</a>
           </div>
         </div>
       </div>
 
       <!-- gallery -->
-      <div class="inner">
-        <h2 class="gallery-title">gallery</h2>
+      <div class="gallery">
+        <h2>gallery</h2>
+        <p>마우스로 움직여보세요</p>
+        <div class="gallwrap">
+          <div class="swiper gallswiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/wedding1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/wedding2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/wedding3.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/wedding4.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/wedding5.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/wedding6.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/wedding7.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/wedding8.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/wedding9.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/wedding10.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/wedding11.jpg" alt="">
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+          <!-- <div class="gallhover">
+            <i class="fa-solid fa-computer-mouse"></i>
+            <p>마우스로 움직여보세요</p>
+          </div> -->
+        </div>
       </div>
-      <!-- 갤러리 -->
-      <div class="gallery clearfix">
-        <div class="slide slide-1">
-          <img src="images/wedding1.jpg" />
-        </div>
-        <div class="slide slide-2">
-          <img src="images/wedding2.jpg" />
-        </div>
-        <div class="slide slide-3">
-          <img src="images/wedding3.jpg" />
-        </div>
-        <div class="slide slide-4">
-          <img src="images/wedding4.jpg" />
-        </div>
-      </div>
+
+
       <!-- footer -->
       <footer class="footer clearfix">
         <div class="inner">
@@ -614,30 +648,25 @@
               <a href="#"><h4>q&a</h4></a>
               <a href="#"><h4>review</h4></a>
             </div>
-            <div class="footer-middle-mobile-content-contact">
-            </div>
+            <div class="footer-middle-mobile-content-contact"></div>
           </div>
           <div class="footer-bottom">
-              <p>
-                대표자: 실뱅 꼴라델 / 서울시 강남구 영동대로 517, 35층(삼성동,
-                아셈타워) / 사업자등록번호: 120-81-79834
-              </p>
-              <p>
-                통신판매업 신고번호 제 2015-서울강남-00052 호 (<a
-                  href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208179834&apv_perm_no=null"
-                  class="footer-underline"
-                  >사업자 정보 확인</a
-                >)
-              </p>
-              <p>
-                개인정보보호책임자: 한소희 / 호스팅 서비스: Rackspace Hosting
-              </p>
-              <p>
-                클라이언트서비스센터 02-3452-1921 메일 문의
-                <a href="" class="footer-underline"
-                  >clientservice.kr@gucci.com</a
-                >
-              </p>
+            <p>
+              대표자: 실뱅 꼴라델 / 서울시 강남구 영동대로 517, 35층(삼성동,
+              아셈타워) / 사업자등록번호: 120-81-79834
+            </p>
+            <p>
+              통신판매업 신고번호 제 2015-서울강남-00052 호 (<a
+                href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208179834&apv_perm_no=null"
+                class="footer-underline"
+                >사업자 정보 확인</a
+              >)
+            </p>
+            <p>개인정보보호책임자: 한소희 / 호스팅 서비스: Rackspace Hosting</p>
+            <p>
+              클라이언트서비스센터 02-3452-1921 메일 문의
+              <a href="" class="footer-underline">clientservice.kr@gucci.com</a>
+            </p>
           </div>
         </div>
       </footer>
