@@ -89,8 +89,10 @@ html.active {
   color: #fff;
   text-transform: uppercase;
 }
-.header nav ul li a:hover {
-  color: #191919;
+
+.header nav ul li a:hover{
+  color: #887160;
+
 }
 .header nav ul li a:hover .balloon {
   color: #fff;
