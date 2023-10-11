@@ -42,18 +42,18 @@
   left: 50%;
   transform: translateX(-50%);
   font-family: "Noto Sans KR";
-  font-size: 26px;
+  font-size: 18px;
   color: #887160;
   text-transform: uppercase;
   background: transparent;
-  width: 170px;
-  height: 60px;
+  width: 120px;
+  height: 48px;
   border: 2px solid #887160;
   border-radius: 50px;
   margin-bottom: 50px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 .pk-review-click-btn:hover {
   color: #fff;
@@ -127,9 +127,18 @@
     font-size: 60px;
   }
   .pk-review-click-btn {
-    font-size: 14px;
-    padding: 4px 14px;
+    font-size: 18px;
+    width: 120px;
+    height: 50px;
     top: 80%;
+  }
+  #modalImage {
+    width: 90%;
+  }
+  .package-close {
+    font-size: 32px;
+    top: -310px;
+    right: 30px;
   }
 }
 @media all and (max-width: 480px) {
@@ -182,5 +191,10 @@
     width: 60px;
     height: 28px;
     top: 84%;
+  }
+  .package-close {
+    font-size: 24px;
+    top: -160px;
+    right: 12px;
   }
 }
