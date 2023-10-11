@@ -337,6 +337,475 @@
   }
 }
 @media all and (max-width: 480px) {
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+  .sdm .inner {
+    max-width: 1920px;
+  }
+  .sdm_back_b {
+    position: relative;
+    width: 100%;
+    height: 2049px;
+    background: url("../images/sdm_secon_back.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sdm_title {
+    /* padding-top: 18%; */
+    position: absolute;
+    text-align: center;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 200px;
+    top: 100px;
+    user-select: none;
+  }
+  .sdm_title h2 {
+    font-size: 52px;
+    letter-spacing: 0.5px;
+    /* font-weight: 500; */
+    color: #ececec;
+    font-family: "Noto Serif KR", sans-serif;
+  }
+  .sdm_title h2 span {
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .sdm_box_b {
+    top: 26%;
+    position: absolute;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  #sdmbox_b_all {
+    width: 400px;
+    height: 730px;
+    background-color: #fff;
+    border-radius: 500px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .smd_box_b_circle {
+    width: 300px;
+    height: 300px;
+    /* background-color: aquamarine; */
+    border-radius: 50%;
+  }
+  #circle01 {
+    background: url("../images/sdm_circle01.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #circle01:hover {
+    transition: all 0.5s;
+    background: url("../images/studio-hover.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #circle02 {
+    background: url("../images/sdm_circle02.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #circle02:hover {
+    transition: all 0.5s;
+    background: url("../images/dress-hover.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #circle03 {
+    background: url("../images/sdm_circle03.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #circle03:hover {
+    transition: all 0.5s;
+    background: url("../images/makeup-hover.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .sdm_box_h3 {
+    padding-top: 18%;
+    font-size: 32px;
+    font-weight: 600;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    color: #282828;
+  }
+  .sdm_box_p01 {
+    padding-top: 5%;
+    font-size: 15px;
+    width: 80%;
+    font-weight: 500;
+    line-height: 20px;
+    color: #474747;
+  }
+  .sdm_box_p02 {
+    padding-top: 4%;
+    padding-bottom: 12%;
+    font-size: 16px;
+    font-weight: 600;
+    width: 80%;
+    line-height: 21px;
+    color: #474747;
+  }
+  .sdm_secondtext {
+    max-width: 1440px;
+    position: relative;
+    left: 10%;
+    top: -1%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .sdm_sec_first {
+    width: 100%;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+    padding-bottom: 2%;
+  }
+  .sdm_sec_second {
+    width: 170px;
+    height: 60px;
+    z-index: 1;
+  }
+  .sdm_sec_second button {
+    background: none;
+    font-size: 26px;
+    width: 120px;
+    height: 48px;
+    border: 2px solid #887160;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  .sdm_sec_second button a {
+    color: #887160;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sdm_sec_second button:hover {
+    background-color: #887160;
+    color: #fff;
+    z-index: 1;
+    transition: 0.2s ease-in-out;
+    border: none;
+  }
+  .sdm_sec_second button:hover a {
+    color: #fff;
+  }
+  .smd_b_foot {
+    top: 50%;
+    right: 0;
+    position: absolute;
+    max-width: 1440px;
+    width: 100%;
+    /* margin: 0 auto; */
+    /* background-color: aqua; */
+  }
+  .smd_b_foot_img {
+    background: url("../images/sdm_b_foot222.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1123px;
+    height: 1016px;
+  }
+  .sdm_box_b_img_df {
+    max-width: 1920px;
+    width: 1500px;
+    height: 1000px;
+    margin-top: -40%;
+    background: url("../images/diffrent_package_back2.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  /* ------------------------- */
+  /* 반응형 */
+  @media all and (max-width: 1024px) {
+    .sdm_secondtext {
+      padding-left: 5%;
+    }
+    .sdm_box_b {
+      padding: 5%;
+    }
+    #sdmbox_b_all {
+      width: 280px;
+    }
+    .smd_box_b_circle {
+      width: 250px;
+      height: 250px;
+    }
+    .smd_b_foot_img {
+      width: 953px;
+      height: 856px;
+    }
+    .smd_b_foot {
+      padding-left: 12%;
+    }
+    .sdm_sec_first {
+      font-size: 28px;
+    }
+    .sdm_sec_second button {
+      width: 120px;
+      height: 50px;
+    }
+    .sdm_sec_second button a {
+      font-size: 18px;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      vertical-align: 5px;
+    }
+    .smd_b_foot_img {
+      margin-top: 10%;
+      margin-left: -7%;
+    }
+    .sdm_title {
+      margin-top: 5%;
+    }
+    .sdm_title h2 {
+      font-size: 48px;
+    }
+    .sdm_box_b_img_df {
+      display: none;
+    }
+    .smdbox_1024 {
+      background: url("../images/pk_back_1024.png");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 700px;
+      margin-top: -700px;
+      position: relative;
+    }
+    .sdm_secondtext {
+      padding-top: 300px;
+      position: relative;
+      z-index: 99;
+      left: 0;
+    }
+  }
+  @media all and (max-width: 768px) {
+    .sdm_back_b {
+      margin-top: -100px;
+      height: 4000px;
+    }
+    .smdbox_1024 {
+      display: none;
+    }
+    .sdm_title {
+      margin-top: 100px;
+    }
+    .sdmbox768 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: -90%;
+    }
+    .sdmbox_768_1 {
+      display: block;
+      width: 100%;
+      height: 900px;
+      background: url("../images/dbdb_780_1.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+    .sdmbox_768_2 {
+      display: block;
+      width: 100%;
+      height: 900px;
+      background: url("../images/dbdb_780_2.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+    .sdmbox_768_3 {
+      display: block;
+      width: 100%;
+      height: 900px;
+      background: url("../images/dbdb_780_3.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      padding: 0;
+    }
+    .sdm_secondtext {
+      z-index: 99;
+      margin-top: -35%;
+      left: 0;
+    }
+    .smd_b_foot {
+      position: relative;
+      background-color: #e7e3dd;
+      margin-top: -145%;
+      z-index: 1;
+    }
+    .smd_b_foot_img {
+      width: 680px;
+    }
+    .sdm_sec_first {
+      width: 50%;
+    }
+  }
+  @media all and (max-width: 480px) {
+    .sdm .inner {
+      max-width: 480px;
+    }
+    .sdm_title {
+      width: 90%;
+      line-height: 60px;
+    }
+    .sdm_title h2 {
+      font-size: 40px;
+      font-weight: 500;
+    }
+    .smd_b_foot {
+      position: relative;
+      width: 100%;
+      background-color: #e7e3dd;
+      z-index: 1;
+    }
+    .smd_b_foot_img {
+      position: relative;
+      width: 330px;
+      height: 606px;
+      margin-top: -220%;
+    }
+    .sdm_sec_first {
+      line-height: 33px;
+      width: 90%;
+      left: 0;
+      font-size: 22px;
+      width: 300px;
+    }
+    .sdm_sec_second {
+      padding-top: 2%;
+    }
+    .sdm_sec_second button {
+      width: 130px;
+    }
+    .sdm_sec_second button a {
+      font-size: 20px;
+    }
+    .sdm_box_b {
+      margin-top: -50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #sdmbox_b_all {
+      position: relative;
+      margin: 20px;
+      width: 400px;
+    }
+    .smd_box_b_circle {
+      width: 340px;
+      height: 340px;
+    }
+    .sdm_secondtext {
+      position: relative;
+      top: -8%;
+      left: 0;
+      z-index: 2;
+      width: 350px;
+      font-size: 33px;
+      /* flex-direction: column; */
+    }
+    .sdm_sec_second {
+      z-index: 3;
+    }
+    .sdm_box_b_img_df {
+      display: none;
+    }
+    .smdbox_1024 {
+      display: none;
+    }
+    .smdbox_480 {
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: center;
+      width: 100%;
+      margin-top: -60%;
+    }
+    .sdmbox_480_1 {
+      display: block;
+      width: 100%;
+      height: 700px;
+      background: url("../images/diffrent_back_480_1.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+    .sdmbox_480_2 {
+      display: block;
+      width: 100%;
+      height: 700px;
+      background: url("../images/diffrent_back_480_2.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      margin-top: -170px;
+      margin-bottom: -170px;
+    }
+    .sdmbox_480_3 {
+      display: block;
+      width: 100%;
+      height: 700px;
+      background: url("../images/diffrent_back_480_3.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      padding: 0;
+    }
+    .smdbox_1024 {
+      display: none;
+    }
+    .sdmbox768 {
+      display: none;
+    }
+    .sdm_back_b {
+      height: 2800px;
+    }
+  }
+  @media all and (max-width: 360px) {
+  }
+  @media all and (max-width: 320px) {
+    .smd_b_foot_img {
+      width: 280px;
+    }
+  }
+}
+@media all and (max-width: 360px) {
   .sdm .inner {
     max-width: 480px;
   }
@@ -457,8 +926,6 @@
   .sdm_back_b {
     height: 2800px;
   }
-}
-@media all and (max-width: 360px) {
 }
 @media all and (max-width: 320px) {
   .smd_b_foot_img {
