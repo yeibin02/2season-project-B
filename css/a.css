@@ -238,6 +238,14 @@ td {
   z-index: 999;
   border-radius: 20px;
 }
+.hall-close-btn {
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 .hall-modal-wrap label {
   width: 450px;
   height: 30px;
