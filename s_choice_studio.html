@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <link rel="canonical" href="http://www.mysite.com/article/article1.html" />
     <meta
       name="naver-site-verification"
-      content="e394674f760eb584c248e383e2623c424f9d655a"
+      content="ac8f45f467b14d6d0ce812c1547c0dc6ffb110b6"
     />
     <!-- Google Tag Manager -->
     <script>
@@ -17,7 +16,7 @@
         j.async = true;
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-NFH6CXG7");
+      })(window, document, "script", "dataLayer", "GTM-5L3S46BJ");
     </script>
     <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
@@ -26,7 +25,6 @@
       name="viewport"
       content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes"
     />
-
     <!-- SEO -->
     <meta name="author" content="웨딩포유" />
     <meta name="title" content="웨딩포유 :: 당신을 위한 결혼" />
@@ -141,9 +139,9 @@
     />
     <!-- script 불러오기 -->
     <script src="js/header.js"></script>
-    <script src="js/a.js"></script>
     <!-- css 불러오기 -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/s_sdm_studio.css" />
     <style>
       .header {
         background-color: #fff;
@@ -154,37 +152,35 @@
       .header nav ul li a:hover {
         color: #887160;
       }
-      .header nav ul li:nth-child(1) a {
+      .header nav ul li:first-child a {
+        border-color: #191919;
+      }
+      .header nav ul li:first-child a:hover {
+        border-color: #887160;
+        background-color: #887160;
+      }
+      .header nav ul li:nth-child(2) a {
         color: #887160;
       }
       .header .s-menu ul li a {
         color: #191919;
       }
     </style>
-
-    <!-- Flickity 스타일시트 가져오기 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
-    />
-    <!-- Flickity 및 classie 스크립트 가져오기 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NFH6CXG7"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5L3S46BJ"
         height="0"
         width="0"
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
     <div class="wrap" id="wrap">
-      <div class="modal-overlay"></div>
+      <!-- top button -->
+      <a href="#wrap"><div class="top-button">top</div></a>
       <!-- header -->
       <header class="header clearfix" id="header">
         <div class="inner">
@@ -218,7 +214,7 @@
           <div class="s-menu">
             <ul>
               <li><a href="login.html">login</a></li>
-              <li><a href="#">my page</a></li>
+              <li><a href="signup.html">sign up</a></li>
             </ul>
           </div>
           <button class="hamburger">
@@ -231,106 +227,42 @@
       <div class="hamburger-menu">
         <ul class="hamburger-menu-contents">
           <li><a href="s_package.html">PACKAGE</a></li>
-          <li><a href="s_about.html">ABOUT</a></li>
           <li><a href="s_weddinghall.html">WEDDING HALL</a></li>
           <li><a href="s_sdm.html">S.D.M</a></li>
           <li><a href="s_notice.html">Q&A</a></li>
+
           <li><a href="s_contact.html">contact</a></li>
+          <li>
+            <ul>
+              <li><a href="login.html">login</a></li>
+              <li><a href="signup.html">sign up</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
-
-      <!-- 서브 웨딩홀 상세 -->
-      <div class="hall-list-wrap">
-        <div class="hall-list-img">
-          <img src="images/s-wd-main1.png" alt="웨딩홀" />
-          <!-- 출력값을 여기안에 담아놓음 -->
-          <p id="hall-list-info">웨딩 홀 상세보기</p>
-        </div>
-
-        <div class="inner">
-          <!-- 홀 정보 표시 -->
-          <div class="hall-info-wrap">
-            <div class="back-wrap-wd">
-              <img src="images/pakage-visual-prev.png" alt="이전" />
-              <a href="s_weddinghall.html"> back</a>
-            </div>
-            <div id="hall-info">
-              <!-- 웨딩 홀 정보 표시 -->
-            </div>
-            <div class="hall-info-info">
-              <div class="hall-schedule">
-                <p>예식 일정 정보</p>
-                <p>예식을 희망하는 날짜 선택 후 예약센터로 신청하세요.</p>
-              </div>
-              <div class="hall-schedule-help">
-                <ul>
-                  <li>
-                    * 신청하신 날짜에 가능한 시간별,보증인원,할인가 등을
-                    안내드립니다.
-                  </li>
-                  <li>
-                    * 방문 상담 희망 일시를 기준으로 상담스케줄을 예약 해
-                    드립니다.
-                  </li>
-                </ul>
-              </div>
-              <div class="hall-calendar">
-                <table class="Calendar">
-                  <thead>
-                    <tr>
-                      <td onClick="prevCalendar();" style="cursor: pointer">
-                        &#60;
-                      </td>
-                      <td colspan="5">
-                        <span id="calYear"></span>년
-                        <span id="calMonth"></span>월
-                      </td>
-                      <td onClick="nextCalendar();" style="cursor: pointer">
-                        &#62;
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>일</td>
-                      <td>월</td>
-                      <td>화</td>
-                      <td>수</td>
-                      <td>목</td>
-                      <td>금</td>
-                      <td>토</td>
-                    </tr>
-                  </thead>
-
-                  <tbody></tbody>
-                </table>
-                <button class="hall-calendar-btn" id="hall-calendar-btn">
-                  예약하기
-                </button>
-              </div>
-            </div>
-          </div>
+      <!-- 문의하기 btn -->
+      <div class="contact-btn">
+        <a href="s_contact.html">
+          <img src="images/contact_modal.png" alt="문의하기" />
+        </a>
+        <div class="con-hover">
+          <p>문의하기</p>
         </div>
       </div>
-      <div class="hall-info-modal">
-        <form class="hall-modal-wrap" id="hall-modal-form">
-          <button class="hall-close-btn">X</button>
-          <label>이름<em>*</em><input type="text" id="name" required /></label>
-          <label
-            >연락처<em>*</em><input type="tel" id="contact" required
-          /></label>
-          <label>이메일<input type="email" id="email" /></label>
-          <label for="Date"
-            >예약 날짜
-            <input
-              type="date"
-              id="date"
-              max="2030-06-20"
-              min="2023-10-13"
-              value="2023-10-13"
-              required
-            />
-          </label>
-          <button class="hall-modal-btn" type="submit">예약 완료</button>
-        </form>
+      <div class="modal-overlay"></div>
+      <!-- visual -->
+      <div class="s_sdm_studio">
+        <div class="inner">
+          <div class="s_sdm_studio_back">
+            <img src="images/b_s_studio_1920.png" alt="스튜디오백1" />
+          </div>
+          <div class="s_sdm_studio_back02">
+            <img src="images/b_s_studio_1024.png" alt="스튜디오백2" />
+          </div>
+          <div class="s_sdm_studio_back03">
+            <img src="images/b_s_studio_480.png" alt="스튜디오백3" />
+          </div>
+        </div>
       </div>
       <!-- footer -->
       <footer class="footer clearfix">
@@ -391,48 +323,25 @@
               <a href="#"><h4>q&a</h4></a>
               <a href="#"><h4>review</h4></a>
             </div>
-            <div class="footer-middle-mobile-content-contact">
-              <a href="#">
-                <div class="footer-contact">
-                  <p>contact</p>
-                  <img src="images/enter_887160.png" alt="contact" />
-                  <img src="images/enter_black.png" alt="contact" />
-                </div>
-              </a>
-            </div>
+            <div class="footer-middle-mobile-content-contact"></div>
           </div>
           <div class="footer-bottom">
-            <div class="footer-bottom1">
-              <p>
-                대표자: 실뱅 꼴라델 / 서울시 강남구 영동대로 517, 35층(삼성동,
-                아셈타워) / 사업자등록번호: 120-81-79834
-              </p>
-              <p>
-                통신판매업 신고번호 제 2015-서울강남-00052 호 (<a
-                  href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208179834&apv_perm_no=null"
-                  class="footer-underline"
-                  >사업자 정보 확인</a
-                >)
-              </p>
-              <p>
-                개인정보보호책임자: 한소희 / 호스팅 서비스: Rackspace Hosting
-              </p>
-              <p>
-                클라이언트서비스센터 02-3452-1921 메일 문의
-                <a href="" class="footer-underline"
-                  >clientservice.kr@gucci.com</a
-                >
-              </p>
-            </div>
-            <div class="footer-bottom2">
-              <a href="#">
-                <div class="footer-contact">
-                  <p>contact</p>
-                  <img src="images/enter_887160.png" alt="contact" />
-                  <img src="images/enter_black.png" alt="contact" />
-                </div>
-              </a>
-            </div>
+            <p>
+              대표자: 실뱅 꼴라델 / 서울시 강남구 영동대로 517, 35층(삼성동,
+              아셈타워) / 사업자등록번호: 120-81-79834
+            </p>
+            <p>
+              통신판매업 신고번호 제 2015-서울강남-00052 호 (<a
+                href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208179834&apv_perm_no=null"
+                class="footer-underline"
+                >사업자 정보 확인</a
+              >)
+            </p>
+            <p>개인정보보호책임자: 한소희 / 호스팅 서비스: Rackspace Hosting</p>
+            <p>
+              클라이언트서비스센터 02-3452-1921 메일 문의
+              <a href="" class="footer-underline">clientservice.kr@gucci.com</a>
+            </p>
           </div>
         </div>
       </footer>

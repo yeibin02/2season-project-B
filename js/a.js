@@ -65,6 +65,12 @@ window.addEventListener("load", function () {
     $(".modal-overlay").css("display", "block");
     $(".hall-info-modal").css("display", "block");
   });
+  // 예약하기 X누를 시 모달창 내리기
+  $(".hall-close-btn").click(function () {
+    $(".header").css("display", "block");
+    $(".modal-overlay").css("display", "none");
+    $(".hall-info-modal").css("display", "none");
+  });
 
   // 예약하기
   const form = document.getElementById("hall-modal-form");
