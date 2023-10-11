@@ -11,7 +11,6 @@
 }
 .s_sdm .inner {
   max-width: 1920px;
-  height: 100%;
 }
 .s_sdm_wrap {
   position: relative;
@@ -173,6 +172,62 @@
     transform: translate(0px, 6px) rotate(0deg);
   }
 }
+
+/* ----- */
+.sdm_tip {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 150px;
+  user-select: none;
+  background: url("../images/sdm_tip_back.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sdm_tip h3 {
+  font-size: 52px;
+  letter-spacing: -0.5px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  padding-bottom: 30px;
+  color: #e4e4e4;
+}
+.sdm_tip p {
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  color: #c9c9c9;
+}
+.sdm_tip_three {
+  padding-top: 30px;
+}
+.sdm_tip_three button {
+  width: 180px;
+  height: 40px;
+  margin-right: 10px;
+  background: none;
+  border: 2px solid #d6d6d6;
+}
+.sdm_tip_three button a {
+  color: #d6d6d6;
+  font-weight: 600;
+}
+.sdm_tip_three button:hover {
+  background: #887160;
+  border: none;
+  cursor: pointer;
+}
+.sdm_tip_three button:hover a {
+  color: #fff;
+}
+/* ----- */
 /* studio */
 .sdm_studio {
   position: relative;
@@ -242,9 +297,10 @@
 .sdm_studio_wrap h3 {
   user-select: none;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 500;
   padding-bottom: 20px;
-  font-family: "Noto Serif KR", serif;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #282828;
 }
 .sdm_studio_wrap p {
   font-size: 14px;
@@ -458,6 +514,7 @@
 }
 /* dress */
 .dress_wrap {
+  /* background-color: aqua; */
   width: 100%;
   height: 800px;
   position: relative;
@@ -466,9 +523,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  /* align-items: center; */
   max-width: 1000px;
-  margin: auto;
-  margin-bottom: 500px;
+  margin: 0 auto;
 }
 .dress_title {
   width: 100%;
@@ -865,6 +922,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 .stu_modal_imgbox {
   position: relative;
@@ -878,6 +936,7 @@
   width: 50%;
   height: 100%;
   margin: 0 auto;
+  z-index: 999;
 }
 .stu_modal_imgbox2 {
   position: relative;
@@ -891,6 +950,7 @@
   width: 50%;
   height: 100%;
   margin: 0 auto;
+  z-index: 999;
 }
 .stu_modal {
   background: #fff;
@@ -903,6 +963,7 @@
   position: fixed;
   left: 0;
   text-align: left;
+  z-index: 999;
 }
 .stu_header {
   text-align: center;
@@ -1045,6 +1106,7 @@
 /* ---- */
 .studio_container01 {
   position: relative;
+  z-index: 1;
   top: 5%;
 }
 .studio_container01 > .stu_btn01 {
@@ -1069,7 +1131,7 @@
   font-weight: 700;
 }
 #sdm_footer {
-  padding-top: 27%;
+  padding-top: 30%;
 }
 /* ------------------------------- */
 /* ----------반응형----------- */
@@ -1119,6 +1181,9 @@
   }
   .s_sdm_wrap {
     max-width: 1024px;
+  }
+  #sdm_footer {
+    padding-top: 47%;
   }
 }
 
@@ -1271,7 +1336,7 @@
     width: 90%;
   }
   #sdm_footer {
-    padding-top: 67%;
+    padding-top: 77%;
   }
 }
 @media all and (max-width: 739px) {
@@ -1302,6 +1367,21 @@
   }
 }
 @media all and (max-width: 480px) {
+  .sdm_tip h3 {
+    font-size: 38px;
+  }
+  .sdm_tip p {
+    font-size: 15px;
+  }
+  .sdm_tip_three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sdm_tip_three button {
+    margin-bottom: 7px;
+  }
   #sdm_footer {
     padding-top: 20%;
   }
