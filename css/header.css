@@ -176,6 +176,7 @@ html.active {
   color: #887160;
   border-bottom: 1px solid #e5e5e5;
   text-transform: uppercase;
+  text-align: center;
 }
 .hamburger-menu-contents li:last-child a{
   border-bottom: none;
@@ -207,5 +208,25 @@ html.active {
   }
   .hamburger{
     display: block;
+  }
+}
+@media all and (max-width: 440px) {
+  .hamburger-menu-contents li a {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 406px) {
+  .hamburger-menu-contents li a {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 390px) {
+  .hamburger-menu-contents li a {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 373px) {
+  .hamburger-menu-contents li a {
+    font-size: 14px;
   }
 }
