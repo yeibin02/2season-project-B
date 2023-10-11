@@ -92,13 +92,35 @@ window.addEventListener("load", function(){
   });
 
   colorRequest.addEventListener('click', function (e) {
-      e.preventDefault()
-      const verificationBox = document.getElementById('verificationCodeBox');
-      const phoneNumBox = document.querySelector('.phoneNum-box');
-
-      verificationBox.style.display = 'flex ';
-
-      phoneNumBox.style.borderRadius = '0';
+    e.preventDefault();
+  
+    // 사용자 이름 유효성 검사
+    const inputValue = nameInput.value.trim();
+    const validName = /^[a-zA-Z가-힣\s]*$/; // 한글, 영문, 공백만 허용
+  
+    // 생년월일 유효성 검사
+    const inputBirthValue = birthInput.value.trim();
+    const validBirth = /^\d{8}$/; // 8자리 숫자만 허용
+  
+    if (!validName.test(inputValue)) {
+      alert("올바른 이름을 입력해주세요.");
+      // 입력값에서 유효하지 않은 문자를 제거
+      nameInput.value = inputValue.replace(/[^a-zA-Z가-힣\s]/g, '');
+      return; // 유효성 검사 통과하지 않을 경우 이후 코드 실행을 막음
+    } else if (!validBirth.test(inputBirthValue)) {
+      alert("올바른 생년월일을 8자리 숫자로 입력해주세요.");
+      birthInput.value = inputBirthValue.replace(/\D/g, '');
+      return; // 유효성 검사 통과하지 않을 경우 이후 코드 실행을 막음
+    }
+  
+    const verificationBox = document.getElementById('verificationCodeBox');
+    const phoneNumBox = document.querySelector('.phoneNum-box');
+  
+    verificationBox.style.display = 'flex';
+    phoneNumBox.style.borderRadius = '0';
+  
+    // 타이머 시작
+    startTimer();
   });
 
   const completion = document.getElementById('completion');
@@ -215,14 +237,7 @@ function startTimer() {
   }, 1000); // 1초마다 업데이트
 }
 
-// verificationBox를 표시하는 버튼을 클릭할 때 타이머 시작
-const colorRequest2 = document.getElementById("colorRequest");
-colorRequest2.addEventListener("click", function () {
-  // verificationBox를 표시
-  const verificationBox = document.getElementById("verificationCodeBox");
-  verificationBox.style.display = "flex";
 
-  // 타이머 시작
-  startTimer();
-});
+
 })
+
