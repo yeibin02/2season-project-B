@@ -127,9 +127,18 @@
     font-size: 60px;
   }
   .pk-review-click-btn {
-    font-size: 14px;
-    padding: 4px 14px;
+    font-size: 18px;
+    width: 120px;
+    height: 50px;
     top: 80%;
+  }
+  #modalImage {
+    width: 90%;
+  }
+  .package-close {
+    font-size: 32px;
+    top: -310px;
+    right: 30px;
   }
 }
 @media all and (max-width: 480px) {
@@ -182,5 +191,10 @@
     width: 60px;
     height: 28px;
     top: 84%;
+  }
+  .package-close {
+    font-size: 24px;
+    top: -160px;
+    right: 12px;
   }
 }
