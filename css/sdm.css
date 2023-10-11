@@ -355,12 +355,8 @@
     z-index: 1;
   }
   .smd_b_foot_img {
-<<<<<<< HEAD
-    width: 340px;
-=======
     position: relative;
     width: 330px;
->>>>>>> fe5a7f796a92cf311703bec64275ecd2d85d1719
     height: 606px;
     margin-top: -220%;
   }
