@@ -89,6 +89,12 @@ window.addEventListener("load", function () {
       // navLinks의 스타일 변경
       navLinks.forEach(function(link) {
         link.style.color = '#fff';
+        link.addEventListener('mouseenter', function () {
+          this.style.color = '#887160';
+        });
+        link.addEventListener('mouseleave', function () {
+          this.style.color = '#fff';
+        });
       });
 
       // sMenuLinks의 스타일 변경
