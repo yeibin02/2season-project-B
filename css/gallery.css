@@ -30,7 +30,7 @@
 
     .gallery .swiper-slide {
       width: 30%;
-      height: 50vw;
+      height: 30vw;
       text-align: center;
       font-size: 18px;
       /* background: #fff; */
@@ -48,7 +48,7 @@
 
     .gallhover{
       width: 100vw;
-      height: calc(50vw + 40px);
+      height: calc(30vw + 40px);
       position: absolute;
       top: 0;
       left: 0;
